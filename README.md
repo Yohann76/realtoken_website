@@ -1,38 +1,18 @@
-# realtoken_website
+# Realtoken Website
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is the foundation of the website to present the Realtoken DAO.
 
-## Recommended IDE Setup
+A technology like WordPress was complicated to maintain on the community server, so a static technology like VueJS is perfect for creating a reliable, consistent, and scalable website foundation.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+# Technologies
 
-## Recommended Browser Setup
+- VueJS 3 (https://vuejs.org/)
+- Vite (https://vite.dev/)
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Run website with make
 
 ```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
+make dev-build   # Build 
+make dev-run     # Run on port 5173
+make dev-kill    # Stop container
 ```
