@@ -1,45 +1,79 @@
 <script setup>
-const benefits = [
+const aboutFeatures = [
   {
-    title: 'Rendement tokenisé',
-    description:
-      'Distribuez des loyers quotidiens vers les portefeuilles des membres via des smart contracts audités.'
+    title: 'Liquidité',
+    description: 'Accédez à des actifs immobiliers tokenisés négociables 24/7 sur les marchés décentralisés.'
   },
   {
-    title: 'Liquidité 24/7',
-    description:
-      'Accédez à des parts immobilières fractionnées négociables en toute transparence sur la DAO.'
+    title: 'Échange',
+    description: 'Échangez vos tokens RealToken de manière transparente et sécurisée sur l\'écosystème.'
   },
   {
-    title: 'Conformité intégrée',
-    description:
-      'Intégrez KYC/KYB, gouvernance communautaire et reporting temps réel sur chaque actif.'
+    title: 'Disponible',
+    description: 'Des actifs réels accessibles à tous, fractionnés en parts numériques vérifiables.'
+  },
+  {
+    title: 'Accessible',
+    description: 'Investissez dans l\'immobilier premium sans barrières traditionnelles ni intermédiaires.'
+  }
+]
+
+const applications = [
+  {
+    title: 'RMM',
+    description: 'RealToken Market Maker - Plateforme de liquidité et d\'échange pour les tokens RealToken, facilitant les transactions et la découverte de prix.'
+  },
+  {
+    title: 'YAM',
+    description: 'Your Asset Manager - Interface de gestion pour suivre vos actifs tokenisés, visualiser les rendements et gérer votre portefeuille RealToken.'
+  }
+]
+
+const resources = [
+  {
+    title: 'Wiki',
+    description: 'Documentation complète sur l\'écosystème RealToken, les protocoles, la gouvernance et les guides d\'utilisation.'
+  }
+]
+
+const governanceTools = [
+  {
+    title: 'Protocole décentralisé',
+    description: 'Gouvernance communautaire transparente où chaque détenteur de REG peut participer aux décisions importantes.'
+  },
+  {
+    title: 'Forum',
+    description: 'Espace de discussion et de proposition pour la communauté RealToken DAO.'
+  },
+  {
+    title: 'Tally',
+    description: 'Plateforme de vote on-chain pour les propositions de gouvernance et les décisions de la DAO.'
   }
 ]
 
 const steps = [
   {
     number: '01',
-    title: 'Acquisition & due diligence',
-    text: 'Sélection d’actifs immobiliers prime et audits juridiques avant tokenisation.'
+    title: 'Acheter des tokens depuis un partenaire',
+    text: 'Acquérez vos tokens RealToken auprès de nos partenaires certifiés et intégrez l\'écosystème.'
   },
   {
     number: '02',
-    title: 'Tokenisation en chaîne',
-    text: 'Création de parts numériques (ERC-20) adossées aux flux économiques de chaque bien.'
+    title: 'Tokens disponibles dans l\'écosystème (RMM, YAM)',
+    text: 'Vos tokens sont immédiatement accessibles sur RMM pour l\'échange et YAM pour la gestion de portefeuille.'
   },
   {
     number: '03',
-    title: 'Distribution & gouvernance',
-    text: 'Investisseurs globaux participent, votent et perçoivent les revenus directement on-chain.'
+    title: 'Obtenir un token REG et participer à la gouvernance',
+    text: 'Recevez vos tokens REG pour participer activement à la gouvernance décentralisée. Bientôt : des NFT pour améliorer la gouvernance décentralisée.'
   }
 ]
 
 const stats = [
   { label: 'Actifs sous gestion', value: '$128M' },
-  { label: 'Taux d’occupation moyen', value: '97%' },
-  { label: 'Membres vérifiés', value: '18 200+' },
-  { label: 'Audits smart contracts', value: '6 complétés' }
+  { label: 'Membres de l\'écosystème', value: '18 200+' },
+  { label: 'Marketcap REG', value: 'À venir' },
+  { label: 'Nombre de votes', value: 'En cours' }
 ]
 </script>
 
@@ -96,50 +130,64 @@ const stats = [
     <section id="about" class="section about">
       <div class="section-heading">
         <p class="tag">À propos</p>
-        <h2>Le pont entre la pierre et la finance programmable.</h2>
+        <h2>Tokenisation d'actifs réels : liquidité, échange, disponible, accessible.</h2>
         <p>
-          Chaque token RealToken représente une part vérifiable d’un portefeuille immobilier. Les flux de
-          trésorerie sont versés directement aux détenteurs tandis que la DAO supervise gouvernance, maintenance et
-          expansion stratégique.
+          RealToken DAO transforme l'investissement immobilier en rendant les actifs réels accessibles, 
+          échangeables et disponibles 24/7. Chaque token représente une part vérifiable d'un portefeuille 
+          immobilier premium, avec une liquidité instantanée et une gouvernance décentralisée.
         </p>
       </div>
       <div class="features">
-        <article>
-          <h3>Hero section</h3>
-          <p>Promesse forte et CTA double, sur fond immersif d’un actif réel tokenisé.</p>
-        </article>
-        <article>
-          <h3>Key benefits</h3>
-          <p>Cartes modulaires mettant en avant rendement, liquidité et conformité.</p>
-        </article>
-        <article>
-          <h3>How it works</h3>
-          <p>Processus en trois étapes, clair pour les nouveaux investisseurs Web3.</p>
-        </article>
-        <article>
-          <h3>Stats & confiance</h3>
-          <p>Preuves sociales, audits et métriques pour réduire le temps de décision.</p>
+        <article v-for="feature in aboutFeatures" :key="feature.title">
+          <h3>{{ feature.title }}</h3>
+          <p>{{ feature.description }}</p>
         </article>
       </div>
     </section>
 
-    <section id="benefits" class="section benefits">
+    <section id="application" class="section application">
       <div class="section-heading compact">
-        <p class="tag">Bénéfices clés</p>
-        <h2>Professionnalisez la tokenisation immobilière.</h2>
+        <p class="tag">Application</p>
+        <h2>Les outils de l'écosystème RealToken.</h2>
       </div>
       <div class="cards">
-        <article v-for="benefit in benefits" :key="benefit.title" class="card">
-          <h3>{{ benefit.title }}</h3>
-          <p>{{ benefit.description }}</p>
+        <article v-for="app in applications" :key="app.title" class="card">
+          <h3>{{ app.title }}</h3>
+          <p>{{ app.description }}</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="ressources" class="section ressources">
+      <div class="section-heading compact">
+        <p class="tag">Ressources</p>
+        <h2>Documentation et guides pour l'écosystème.</h2>
+      </div>
+      <div class="cards">
+        <article v-for="resource in resources" :key="resource.title" class="card">
+          <h3>{{ resource.title }}</h3>
+          <p>{{ resource.description }}</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="governance" class="section governance">
+      <div class="section-heading compact">
+        <p class="tag">Gouvernance</p>
+        <h2>Gouvernance décentralisée pour la communauté.</h2>
+      </div>
+      <div class="cards">
+        <article v-for="tool in governanceTools" :key="tool.title" class="card">
+          <h3>{{ tool.title }}</h3>
+          <p>{{ tool.description }}</p>
         </article>
       </div>
     </section>
 
     <section id="process" class="section process">
       <div class="section-heading compact">
-        <p class="tag">Process</p>
-        <h2>Comment la DAO orchestre chaque actif.</h2>
+        <p class="tag">Comment ça marche</p>
+        <h2>Rejoignez l'écosystème RealToken en trois étapes.</h2>
       </div>
       <div class="timeline">
         <article v-for="step in steps" :key="step.number" class="step">
@@ -167,16 +215,16 @@ const stats = [
 
     <section class="section cta">
       <div>
-        <p class="tag">Prêt à lancer</p>
-        <h2>Déployez votre prochain actif RealToken.</h2>
+        <p class="tag">Partenaires</p>
+        <h2>Intégrez votre token et façonnez l'avenir de l'écosystème RealToken.</h2>
         <p>
-          Connectez votre wallet, sélectionnez un véhicule juridique et laissez la DAO orchestrer l’émission, la
-          distribution et le marché secondaire.
+          Rejoignez l'écosystème RealToken en tant que partenaire. Intégrez vos tokens et bénéficiez 
+          de la liquidité, de la gouvernance et de l'infrastructure de la DAO pour développer votre projet.
         </p>
       </div>
       <div class="cta-actions">
-        <button class="primary filled">Tokeniser un bien</button>
-        <button class="primary outline">Parler à l’équipe</button>
+        <button class="primary filled">Devenir partenaire</button>
+        <button class="primary outline">En savoir plus</button>
       </div>
     </section>
   </div>
@@ -385,7 +433,15 @@ h1 span {
   background: rgba(255, 255, 255, 0.02);
 }
 
-.benefits {
+.application {
+  background: rgba(5, 15, 36, 0.8);
+}
+
+.ressources {
+  background: rgba(10, 31, 68, 0.6);
+}
+
+.governance {
   background: rgba(5, 15, 36, 0.8);
 }
 
