@@ -1,6 +1,6 @@
 COMPOSE=docker compose
 
-.PHONY: dev-build dev-run dev-kill
+.PHONY: dev-build dev-run dev-kill dev-logs
 
 dev-build:
 	$(COMPOSE) build
@@ -10,4 +10,7 @@ dev-run:
 
 dev-kill:
 	$(COMPOSE) down
+
+dev-logs:
+	$(COMPOSE) logs -f
 

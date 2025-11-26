@@ -15,6 +15,7 @@ A technology like WordPress was complicated to maintain on the community server,
 make dev-build   # Build 
 make dev-run     # Run on port 5173
 make dev-kill    # Stop container
+make dev-logs    # Show container logs
 ```
 
 ### Design concept: 
