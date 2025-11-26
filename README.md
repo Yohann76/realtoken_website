@@ -28,9 +28,16 @@ make dev-logs    # Show container logs
 
 ### Features:
 
-- Hero section with strong value proposition
-- About real-world asset tokenization
-- Key benefits showcaseg
-- How it works process
-- Stats/trust indicators
-- CTA section
+New design information:
+
+- Hero section with strong value proposition (+nav, and add link to different section)
+- About real-world asset tokenization (liquidity, exchange, available, accessible) / - Key benefits showcaseg
+- Application section (from NAV) -> RMM (description) + YAM (description)
+- Ressource section (from NAV) -> Wiki...?)
+- Governance section (from NAV) -> Decentralize protocole, Forum, Tally
+- How it works process (
+    - 01 buy token from partenary
+    - 02 token available in ecosystem (RMM, YAM)
+    - 03 get a REG token, and participate to governance (SOON: des NFT for improve decentralize governance)
+- Stats/trust indicators -> Assets under management / member of the ecosystem / REG marketcap / Number of votes
+- CTA section (invite partner) -> Integrate your token and shape the future of the RealToken ecosystem
