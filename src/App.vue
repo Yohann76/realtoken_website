@@ -55,12 +55,11 @@ const stats = [
           </div>
         </div>
         <div class="nav-links">
-          <a href="#about">À propos</a>
-          <a href="#benefits">Bénéfices</a>
-          <a href="#process">Process</a>
-          <a href="#stats">Statistiques</a>
+          <a href="#application">Application</a>
+          <a href="#ressources">Ressources</a>
+          <a href="#governance">Gouvernance</a>
         </div>
-        <button class="primary ghost">Lancer l’app</button>
+        <button class="primary ghost">Contacter nous</button>
       </nav>
 
       <div class="hero-content">
