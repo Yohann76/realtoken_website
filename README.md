@@ -23,7 +23,7 @@ make dev-logs    # Show container logs
 - Professional fintech/Web3 aesthetic with traditional real estate trust
 - Navy blue (#0A1F44) and vibrant orange (#FF8C42) palette
 - Modern geometric elements inspired by the cube logo
-- Clean typography with Outfit font family
+- Clean typography with Raleway font family
 - Subtle animations for depth and engagement
 
 ### Features:
