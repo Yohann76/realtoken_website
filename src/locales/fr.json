@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "application": "Application",
+    "ressources": "Ressources",
+    "governance": "Gouvernance",
+    "contact": "Contacter nous"
+  },
+  "hero": {
+    "tag": "Tokenisation immobilière on-chain",
+    "title": "Investissez dans des actifs réels",
+    "titleSpan": "avec la précision d'un protocole DeFi.",
+    "lead": "RealToken DAO unifie la solidité d'un trust immobilier et la transparence Web3. Créez, gérez et échangez des parts fractionnées adossées à des immeubles premium en quelques clics.",
+    "ctaDashboard": "Accéder au dashboard",
+    "ctaVision": "Découvrir la vision",
+    "trustSec": "SEC-ready",
+    "trustSecDesc": "Cadre juridique validé",
+    "trustLloyds": "Assurance Lloyd's",
+    "trustLloydsDesc": "Protection locative",
+    "trustChainlink": "Oracle Chainlink",
+    "trustChainlinkDesc": "Reporting automatisé"
+  },
+  "about": {
+    "tag": "À propos",
+    "title": "Tokenisation d'actifs réels : liquidité, échange, disponible, accessible.",
+    "description": "RealToken DAO transforme l'investissement immobilier en rendant les actifs réels accessibles, échangeables et disponibles 24/7. Chaque token représente une part vérifiable d'un portefeuille immobilier premium, avec une liquidité instantanée et une gouvernance décentralisée.",
+    "features": {
+      "liquidity": {
+        "title": "Liquidité",
+        "description": "Accédez à des actifs immobiliers tokenisés négociables 24/7 sur les marchés décentralisés."
+      },
+      "exchange": {
+        "title": "Échange",
+        "description": "Échangez vos tokens RealToken de manière transparente et sécurisée sur l'écosystème."
+      },
+      "available": {
+        "title": "Disponible",
+        "description": "Des actifs réels accessibles à tous, fractionnés en parts numériques vérifiables."
+      },
+      "accessible": {
+        "title": "Accessible",
+        "description": "Investissez dans l'immobilier premium sans barrières traditionnelles ni intermédiaires."
+      }
+    }
+  },
+  "application": {
+    "tag": "Application",
+    "title": "Les outils de l'écosystème RealToken.",
+    "rmm": {
+      "title": "RMM",
+      "description": "RealToken Market Maker - Plateforme de liquidité et d'échange pour les tokens RealToken, facilitant les transactions et la découverte de prix."
+    },
+    "yam": {
+      "title": "YAM",
+      "description": "Your Asset Manager - Interface de gestion pour suivre vos actifs tokenisés, visualiser les rendements et gérer votre portefeuille RealToken."
+    }
+  },
+  "ressources": {
+    "tag": "Ressources",
+    "title": "Documentation et guides pour l'écosystème.",
+    "wiki": {
+      "title": "Wiki",
+      "description": "Documentation complète sur l'écosystème RealToken, les protocoles, la gouvernance et les guides d'utilisation."
+    }
+  },
+  "governance": {
+    "tag": "Gouvernance",
+    "title": "Gouvernance décentralisée pour la communauté.",
+    "protocol": {
+      "title": "Protocole décentralisé",
+      "description": "Gouvernance communautaire transparente où chaque détenteur de REG peut participer aux décisions importantes."
+    },
+    "forum": {
+      "title": "Forum",
+      "description": "Espace de discussion et de proposition pour la communauté RealToken DAO."
+    },
+    "tally": {
+      "title": "Tally",
+      "description": "Plateforme de vote on-chain pour les propositions de gouvernance et les décisions de la DAO."
+    }
+  },
+  "process": {
+    "tag": "Comment ça marche",
+    "title": "Rejoignez l'écosystème RealToken en trois étapes.",
+    "step1": {
+      "title": "Acheter des tokens depuis un partenaire",
+      "text": "Acquérez vos tokens RealToken auprès de nos partenaires certifiés et intégrez l'écosystème."
+    },
+    "step2": {
+      "title": "Tokens disponibles dans l'écosystème (RMM, YAM)",
+      "text": "Vos tokens sont immédiatement accessibles sur RMM pour l'échange et YAM pour la gestion de portefeuille."
+    },
+    "step3": {
+      "title": "Obtenir un token REG et participer à la gouvernance",
+      "text": "Recevez vos tokens REG pour participer activement à la gouvernance décentralisée. Bientôt : des NFT pour améliorer la gouvernance décentralisée."
+    }
+  },
+  "stats": {
+    "tag": "Preuves",
+    "title": "Des indicateurs vérifiables, en temps réel.",
+    "assets": "Actifs sous gestion",
+    "members": "Membres de l'écosystème",
+    "regMarketcap": "Marketcap REG",
+    "votes": "Nombre de votes",
+    "comingSoon": "À venir",
+    "inProgress": "En cours"
+  },
+  "cta": {
+    "tag": "Partenaires",
+    "title": "Intégrez votre token et façonnez l'avenir de l'écosystème RealToken.",
+    "description": "Rejoignez l'écosystème RealToken en tant que partenaire. Intégrez vos tokens et bénéficiez de la liquidité, de la gouvernance et de l'infrastructure de la DAO pour développer votre projet.",
+    "buttonPartner": "Devenir partenaire",
+    "buttonLearn": "En savoir plus"
+  },
+  "logo": {
+    "name": "RealToken DAO",
+    "subtitle": "Asset Management"
+  }
+}
+

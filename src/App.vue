@@ -1,80 +1,86 @@
 <script setup>
-const aboutFeatures = [
-  {
-    title: 'Liquidité',
-    description: 'Accédez à des actifs immobiliers tokenisés négociables 24/7 sur les marchés décentralisés.'
-  },
-  {
-    title: 'Échange',
-    description: 'Échangez vos tokens RealToken de manière transparente et sécurisée sur l\'écosystème.'
-  },
-  {
-    title: 'Disponible',
-    description: 'Des actifs réels accessibles à tous, fractionnés en parts numériques vérifiables.'
-  },
-  {
-    title: 'Accessible',
-    description: 'Investissez dans l\'immobilier premium sans barrières traditionnelles ni intermédiaires.'
-  }
-]
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
+import LanguageSelector from './components/LanguageSelector.vue'
 
-const applications = [
+const { t } = useI18n()
+
+const aboutFeatures = computed(() => [
   {
-    title: 'RMM',
-    description: 'RealToken Market Maker - Plateforme de liquidité et d\'échange pour les tokens RealToken, facilitant les transactions et la découverte de prix.'
+    title: t('about.features.liquidity.title'),
+    description: t('about.features.liquidity.description')
   },
   {
-    title: 'YAM',
-    description: 'Your Asset Manager - Interface de gestion pour suivre vos actifs tokenisés, visualiser les rendements et gérer votre portefeuille RealToken.'
-  }
-]
-
-const resources = [
-  {
-    title: 'Wiki',
-    description: 'Documentation complète sur l\'écosystème RealToken, les protocoles, la gouvernance et les guides d\'utilisation.'
-  }
-]
-
-const governanceTools = [
-  {
-    title: 'Protocole décentralisé',
-    description: 'Gouvernance communautaire transparente où chaque détenteur de REG peut participer aux décisions importantes.'
+    title: t('about.features.exchange.title'),
+    description: t('about.features.exchange.description')
   },
   {
-    title: 'Forum',
-    description: 'Espace de discussion et de proposition pour la communauté RealToken DAO.'
+    title: t('about.features.available.title'),
+    description: t('about.features.available.description')
   },
   {
-    title: 'Tally',
-    description: 'Plateforme de vote on-chain pour les propositions de gouvernance et les décisions de la DAO.'
+    title: t('about.features.accessible.title'),
+    description: t('about.features.accessible.description')
   }
-]
+])
 
-const steps = [
+const applications = computed(() => [
+  {
+    title: t('application.rmm.title'),
+    description: t('application.rmm.description')
+  },
+  {
+    title: t('application.yam.title'),
+    description: t('application.yam.description')
+  }
+])
+
+const resources = computed(() => [
+  {
+    title: t('ressources.wiki.title'),
+    description: t('ressources.wiki.description')
+  }
+])
+
+const governanceTools = computed(() => [
+  {
+    title: t('governance.protocol.title'),
+    description: t('governance.protocol.description')
+  },
+  {
+    title: t('governance.forum.title'),
+    description: t('governance.forum.description')
+  },
+  {
+    title: t('governance.tally.title'),
+    description: t('governance.tally.description')
+  }
+])
+
+const steps = computed(() => [
   {
     number: '01',
-    title: 'Acheter des tokens depuis un partenaire',
-    text: 'Acquérez vos tokens RealToken auprès de nos partenaires certifiés et intégrez l\'écosystème.'
+    title: t('process.step1.title'),
+    text: t('process.step1.text')
   },
   {
     number: '02',
-    title: 'Tokens disponibles dans l\'écosystème (RMM, YAM)',
-    text: 'Vos tokens sont immédiatement accessibles sur RMM pour l\'échange et YAM pour la gestion de portefeuille.'
+    title: t('process.step2.title'),
+    text: t('process.step2.text')
   },
   {
     number: '03',
-    title: 'Obtenir un token REG et participer à la gouvernance',
-    text: 'Recevez vos tokens REG pour participer activement à la gouvernance décentralisée. Bientôt : des NFT pour améliorer la gouvernance décentralisée.'
+    title: t('process.step3.title'),
+    text: t('process.step3.text')
   }
-]
+])
 
-const stats = [
-  { label: 'Actifs sous gestion', value: '$128M' },
-  { label: 'Membres de l\'écosystème', value: '18 200+' },
-  { label: 'Marketcap REG', value: 'À venir' },
-  { label: 'Nombre de votes', value: 'En cours' }
-]
+const stats = computed(() => [
+  { label: t('stats.assets'), value: '$128M' },
+  { label: t('stats.members'), value: '18 200+' },
+  { label: t('stats.regMarketcap'), value: t('stats.comingSoon') },
+  { label: t('stats.votes'), value: t('stats.inProgress') }
+])
 </script>
 
 <template>
@@ -84,44 +90,46 @@ const stats = [
         <div class="logo">
           <div class="cube"></div>
           <div>
-            <span>RealToken DAO</span>
-            <small>Asset Management</small>
+            <span>{{ $t('logo.name') }}</span>
+            <small>{{ $t('logo.subtitle') }}</small>
           </div>
         </div>
         <div class="nav-links">
-          <a href="#application">Application</a>
-          <a href="#ressources">Ressources</a>
-          <a href="#governance">Gouvernance</a>
+          <a href="#application">{{ $t('nav.application') }}</a>
+          <a href="#ressources">{{ $t('nav.ressources') }}</a>
+          <a href="#governance">{{ $t('nav.governance') }}</a>
         </div>
-        <button class="primary ghost">Contacter nous</button>
+        <div class="nav-right">
+          <LanguageSelector />
+          <button class="primary ghost">{{ $t('nav.contact') }}</button>
+        </div>
       </nav>
 
       <div class="hero-content">
-        <p class="tag">Tokenisation immobilière on-chain</p>
+        <p class="tag">{{ $t('hero.tag') }}</p>
         <h1>
-          Investissez dans des actifs réels
-          <span>avec la précision d’un protocole DeFi.</span>
+          {{ $t('hero.title') }}
+          <span>{{ $t('hero.titleSpan') }}</span>
         </h1>
         <p class="lead">
-          RealToken DAO unifie la solidité d’un trust immobilier et la transparence Web3. Créez, gérez et
-          échangez des parts fractionnées adossées à des immeubles premium en quelques clics.
+          {{ $t('hero.lead') }}
         </p>
         <div class="hero-cta">
-          <button class="primary filled">Accéder au dashboard</button>
-          <button class="primary outline">Découvrir la vision</button>
+          <button class="primary filled">{{ $t('hero.ctaDashboard') }}</button>
+          <button class="primary outline">{{ $t('hero.ctaVision') }}</button>
         </div>
         <div class="trust-points">
           <div>
-            <strong>SEC-ready</strong>
-            <span>Cadre juridique validé</span>
+            <strong>{{ $t('hero.trustSec') }}</strong>
+            <span>{{ $t('hero.trustSecDesc') }}</span>
           </div>
           <div>
-            <strong>Assurance Lloyd’s</strong>
-            <span>Protection locative</span>
+            <strong>{{ $t('hero.trustLloyds') }}</strong>
+            <span>{{ $t('hero.trustLloydsDesc') }}</span>
           </div>
           <div>
-            <strong>Oracle Chainlink</strong>
-            <span>Reporting automatisé</span>
+            <strong>{{ $t('hero.trustChainlink') }}</strong>
+            <span>{{ $t('hero.trustChainlinkDesc') }}</span>
           </div>
         </div>
       </div>
@@ -129,12 +137,10 @@ const stats = [
 
     <section id="about" class="section about">
       <div class="section-heading">
-        <p class="tag">À propos</p>
-        <h2>Tokenisation d'actifs réels : liquidité, échange, disponible, accessible.</h2>
+        <p class="tag">{{ $t('about.tag') }}</p>
+        <h2>{{ $t('about.title') }}</h2>
         <p>
-          RealToken DAO transforme l'investissement immobilier en rendant les actifs réels accessibles, 
-          échangeables et disponibles 24/7. Chaque token représente une part vérifiable d'un portefeuille 
-          immobilier premium, avec une liquidité instantanée et une gouvernance décentralisée.
+          {{ $t('about.description') }}
         </p>
       </div>
       <div class="features">
@@ -147,8 +153,8 @@ const stats = [
 
     <section id="application" class="section application">
       <div class="section-heading compact">
-        <p class="tag">Application</p>
-        <h2>Les outils de l'écosystème RealToken.</h2>
+        <p class="tag">{{ $t('application.tag') }}</p>
+        <h2>{{ $t('application.title') }}</h2>
       </div>
       <div class="cards">
         <article v-for="app in applications" :key="app.title" class="card">
@@ -160,8 +166,8 @@ const stats = [
 
     <section id="ressources" class="section ressources">
       <div class="section-heading compact">
-        <p class="tag">Ressources</p>
-        <h2>Documentation et guides pour l'écosystème.</h2>
+        <p class="tag">{{ $t('ressources.tag') }}</p>
+        <h2>{{ $t('ressources.title') }}</h2>
       </div>
       <div class="cards">
         <article v-for="resource in resources" :key="resource.title" class="card">
@@ -173,8 +179,8 @@ const stats = [
 
     <section id="governance" class="section governance">
       <div class="section-heading compact">
-        <p class="tag">Gouvernance</p>
-        <h2>Gouvernance décentralisée pour la communauté.</h2>
+        <p class="tag">{{ $t('governance.tag') }}</p>
+        <h2>{{ $t('governance.title') }}</h2>
       </div>
       <div class="cards">
         <article v-for="tool in governanceTools" :key="tool.title" class="card">
@@ -186,8 +192,8 @@ const stats = [
 
     <section id="process" class="section process">
       <div class="section-heading compact">
-        <p class="tag">Comment ça marche</p>
-        <h2>Rejoignez l'écosystème RealToken en trois étapes.</h2>
+        <p class="tag">{{ $t('process.tag') }}</p>
+        <h2>{{ $t('process.title') }}</h2>
       </div>
       <div class="timeline">
         <article v-for="step in steps" :key="step.number" class="step">
@@ -202,8 +208,8 @@ const stats = [
 
     <section id="stats" class="section stats">
       <div class="section-heading compact">
-        <p class="tag">Preuves</p>
-        <h2>Des indicateurs vérifiables, en temps réel.</h2>
+        <p class="tag">{{ $t('stats.tag') }}</p>
+        <h2>{{ $t('stats.title') }}</h2>
       </div>
       <div class="stats-grid">
         <article v-for="item in stats" :key="item.label">
@@ -215,16 +221,15 @@ const stats = [
 
     <section class="section cta">
       <div>
-        <p class="tag">Partenaires</p>
-        <h2>Intégrez votre token et façonnez l'avenir de l'écosystème RealToken.</h2>
+        <p class="tag">{{ $t('cta.tag') }}</p>
+        <h2>{{ $t('cta.title') }}</h2>
         <p>
-          Rejoignez l'écosystème RealToken en tant que partenaire. Intégrez vos tokens et bénéficiez 
-          de la liquidité, de la gouvernance et de l'infrastructure de la DAO pour développer votre projet.
+          {{ $t('cta.description') }}
         </p>
       </div>
       <div class="cta-actions">
-        <button class="primary filled">Devenir partenaire</button>
-        <button class="primary outline">En savoir plus</button>
+        <button class="primary filled">{{ $t('cta.buttonPartner') }}</button>
+        <button class="primary outline">{{ $t('cta.buttonLearn') }}</button>
       </div>
     </section>
   </div>
@@ -305,6 +310,12 @@ const stats = [
 
 .nav-links a:hover {
   color: var(--color-orange);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .primary {
@@ -526,11 +537,17 @@ h1 span {
 @media (max-width: 768px) {
   .top-nav {
     flex-direction: column;
+    gap: 16px;
   }
 
   .nav-links {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .nav-right {
+    justify-content: center;
+    width: 100%;
   }
 
   .hero::after {

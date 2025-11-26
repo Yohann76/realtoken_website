@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "application": "Application",
+    "ressources": "Resources",
+    "governance": "Governance",
+    "contact": "Contact us"
+  },
+  "hero": {
+    "tag": "On-chain real estate tokenization",
+    "title": "Invest in real assets",
+    "titleSpan": "with the precision of a DeFi protocol.",
+    "lead": "RealToken DAO unifies the solidity of a real estate trust and Web3 transparency. Create, manage and trade fractional shares backed by premium properties in a few clicks.",
+    "ctaDashboard": "Access dashboard",
+    "ctaVision": "Discover the vision",
+    "trustSec": "SEC-ready",
+    "trustSecDesc": "Validated legal framework",
+    "trustLloyds": "Lloyd's Insurance",
+    "trustLloydsDesc": "Rental protection",
+    "trustChainlink": "Chainlink Oracle",
+    "trustChainlinkDesc": "Automated reporting"
+  },
+  "about": {
+    "tag": "About",
+    "title": "Real asset tokenization: liquidity, exchange, available, accessible.",
+    "description": "RealToken DAO transforms real estate investment by making real assets accessible, tradable and available 24/7. Each token represents a verifiable share of a premium real estate portfolio, with instant liquidity and decentralized governance.",
+    "features": {
+      "liquidity": {
+        "title": "Liquidity",
+        "description": "Access tokenized real estate assets tradable 24/7 on decentralized markets."
+      },
+      "exchange": {
+        "title": "Exchange",
+        "description": "Trade your RealToken tokens transparently and securely on the ecosystem."
+      },
+      "available": {
+        "title": "Available",
+        "description": "Real assets accessible to all, fractionalized into verifiable digital shares."
+      },
+      "accessible": {
+        "title": "Accessible",
+        "description": "Invest in premium real estate without traditional barriers or intermediaries."
+      }
+    }
+  },
+  "application": {
+    "tag": "Application",
+    "title": "RealToken ecosystem tools.",
+    "rmm": {
+      "title": "RMM",
+      "description": "RealToken Market Maker - Liquidity and exchange platform for RealToken tokens, facilitating transactions and price discovery."
+    },
+    "yam": {
+      "title": "YAM",
+      "description": "Your Asset Manager - Management interface to track your tokenized assets, visualize returns and manage your RealToken portfolio."
+    }
+  },
+  "ressources": {
+    "tag": "Resources",
+    "title": "Documentation and guides for the ecosystem.",
+    "wiki": {
+      "title": "Wiki",
+      "description": "Complete documentation on the RealToken ecosystem, protocols, governance and usage guides."
+    }
+  },
+  "governance": {
+    "tag": "Governance",
+    "title": "Decentralized governance for the community.",
+    "protocol": {
+      "title": "Decentralized protocol",
+      "description": "Transparent community governance where every REG holder can participate in important decisions."
+    },
+    "forum": {
+      "title": "Forum",
+      "description": "Discussion and proposal space for the RealToken DAO community."
+    },
+    "tally": {
+      "title": "Tally",
+      "description": "On-chain voting platform for governance proposals and DAO decisions."
+    }
+  },
+  "process": {
+    "tag": "How it works",
+    "title": "Join the RealToken ecosystem in three steps.",
+    "step1": {
+      "title": "Buy tokens from a partner",
+      "text": "Acquire your RealToken tokens from our certified partners and join the ecosystem."
+    },
+    "step2": {
+      "title": "Tokens available in the ecosystem (RMM, YAM)",
+      "text": "Your tokens are immediately available on RMM for trading and YAM for portfolio management."
+    },
+    "step3": {
+      "title": "Get a REG token and participate in governance",
+      "text": "Receive your REG tokens to actively participate in decentralized governance. Coming soon: NFTs to improve decentralized governance."
+    }
+  },
+  "stats": {
+    "tag": "Proof",
+    "title": "Verifiable indicators, in real time.",
+    "assets": "Assets under management",
+    "members": "Ecosystem members",
+    "regMarketcap": "REG marketcap",
+    "votes": "Number of votes",
+    "comingSoon": "Coming soon",
+    "inProgress": "In progress"
+  },
+  "cta": {
+    "tag": "Partners",
+    "title": "Integrate your token and shape the future of the RealToken ecosystem.",
+    "description": "Join the RealToken ecosystem as a partner. Integrate your tokens and benefit from the liquidity, governance and DAO infrastructure to develop your project.",
+    "buttonPartner": "Become a partner",
+    "buttonLearn": "Learn more"
+  },
+  "logo": {
+    "name": "RealToken DAO",
+    "subtitle": "Asset Management"
+  }
+}
+
