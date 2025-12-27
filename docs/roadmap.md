@@ -15,3 +15,4 @@
 
 - A page to describe the list of DAO projects
 - Be able to contact the DAO via social media and a contact address for the marketing committee.
+- Add partenary section (RealT for the moment, AAVE? Chainlink?)
