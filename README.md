@@ -18,7 +18,7 @@ make dev-kill    # Stop container
 make dev-logs    # Show container logs
 ```
 
-### Design concept: 
+### Design/Chart concept: 
 
 - Professional fintech/Web3 aesthetic with traditional real estate trust
 - Navy blue (#0A1F44) and vibrant orange (#FF8C42) palette
