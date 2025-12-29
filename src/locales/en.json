@@ -3,6 +3,7 @@
     "application": "Application",
     "ressources": "Resources",
     "governance": "Governance",
+    "blog": "Blog",
     "contact": "Contact us"
   },
   "hero": {
@@ -114,6 +115,16 @@
   "logo": {
     "name": "RealToken DAO",
     "subtitle": "Asset Management"
+  },
+  "blog": {
+    "tag": "Blog",
+    "title": "Latest articles",
+    "description": "Discover our latest news and guides about the RealToken ecosystem",
+    "pageTitle": "RealToken Blog",
+    "pageDescription": "Explore all our articles on real estate tokenization, decentralized governance and the RealToken ecosystem",
+    "viewAll": "View all articles",
+    "backToBlog": "Back to blog",
+    "loading": "Loading articles..."
   }
 }
 
