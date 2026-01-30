@@ -66,10 +66,14 @@ function parseFrontmatter(content) {
 // TODO: automatically generate the slug from the filename (or parameter markdown) (e.g. 'introduction-realtoken-dao' -> 'introduction-realtoken-dao')
 const articlesList = {
   fr: [
+    'lien-realt-dao-realtoken',
+    'objectif-dao-realtoken',
     'naissance-dao-realtoken',
     'perimetre-dao-realtoken'
   ],
   en: [
+    'realtoken-dao-realt-relationship',
+    'realtoken-dao-objectives',
     'birth-of-realtoken-dao',
     'realtoken-dao-scope'
   ]
@@ -81,7 +85,11 @@ const slugEquivalents = {
   'perimetre-dao-realtoken': { en: 'realtoken-dao-scope' },
   'realtoken-dao-scope': { fr: 'perimetre-dao-realtoken' },
   'naissance-dao-realtoken': { en: 'birth-of-realtoken-dao' },
-  'birth-of-realtoken-dao': { fr: 'naissance-dao-realtoken' }
+  'birth-of-realtoken-dao': { fr: 'naissance-dao-realtoken' },
+  'objectif-dao-realtoken': { en: 'realtoken-dao-objectives' },
+  'realtoken-dao-objectives': { fr: 'objectif-dao-realtoken' },
+  'lien-realt-dao-realtoken': { en: 'realtoken-dao-realt-relationship' },
+  'realtoken-dao-realt-relationship': { fr: 'lien-realt-dao-realtoken' }
 }
 
 /** Retourne le slug à utiliser pour une locale (équivalent du même article dans l'autre langue si besoin) */
