@@ -4,7 +4,7 @@ date: "2024-03-01"
 description: "Discover the scope of action, responsibilities and areas of intervention of the RealToken DAO"
 tags: ["dao", "governance", "ecosystem"]
 author: "RealToken Team"
-imageHeader: "realtoken-scope.jpg"
+imageHeader: "realtoken-scope.png"
 ---
 
 # The Scope of RealToken DAO
