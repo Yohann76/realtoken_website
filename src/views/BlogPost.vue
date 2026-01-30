@@ -5,6 +5,9 @@
     </header>
 
     <article class="post-content" v-if="article">
+      <div class="post-hero-image" v-if="article.imageHeader">
+        <img :src="`/ArticleImg/${article.imageHeader}`" :alt="article.title" />
+      </div>
       <div class="post-header-content">
         <div class="post-meta">
           <span class="post-date">{{ formatDate(article.date) }}</span>
@@ -88,6 +91,22 @@ const formatDate = (dateString) => {
   max-width: 800px;
   margin: 0 auto;
   padding: 48px min(8vw, 120px) 96px;
+}
+
+.post-hero-image {
+  width: 100%;
+  max-height: 360px;
+  overflow: hidden;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.post-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .post-header-content {

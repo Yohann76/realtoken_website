@@ -4,7 +4,7 @@ date: "2024-03-01"
 description: "Découvrez le périmètre d'action, les responsabilités et les domaines d'intervention de la RealToken DAO"
 tags: ["dao", "gouvernance", "écosystème"]
 author: "Équipe RealToken"
-imageHeader: "realtoken-perimetre.jpg"
+imageHeader: "realtoken-scope.png"
 ---
 
 # Le périmètre de la DAO RealToken

@@ -1,7 +1,7 @@
 <template>
   <article class="article-card" @click="goToArticle">
     <div class="article-image" v-if="article.imageHeader">
-      <img :src="`/images/${article.imageHeader}`" :alt="article.title" />
+      <img :src="`/ArticleImg/${article.imageHeader}`" :alt="article.title" />
     </div>
     <div class="article-content">
       <div class="article-meta">
