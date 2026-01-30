@@ -73,6 +73,18 @@ const articlesList = {
   ]
 }
 
+// Correspondance des slugs entre locales (même article, slugs différents selon la langue)
+// Quand on est sur /blog/perimetre-dao-realtoken et qu'on passe en EN, on doit charger realtoken-dao-scope
+const slugEquivalents = {
+  'perimetre-dao-realtoken': { en: 'realtoken-dao-scope' },
+  'realtoken-dao-scope': { fr: 'perimetre-dao-realtoken' }
+}
+
+/** Retourne le slug à utiliser pour une locale (équivalent du même article dans l'autre langue si besoin) */
+export function getSlugForLocale(slug, locale) {
+  return slugEquivalents[slug]?.[locale] ?? slug
+}
+
 // Note: Les slugs correspondent aux noms de fichiers sans l'extension .md
 
 // Fonction pour charger le contenu d'un article
@@ -112,15 +124,16 @@ export async function loadArticles(locale = 'fr') {
   return articles
 }
 
-// Fonction pour charger un article spécifique
+// Fonction pour charger un article spécifique (résout le slug équivalent si l'article n'existe pas dans cette locale)
 export async function loadArticle(slug, locale = 'fr') {
-  const content = await loadArticleContent(slug, locale)
+  const resolvedSlug = getSlugForLocale(slug, locale)
+  const content = await loadArticleContent(resolvedSlug, locale)
   if (!content) return null
   
   const parsed = parseFrontmatter(content)
   return {
     ...parsed.data,
-    slug,
+    slug: resolvedSlug,
     content: md.render(parsed.content),
     rawContent: parsed.content
   }

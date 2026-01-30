@@ -34,12 +34,13 @@
 
 <script setup>
 import { ref, onMounted, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import { loadArticle } from '../utils/blog.js'
+import { loadArticle, getSlugForLocale } from '../utils/blog.js'
 import Navigation from '../components/Navigation.vue'
 
 const route = useRoute()
+const router = useRouter()
 const { locale } = useI18n()
 const article = ref(null)
 
@@ -51,8 +52,19 @@ const fetchArticle = async () => {
 onMounted(fetchArticle)
 watch([() => route.params.slug, locale], fetchArticle)
 
+// Au changement de langue sur un article, mettre à jour l'URL avec le slug équivalent (ex. EN → realtoken-dao-scope)
+watch(locale, (newLocale) => {
+  const currentSlug = route.params.slug
+  const slugForLocale = getSlugForLocale(currentSlug, newLocale)
+  if (slugForLocale !== currentSlug) {
+    router.replace({ path: `/blog/${slugForLocale}` })
+  }
+})
+
 const formatDate = (dateString) => {
+  if (!dateString) return ''
   const date = new Date(dateString)
+  if (Number.isNaN(date.getTime())) return ''
   return date.toLocaleDateString(locale.value, { 
     year: 'numeric', 
     month: 'long', 
