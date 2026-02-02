@@ -144,6 +144,21 @@
     "viewAll": "View all articles",
     "backToBlog": "Back to blog",
     "loading": "Loading articles..."
+  },
+  "footer": {
+    "tagline": "Decentralized ecosystem for tokenized real-world assets.",
+    "applications": "Applications",
+    "governance": "Governance",
+    "resources": "Resources",
+    "legal": "Legal",
+    "blog": "Blog",
+    "wiki": "Wiki",
+    "forum": "Forum",
+    "faq": "FAQ",
+    "privacy": "Privacy",
+    "terms": "Terms of use",
+    "copyright": "© {{year}} RealToken DAO. All rights reserved.",
+    "followUs": "Follow us"
   }
 }
 
