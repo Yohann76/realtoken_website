@@ -135,6 +135,40 @@
     "name": "RealToken DAO",
     "subtitle": "Asset Management"
   },
+  "comite": {
+    "tag": "Governance",
+    "pageTitle": "Committees",
+    "pageDescription": "The DAO is organized into committees to progressively delegate responsibilities to the community.",
+    "members": "Members",
+    "telegram": "Join Telegram",
+    "committees": {
+      "proposer": {
+        "title": "Proposer",
+        "description": "To help establish: proposals on the Forum and corresponding votes on Tally (onChain).",
+        "members": "Sigri, DRKTT and PhilP"
+      },
+      "security": {
+        "title": "Security Committee",
+        "description": "To ensure the security of the DAO protocols (at minimum, intervene in emergencies to stop a protocol).",
+        "members": "Benoist-Not-for-sale, Cogatos, Sigri, EzSwim, JoeD"
+      },
+      "votingPower": {
+        "title": "Voting Power Working Group",
+        "description": "To study and propose new versions of the Voting Power calculation algorithm based on REG holdings.",
+        "members": "Taodiem, Paul, PhilP, Yohann76, Eric, Battistu, DRKTT, Stouban, Teugos"
+      },
+      "liquidity": {
+        "title": "Liquidity Management Committee",
+        "description": "To manage the liquidity strategy implemented via RIP00003, and to study and propose new liquidity management strategies.",
+        "members": "Teugos, PhilP"
+      },
+      "marketing": {
+        "title": "Marketing and Communication Committee",
+        "description": "To study and propose marketing and communication actions to increase visibility and engagement within the Realtoken ecosystem.",
+        "members": "0xEzSwim, Yohann76, Paul, Virtual Madness, Teugos"
+      }
+    }
+  },
   "faq": {
     "tag": "FAQ",
     "pageTitle": "Frequently asked questions",

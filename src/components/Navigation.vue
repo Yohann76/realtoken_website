@@ -179,10 +179,11 @@ const menuItems = computed(() => [
     children: [
       { labelKey: 'nav.menu.governanceTally', href: 'https://www.tally.xyz', external: true },
       { labelKey: 'nav.menu.governanceReg', href: '/#governance', external: false },
-      { labelKey: 'nav.menu.governanceComites', href: '/#governance', external: false },
       { labelKey: 'nav.menu.governanceForum', href: 'https://forum.realtoken.community/', external: true }
     ],
-    routerChildren: []
+    routerChildren: [
+      { labelKey: 'nav.menu.governanceComites', to: '/comite' }
+    ]
   },
   {
     id: 'resources',
