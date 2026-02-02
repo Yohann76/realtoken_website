@@ -14,7 +14,7 @@
       "projetsRwa": "RWA Projects",
       "projetsRwaRealt": "RealT",
       "governance": "Governance",
-      "governanceTally": "Tally",
+      "governanceTally": "Tally (vote)",
       "governanceReg": "The REG",
       "governanceComites": "Committees",
       "governanceForum": "Forum",
@@ -94,7 +94,7 @@
       "description": "Discussion and proposal space for the RealToken DAO community."
     },
     "tally": {
-      "title": "Tally",
+      "title": "Tally (vote)",
       "description": "On-chain voting platform for governance proposals and DAO decisions."
     }
   },

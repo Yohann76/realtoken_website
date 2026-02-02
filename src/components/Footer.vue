@@ -44,7 +44,7 @@
           <div class="footer-col">
             <h4 class="footer-col-title">{{ $t('footer.governance') }}</h4>
             <ul>
-              <li><a href="https://www.tally.xyz" target="_blank" rel="noopener noreferrer">Tally</a></li>
+              <li><a href="https://www.tally.xyz/gov/realtoken-ecosystem-governance" target="_blank" rel="noopener noreferrer">{{ $t('nav.menu.governanceTally') }}</a></li>
               <li><a href="https://forum.realtoken.community/" target="_blank" rel="noopener noreferrer">{{ $t('footer.forum') }}</a></li>
               <li><a href="/#governance">{{ $t('nav.menu.governanceReg') }}</a></li>
               <li><router-link to="/comite">{{ $t('nav.menu.governanceComites') }}</router-link></li>
