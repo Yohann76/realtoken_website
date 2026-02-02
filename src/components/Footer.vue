@@ -35,7 +35,7 @@
           <div class="footer-col">
             <h4 class="footer-col-title">{{ $t('footer.applications') }}</h4>
             <ul>
-              <li><a href="https://app.realtoken.network" target="_blank" rel="noopener noreferrer">RMM</a></li>
+              <li><a href="https://rmm.realtoken.network/" target="_blank" rel="noopener noreferrer">RMM</a></li>
               <li><a href="https://yam.realtoken.network" target="_blank" rel="noopener noreferrer">YAM</a></li>
               <li><a href="https://rent2pay.io" target="_blank" rel="noopener noreferrer">Rent2Pay</a></li>
               <li><a href="https://app.realtoken.network" target="_blank" rel="noopener noreferrer">Dashboard</a></li>
