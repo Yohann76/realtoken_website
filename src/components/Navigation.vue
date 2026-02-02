@@ -173,7 +173,7 @@ const menuItems = [
       { labelKey: 'nav.menu.governanceTally', href: 'https://www.tally.xyz', external: true },
       { labelKey: 'nav.menu.governanceReg', href: '/#governance', external: false },
       { labelKey: 'nav.menu.governanceComites', href: '/#governance', external: false },
-      { labelKey: 'nav.menu.governanceForum', href: 'https://forum.realtoken.network', external: true }
+      { labelKey: 'nav.menu.governanceForum', href: 'https://forum.realtoken.community/', external: true }
     ],
     routerChildren: []
   },
