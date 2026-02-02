@@ -4,7 +4,26 @@
     "ressources": "Ressources",
     "governance": "Gouvernance",
     "blog": "Blog",
-    "contact": "Contacter nous"
+    "contact": "Contacter nous",
+    "menu": {
+      "applications": "Applications",
+      "applicationsRmm": "RMM",
+      "applicationsYam": "YAM",
+      "applicationsRent2Pay": "Rent2Pay",
+      "applicationsDashboard": "Dashboard",
+      "projetsRwa": "Projets RWA",
+      "projetsRwaRealt": "RealT",
+      "governance": "Gouvernance",
+      "governanceTally": "Tally",
+      "governanceReg": "Le REG",
+      "governanceComites": "Comités",
+      "governanceForum": "Forum",
+      "resources": "Ressources",
+      "resourcesFaq": "FAQ",
+      "resourcesTutoriels": "Tutoriels",
+      "resourcesBlog": "Blog",
+      "resourcesAutre": "Autre"
+    }
   },
   "hero": {
     "tag": "Tokenisation immobilière on-chain",

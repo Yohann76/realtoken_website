@@ -4,7 +4,26 @@
     "ressources": "Resources",
     "governance": "Governance",
     "blog": "Blog",
-    "contact": "Contact us"
+    "contact": "Contact us",
+    "menu": {
+      "applications": "Applications",
+      "applicationsRmm": "RMM",
+      "applicationsYam": "YAM",
+      "applicationsRent2Pay": "Rent2Pay",
+      "applicationsDashboard": "Dashboard",
+      "projetsRwa": "RWA Projects",
+      "projetsRwaRealt": "RealT",
+      "governance": "Governance",
+      "governanceTally": "Tally",
+      "governanceReg": "The REG",
+      "governanceComites": "Committees",
+      "governanceForum": "Forum",
+      "resources": "Resources",
+      "resourcesFaq": "FAQ",
+      "resourcesTutoriels": "Tutorials",
+      "resourcesBlog": "Blog",
+      "resourcesAutre": "Other"
+    }
   },
   "hero": {
     "tag": "On-chain real estate tokenization",

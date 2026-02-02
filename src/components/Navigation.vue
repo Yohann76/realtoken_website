@@ -1,7 +1,7 @@
 <template>
   <header class="nav-wrapper">
     <nav class="top-nav">
-      <router-link to="/" class="logo" @click="menuOpen = false">
+      <router-link to="/" class="logo" @click="closeAll">
         <div class="cube"></div>
         <div>
           <span>{{ $t('logo.name') }}</span>
@@ -24,10 +24,55 @@
 
       <div class="nav-desktop">
         <div class="nav-links">
-          <a href="/#application" @click="menuOpen = false">{{ $t('nav.application') }}</a>
-          <a href="/#ressources" @click="menuOpen = false">{{ $t('nav.ressources') }}</a>
-          <a href="/#governance" @click="menuOpen = false">{{ $t('nav.governance') }}</a>
-          <router-link to="/blog" @click="menuOpen = false">{{ $t('nav.blog') }}</router-link>
+          <div
+            v-for="item in menuItems"
+            :key="item.id"
+            class="nav-item"
+            @mouseenter="openDropdown = item.id"
+            @mouseleave="openDropdown = null"
+          >
+            <button
+              type="button"
+              class="nav-trigger"
+              :class="{ active: openDropdown === item.id }"
+              :aria-expanded="openDropdown === item.id"
+              :aria-haspopup="true"
+              @click="openDropdown = openDropdown === item.id ? null : item.id"
+            >
+              {{ $t(item.labelKey) }}
+              <span class="chevron" aria-hidden="true"></span>
+            </button>
+            <Transition name="dropdown">
+              <div
+                v-show="openDropdown === item.id"
+                class="dropdown"
+                role="menu"
+              >
+                <a
+                  v-for="child in item.children"
+                  :key="child.labelKey"
+                  :href="child.href"
+                  :target="child.external ? '_blank' : undefined"
+                  :rel="child.external ? 'noopener noreferrer' : undefined"
+                  class="dropdown-item"
+                  role="menuitem"
+                  @click="closeAll"
+                >
+                  {{ $t(child.labelKey) }}
+                </a>
+                <router-link
+                  v-for="child in item.routerChildren"
+                  :key="child.labelKey"
+                  :to="child.to"
+                  class="dropdown-item"
+                  role="menuitem"
+                  @click="closeAll"
+                >
+                  {{ $t(child.labelKey) }}
+                </router-link>
+              </div>
+            </Transition>
+          </div>
         </div>
         <div class="nav-right">
           <LanguageSelector />
@@ -39,10 +84,45 @@
     <Transition name="menu">
       <div v-show="menuOpen" class="nav-mobile" aria-hidden="!menuOpen">
         <div class="nav-mobile-inner">
-          <a href="/#application" @click="menuOpen = false">{{ $t('nav.application') }}</a>
-          <a href="/#ressources" @click="menuOpen = false">{{ $t('nav.ressources') }}</a>
-          <a href="/#governance" @click="menuOpen = false">{{ $t('nav.governance') }}</a>
-          <router-link to="/blog" @click="menuOpen = false">{{ $t('nav.blog') }}</router-link>
+          <div
+            v-for="item in menuItems"
+            :key="item.id"
+            class="mobile-group"
+          >
+            <button
+              type="button"
+              class="mobile-trigger"
+              :aria-expanded="openMobile === item.id"
+              @click="toggleMobile(item.id)"
+            >
+              {{ $t(item.labelKey) }}
+              <span class="chevron" :class="{ open: openMobile === item.id }"></span>
+            </button>
+            <Transition name="accordion">
+              <div v-show="openMobile === item.id" class="mobile-children">
+                <a
+                  v-for="child in item.children"
+                  :key="child.labelKey"
+                  :href="child.href"
+                  :target="child.external ? '_blank' : undefined"
+                  :rel="child.external ? 'noopener noreferrer' : undefined"
+                  class="mobile-link"
+                  @click="closeAll"
+                >
+                  {{ $t(child.labelKey) }}
+                </a>
+                <router-link
+                  v-for="child in item.routerChildren"
+                  :key="child.labelKey"
+                  :to="child.to"
+                  class="mobile-link"
+                  @click="closeAll"
+                >
+                  {{ $t(child.labelKey) }}
+                </router-link>
+              </div>
+            </Transition>
+          </div>
           <div class="nav-mobile-actions">
             <LanguageSelector />
             <button class="primary ghost">{{ $t('nav.contact') }}</button>
@@ -51,6 +131,7 @@
       </div>
     </Transition>
 
+    <div v-if="openDropdown" class="dropdown-backdrop" @click="openDropdown = null" aria-hidden="true"></div>
     <div class="nav-spacer" aria-hidden="true"></div>
   </header>
 </template>
@@ -60,9 +141,68 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import LanguageSelector from './LanguageSelector.vue'
 
 const menuOpen = ref(false)
+const openDropdown = ref(null)
+const openMobile = ref(null)
+
+// Structure du menu : Applications, Projets RWA, Governance, Resources
+// Liens externes à adapter selon les URLs réelles du projet
+const menuItems = [
+  {
+    id: 'applications',
+    labelKey: 'nav.menu.applications',
+    children: [
+      { labelKey: 'nav.menu.applicationsRmm', href: 'https://app.realtoken.network', external: true },
+      { labelKey: 'nav.menu.applicationsYam', href: 'https://yam.realtoken.network', external: true },
+      { labelKey: 'nav.menu.applicationsRent2Pay', href: 'https://rent2pay.io', external: true },
+      { labelKey: 'nav.menu.applicationsDashboard', href: 'https://app.realtoken.network', external: true }
+    ],
+    routerChildren: []
+  },
+  {
+    id: 'projets-rwa',
+    labelKey: 'nav.menu.projetsRwa',
+    children: [
+      { labelKey: 'nav.menu.projetsRwaRealt', href: 'https://realt.co', external: true }
+    ],
+    routerChildren: []
+  },
+  {
+    id: 'governance',
+    labelKey: 'nav.menu.governance',
+    children: [
+      { labelKey: 'nav.menu.governanceTally', href: 'https://www.tally.xyz', external: true },
+      { labelKey: 'nav.menu.governanceReg', href: '/#governance', external: false },
+      { labelKey: 'nav.menu.governanceComites', href: '/#governance', external: false },
+      { labelKey: 'nav.menu.governanceForum', href: 'https://forum.realtoken.network', external: true }
+    ],
+    routerChildren: []
+  },
+  {
+    id: 'resources',
+    labelKey: 'nav.menu.resources',
+    children: [
+      { labelKey: 'nav.menu.resourcesFaq', href: '/#ressources', external: false },
+      { labelKey: 'nav.menu.resourcesTutoriels', href: '/#ressources', external: false },
+      { labelKey: 'nav.menu.resourcesAutre', href: '/#ressources', external: false }
+    ],
+    routerChildren: [
+      { labelKey: 'nav.menu.resourcesBlog', to: '/blog' }
+    ]
+  }
+]
+
+function closeAll() {
+  menuOpen.value = false
+  openDropdown.value = null
+  openMobile.value = null
+}
+
+function toggleMobile(id) {
+  openMobile.value = openMobile.value === id ? null : id
+}
 
 const closeOnEscape = (e) => {
-  if (e.key === 'Escape') menuOpen.value = false
+  if (e.key === 'Escape') closeAll()
 }
 
 const closeOnResize = () => {
@@ -138,20 +278,95 @@ onUnmounted(() => {
 
 .nav-links {
   display: flex;
-  gap: 24px;
+  gap: 8px;
   font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.8);
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.2s ease;
+.nav-item {
+  position: relative;
 }
 
-.nav-links a:hover,
-.nav-links a.router-link-active {
+.nav-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.nav-trigger:hover,
+.nav-trigger.active {
   color: var(--color-orange);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.chevron {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  margin-bottom: 3px;
+  transition: transform 0.2s ease;
+}
+
+.mobile-trigger .chevron.open {
+  transform: rotate(-135deg);
+  margin-bottom: -3px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  margin-top: 4px;
+  padding: 8px 0;
+  background: rgba(10, 31, 68, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: 1001;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-orange);
+}
+
+.dropdown-enter-active,
+.dropdown-leave-active {
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.dropdown-enter-from,
+.dropdown-leave-to {
+  opacity: 0;
+  transform: translateY(-6px);
+}
+
+.dropdown-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
 }
 
 .nav-right {
@@ -182,13 +397,11 @@ onUnmounted(() => {
   box-shadow: 0 20px 40px rgba(255, 140, 66, 0.4);
 }
 
-/* Espaceur pour éviter que le contenu passe sous la nav */
 .nav-spacer {
   height: var(--nav-height);
   pointer-events: none;
 }
 
-/* Hamburger : visible uniquement sur mobile */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -226,7 +439,7 @@ onUnmounted(() => {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Menu mobile (drawer) */
+/* Menu mobile */
 .nav-mobile {
   position: fixed;
   top: var(--nav-height);
@@ -244,21 +457,60 @@ onUnmounted(() => {
   padding: 24px min(8vw, 120px) 48px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
 }
 
-.nav-mobile-inner a {
-  padding: 14px 0;
-  font-size: 1.1rem;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.9);
+.mobile-group {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobile-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px 0;
+  font-size: 1.05rem;
+  font-family: inherit;
+  color: rgba(255, 255, 255, 0.95);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
   transition: color 0.2s ease;
 }
 
-.nav-mobile-inner a:hover,
-.nav-mobile-inner a.router-link-active {
+.mobile-trigger:hover {
   color: var(--color-orange);
+}
+
+.mobile-children {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+  padding-left: 12px;
+}
+
+.mobile-link {
+  padding: 10px 0;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobile-link:hover {
+  color: var(--color-orange);
+}
+
+.accordion-enter-active,
+.accordion-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.accordion-enter-from,
+.accordion-leave-to {
+  opacity: 0;
 }
 
 .nav-mobile-actions {
@@ -279,7 +531,6 @@ onUnmounted(() => {
   opacity: 0;
 }
 
-/* Responsive : hamburger + drawer en dessous de 769px */
 @media (max-width: 768px) {
   .top-nav {
     padding-left: min(6vw, 24px);
