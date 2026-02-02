@@ -53,7 +53,7 @@
             <h4 class="footer-col-title">{{ $t('footer.resources') }}</h4>
             <ul>
               <li><router-link to="/blog">{{ $t('footer.blog') }}</router-link></li>
-              <li><a href="/#ressources">{{ $t('footer.wiki') }}</a></li>
+              <li><a :href="wikiUrl" target="_blank" rel="noopener noreferrer">{{ $t('footer.wiki') }}</a></li>
               <li><router-link to="/faq">{{ $t('footer.faq') }}</router-link></li>
             </ul>
           </div>
@@ -76,6 +76,15 @@
 
 <script setup>
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { locale } = useI18n()
+
+const wikiUrl = computed(() =>
+  locale.value === 'fr'
+    ? 'https://wiki.realtoken.community/fr/home'
+    : 'https://wiki.realtoken.community/en/home'
+)
 
 // Icônes SVG en chaînes pour affichage via v-html (évite le runtime compiler)
 const svgTwitter = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>'

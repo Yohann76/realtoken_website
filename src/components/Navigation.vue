@@ -137,16 +137,23 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import LanguageSelector from './LanguageSelector.vue'
 
+const { locale } = useI18n()
 const menuOpen = ref(false)
 const openDropdown = ref(null)
 const openMobile = ref(null)
 
+const wikiUrl = computed(() =>
+  locale.value === 'fr'
+    ? 'https://wiki.realtoken.community/fr/home'
+    : 'https://wiki.realtoken.community/en/home'
+)
+
 // Structure du menu : Applications, Projets RWA, Governance, Resources
-// Liens externes à adapter selon les URLs réelles du projet
-const menuItems = [
+const menuItems = computed(() => [
   {
     id: 'applications',
     labelKey: 'nav.menu.applications',
@@ -181,7 +188,7 @@ const menuItems = [
     id: 'resources',
     labelKey: 'nav.menu.resources',
     children: [
-      { labelKey: 'nav.menu.resourcesTutoriels', href: '/#ressources', external: false },
+      { labelKey: 'nav.menu.resourcesWiki', href: wikiUrl.value, external: true },
       { labelKey: 'nav.menu.resourcesAutre', href: '/#ressources', external: false }
     ],
     routerChildren: [
@@ -189,7 +196,7 @@ const menuItems = [
       { labelKey: 'nav.menu.resourcesFaq', to: '/faq' }
     ]
   }
-]
+])
 
 function closeAll() {
   menuOpen.value = false
