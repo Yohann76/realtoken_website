@@ -1,9 +1,5 @@
 <template>
   <div class="blog-post-page">
-    <header class="post-header">
-      <Navigation />
-    </header>
-
     <article class="post-content" v-if="article">
       <div class="post-hero-image" v-if="article.imageHeader">
         <img :src="`/ArticleImg/${article.imageHeader}`" :alt="article.title" />
@@ -40,7 +36,6 @@ import { ref, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { loadArticle, getSlugForLocale } from '../utils/blog.js'
-import Navigation from '../components/Navigation.vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -81,10 +76,6 @@ const formatDate = (dateString) => {
   min-height: 100vh;
   background: linear-gradient(135deg, rgba(10, 31, 68, 0.98), rgba(5, 15, 36, 0.95));
   color: #f8fbff;
-}
-
-.post-header {
-  padding: 48px min(8vw, 120px) 0;
 }
 
 .post-content {

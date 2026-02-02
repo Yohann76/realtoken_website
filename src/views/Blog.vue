@@ -1,7 +1,6 @@
 <template>
   <div class="blog-page">
     <header class="blog-header">
-      <Navigation />
       <div class="header-content">
         <p class="tag">{{ $t('blog.tag') }}</p>
         <h1>{{ $t('blog.pageTitle') }}</h1>
@@ -28,7 +27,6 @@
 import { ref, onMounted, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { loadArticles } from '../utils/blog.js'
-import Navigation from '../components/Navigation.vue'
 import ArticleCard from '../components/blog/ArticleCard.vue'
 
 const { locale } = useI18n()
@@ -59,7 +57,7 @@ watch(locale, fetchArticles)
 
 .header-content {
   max-width: 720px;
-  margin-top: 64px;
+  margin-top: 24px;
 }
 
 .tag {

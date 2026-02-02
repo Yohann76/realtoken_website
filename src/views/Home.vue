@@ -1,7 +1,6 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'
-import Navigation from '../components/Navigation.vue'
 import LatestArticles from '../components/blog/LatestArticles.vue'
 
 const { t } = useI18n()
@@ -87,8 +86,6 @@ const stats = computed(() => [
 <template>
   <div class="landing">
     <header class="hero">
-      <Navigation />
-
       <div class="hero-content">
         <p class="tag">{{ $t('hero.tag') }}</p>
         <h1>
@@ -253,55 +250,6 @@ const stats = computed(() => [
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
   pointer-events: none;
-}
-
-.top-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-  margin-bottom: 64px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.logo small {
-  display: block;
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.72);
-  letter-spacing: 0.2em;
-}
-
-.cube {
-  width: 36px;
-  height: 36px;
-  background: linear-gradient(135deg, var(--color-orange), #ffb97a);
-  clip-path: polygon(0 0, 70% 0, 100% 30%, 100% 100%, 30% 100%, 0 70%);
-  box-shadow: 0 10px 30px rgba(255, 140, 66, 0.45);
-}
-
-.nav-links {
-  display: flex;
-  gap: 24px;
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.nav-links a:hover {
-  color: var(--color-orange);
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 16px;
 }
 
 .primary {
@@ -521,21 +469,6 @@ h1 span {
 }
 
 @media (max-width: 768px) {
-  .top-nav {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .nav-right {
-    justify-content: center;
-    width: 100%;
-  }
-
   .hero::after {
     inset: 16px;
   }
