@@ -54,7 +54,7 @@
             <ul>
               <li><router-link to="/blog">{{ $t('footer.blog') }}</router-link></li>
               <li><a href="/#ressources">{{ $t('footer.wiki') }}</a></li>
-              <li><a href="/#ressources">{{ $t('footer.faq') }}</a></li>
+              <li><router-link to="/faq">{{ $t('footer.faq') }}</router-link></li>
             </ul>
           </div>
           <div class="footer-col">

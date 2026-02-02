@@ -135,6 +135,21 @@
     "name": "RealToken DAO",
     "subtitle": "Asset Management"
   },
+  "faq": {
+    "tag": "FAQ",
+    "pageTitle": "Questions fréquentes",
+    "pageDescription": "Retrouvez les réponses aux questions les plus posées sur l'écosystème RealToken.",
+    "items": {
+      "q1": {
+        "question": "Qu'est-ce que RealToken DAO ?",
+        "answer": "RealToken DAO est un écosystème décentralisé qui tokenise des actifs immobiliers réels. Chaque token représente une part vérifiable d'un portefeuille immobilier, avec liquidité et gouvernance communautaire."
+      },
+      "q2": {
+        "question": "Comment acheter des tokens RealToken ?",
+        "answer": "Vous pouvez acquérir des tokens RealToken auprès de nos partenaires certifiés. Une fois en votre possession, vos tokens sont accessibles sur RMM pour l'échange et sur YAM pour la gestion de portefeuille."
+      }
+    }
+  },
   "blog": {
     "tag": "Blog",
     "title": "Derniers articles",

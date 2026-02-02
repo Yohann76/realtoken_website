@@ -181,12 +181,12 @@ const menuItems = [
     id: 'resources',
     labelKey: 'nav.menu.resources',
     children: [
-      { labelKey: 'nav.menu.resourcesFaq', href: '/#ressources', external: false },
       { labelKey: 'nav.menu.resourcesTutoriels', href: '/#ressources', external: false },
       { labelKey: 'nav.menu.resourcesAutre', href: '/#ressources', external: false }
     ],
     routerChildren: [
-      { labelKey: 'nav.menu.resourcesBlog', to: '/blog' }
+      { labelKey: 'nav.menu.resourcesBlog', to: '/blog' },
+      { labelKey: 'nav.menu.resourcesFaq', to: '/faq' }
     ]
   }
 ]
