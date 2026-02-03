@@ -102,15 +102,15 @@ const stats = computed(() => [
         <div class="trust-points">
           <div>
             <strong>{{ $t('hero.trustSec') }}</strong>
-            <span>{{ $t('hero.trustSecDesc') }}</span>
+            <span v-if="$t('hero.trustSecDesc')"> {{ $t('hero.trustSecDesc') }}</span>
           </div>
           <div>
             <strong>{{ $t('hero.trustLloyds') }}</strong>
-            <span>{{ $t('hero.trustLloydsDesc') }}</span>
+            <span v-if="$t('hero.trustLloydsDesc')"> {{ $t('hero.trustLloydsDesc') }}</span>
           </div>
           <div>
             <strong>{{ $t('hero.trustChainlink') }}</strong>
-            <span>{{ $t('hero.trustChainlinkDesc') }}</span>
+            <span v-if="$t('hero.trustChainlinkDesc')"> {{ $t('hero.trustChainlinkDesc') }}</span>
           </div>
         </div>
       </div>
@@ -351,6 +351,11 @@ h1 span {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   background: rgba(5, 15, 36, 0.55);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-heading {

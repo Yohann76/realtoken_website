@@ -26,18 +26,18 @@
     }
   },
   "hero": {
-    "tag": "On-chain real estate tokenization",
+    "tag": "On-chain real asset tokenization",
     "title": "Build together a",
     "titleSpan": "decentralized RWA ecosystem",
     "lead": "RealToken DAO is a decentralized ecosystem that integrates all your real-world asset tokens such as real estate, factoring, or debt, by collaborating with different partners to decentralize the management of real-world assets.",
     "ctaDashboard": "Discover the vision",
     "ctaVision": "Token economy",
-    "trustSec": "SEC-ready",
-    "trustSecDesc": "Validated legal framework",
-    "trustLloyds": "Lloyd's Insurance",
-    "trustLloydsDesc": "Rental protection",
-    "trustChainlink": "Chainlink Oracle",
-    "trustChainlinkDesc": "Automated reporting"
+    "trustSec": "Decentralized governance",
+    "trustSecDesc": "",
+    "trustLloyds": "Real assets (RWA)",
+    "trustLloydsDesc": "",
+    "trustChainlink": "24/7 liquidity",
+    "trustChainlinkDesc": ""
   },
   "about": {
     "tag": "About",
