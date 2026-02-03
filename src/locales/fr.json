@@ -67,11 +67,11 @@
     "title": "Les outils de l'écosystème RealToken.",
     "rmm": {
       "title": "RMM",
-      "description": "RealToken Market Maker - Plateforme de liquidité et d'échange pour les tokens RealToken, facilitant les transactions et la découverte de prix."
+      "description": "RealToken Money Market - Plateforme de liquidité et d'échange pour les tokens RealToken, facilitant les transactions et la découverte de prix."
     },
     "yam": {
       "title": "YAM",
-      "description": "Your Asset Manager - Interface de gestion pour suivre vos actifs tokenisés, visualiser les rendements et gérer votre portefeuille RealToken."
+      "description": "You and Me - Interface de gestion pour suivre vos actifs tokenisés, visualiser les rendements et gérer votre portefeuille RealToken."
     }
   },
   "ressources": {
@@ -142,7 +142,7 @@
     "criteriaText": "Token ERC-20 : votre actif ou projet doit être représenté par un token conforme à la norme ERC-20 sur Ethereum ou une chaîne compatible (ex. Gnosis Chain).",
     "offerTitle": "Ce que nous offrons",
     "offerDesc": "En tant que partenaire, vous pouvez bénéficier des infrastructures suivantes :",
-    "offer1": "Une infrastructure de marché secondaire avec notre RMM (RealToken Market Maker), pour assurer liquidité et échange de vos tokens.",
+    "offer1": "Une infrastructure de marché secondaire avec notre RMM (RealToken Money Market), pour assurer liquidité et échange de vos tokens.",
     "offer2": "Une infrastructure de lending et borrowing via le RMM, pour le prêt et l'emprunt de vos actifs tokenisés.",
     "offer3": "Une infrastructure de tokenisation pour tous vos projets, grâce à notre partenaire RealT, pionnier de la tokenisation d'actifs réels (RWA).",
     "ctaText": "Vous souhaitez devenir partenaire ? Contactez-nous pour échanger sur votre projet.",
