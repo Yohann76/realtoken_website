@@ -38,7 +38,7 @@
               <li><a href="https://rmm.realtoken.network/" target="_blank" rel="noopener noreferrer">RMM</a></li>
               <li><a href="https://yam.realtoken.network" target="_blank" rel="noopener noreferrer">YAM</a></li>
               <li><a href="https://rent2pay.io" target="_blank" rel="noopener noreferrer">Rent2Pay</a></li>
-              <li><a href="https://app.realtoken.network" target="_blank" rel="noopener noreferrer">Dashboard</a></li>
+              <li><a href="https://dashboard.realtoken.community/" target="_blank" rel="noopener noreferrer">Dashboard</a></li>
             </ul>
           </div>
           <div class="footer-col">

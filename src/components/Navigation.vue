@@ -161,7 +161,7 @@ const menuItems = computed(() => [
       { labelKey: 'nav.menu.applicationsRmm', href: 'https://rmm.realtoken.network/', external: true },
       { labelKey: 'nav.menu.applicationsYam', href: 'https://yam.realtoken.network', external: true },
       { labelKey: 'nav.menu.applicationsRent2Pay', href: 'https://rent2pay.io', external: true },
-      { labelKey: 'nav.menu.applicationsDashboard', href: 'https://app.realtoken.network', external: true }
+      { labelKey: 'nav.menu.applicationsDashboard', href: 'https://dashboard.realtoken.community/', external: true }
     ],
     routerChildren: []
   },
