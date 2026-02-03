@@ -42,11 +42,11 @@
   "about": {
     "tag": "About",
     "title": "Real asset tokenization: liquidity, exchange, available, accessible.",
-    "description": "RealToken DAO transforms real estate investment by making real assets accessible, tradable and available 24/7. Each token represents a verifiable share of a premium real estate portfolio, with instant liquidity and decentralized governance.",
+    "description": "RealToken DAO transforms access to real-world assets by making them accessible, tradable and available 24/7. Each token represents a verifiable share of a portfolio of real assets, with instant liquidity and decentralized governance.",
     "features": {
       "liquidity": {
         "title": "Liquidity",
-        "description": "Access tokenized real estate assets tradable 24/7 on decentralized markets."
+        "description": "Access tokenized real-world assets, tradable 24/7 on decentralized markets."
       },
       "exchange": {
         "title": "Exchange",
@@ -58,7 +58,7 @@
       },
       "accessible": {
         "title": "Accessible",
-        "description": "Invest in premium real estate without traditional barriers or intermediaries."
+        "description": "Access premium real-world assets without traditional barriers or intermediaries."
       }
     }
   },

@@ -42,11 +42,11 @@
   "about": {
     "tag": "À propos",
     "title": "Tokenisation d'actifs réels : liquidité, échange, disponible, accessible.",
-    "description": "RealToken DAO transforme l'investissement immobilier en rendant les actifs réels accessibles, échangeables et disponibles 24/7. Chaque token représente une part vérifiable d'un portefeuille immobilier premium, avec une liquidité instantanée et une gouvernance décentralisée.",
+    "description": "RealToken DAO transforme l'accès aux actifs du monde réel en les rendant accessibles, échangeables et disponibles 24/7. Chaque token représente une part vérifiable d'un portefeuille d'actifs réels, avec une liquidité instantanée et une gouvernance décentralisée.",
     "features": {
       "liquidity": {
         "title": "Liquidité",
-        "description": "Accédez à des actifs immobiliers tokenisés négociables 24/7 sur les marchés décentralisés."
+        "description": "Accédez à des actifs du monde réel tokenisés, négociables 24/7 sur les marchés décentralisés."
       },
       "exchange": {
         "title": "Échange",
@@ -58,7 +58,7 @@
       },
       "accessible": {
         "title": "Accessible",
-        "description": "Investissez dans l'immobilier premium sans barrières traditionnelles ni intermédiaires."
+        "description": "Accédez aux actifs réels premium sans barrières traditionnelles ni intermédiaires."
       }
     }
   },
