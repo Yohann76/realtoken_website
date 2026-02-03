@@ -572,6 +572,13 @@ h1 span {
   color: rgba(255, 255, 255, 0.65);
 }
 
+.section.cta {
+  max-width: none;
+  width: 100%;
+  padding-left: min(8vw, 120px);
+  padding-right: min(8vw, 120px);
+}
+
 .cta {
   display: flex;
   flex-wrap: wrap;
