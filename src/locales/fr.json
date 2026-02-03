@@ -131,6 +131,23 @@
     "buttonPartner": "Devenir partenaire",
     "buttonLearn": "En savoir plus"
   },
+  "partenaires": {
+    "tag": "Partenaires",
+    "pageTitle": "Devenir partenaire",
+    "pageDescription": "Intégrez votre token à l'écosystème RealToken et bénéficiez de notre infrastructure de marché, de lending et de tokenisation d'actifs réels.",
+    "intro": "Cette page est dédiée aux projets qui souhaitent rejoindre l'écosystème RealToken. Voici nos critères d'acceptation et ce que nous mettons à votre disposition.",
+    "criteriaTitle": "Critères d'acceptation",
+    "criteriaDesc": "Pour intégrer notre écosystème, votre projet doit répondre au critère suivant :",
+    "criteriaBadge": "Requis",
+    "criteriaText": "Token ERC-20 : votre actif ou projet doit être représenté par un token conforme à la norme ERC-20 sur Ethereum ou une chaîne compatible (ex. Gnosis Chain).",
+    "offerTitle": "Ce que nous offrons",
+    "offerDesc": "En tant que partenaire, vous pouvez bénéficier des infrastructures suivantes :",
+    "offer1": "Une infrastructure de marché secondaire avec notre RMM (RealToken Market Maker), pour assurer liquidité et échange de vos tokens.",
+    "offer2": "Une infrastructure de lending et borrowing via le RMM, pour le prêt et l'emprunt de vos actifs tokenisés.",
+    "offer3": "Une infrastructure de tokenisation pour tous vos projets, grâce à notre partenaire RealT, pionnier de la tokenisation d'actifs réels (RWA).",
+    "ctaText": "Vous souhaitez devenir partenaire ? Contactez-nous pour échanger sur votre projet.",
+    "ctaButton": "Nous contacter"
+  },
   "logo": {
     "name": "RealToken DAO",
     "subtitle": "Asset Management"

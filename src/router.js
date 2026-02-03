@@ -6,6 +6,7 @@ import Faq from './views/Faq.vue'
 import Comite from './views/Comite.vue'
 import LiensUtiles from './views/LiensUtiles.vue'
 import Reg from './views/Reg.vue'
+import Partenaires from './views/Partenaires.vue'
 
 const routes = [
   {
@@ -42,6 +43,11 @@ const routes = [
     path: '/reg',
     name: 'Reg',
     component: Reg
+  },
+  {
+    path: '/devenir-partenaire',
+    name: 'Partenaires',
+    component: Partenaires
   }
 ]
 
