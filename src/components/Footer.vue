@@ -62,8 +62,8 @@
           <div class="footer-col">
             <h4 class="footer-col-title">{{ $t('footer.legal') }}</h4>
             <ul>
-              <li><a href="#">{{ $t('footer.privacy') }}</a></li>
-              <li><a href="#">{{ $t('footer.terms') }}</a></li>
+              <li><router-link to="/confidentialite">{{ $t('footer.privacy') }}</router-link></li>
+              <li><router-link to="/mentions-legales">{{ $t('footer.terms') }}</router-link></li>
             </ul>
           </div>
         </nav>

@@ -292,6 +292,38 @@
     "backToBlog": "Back to blog",
     "loading": "Loading articles..."
   },
+  "confidentialite": {
+    "tag": "Legal",
+    "pageTitle": "Privacy policy",
+    "pageDescription": "How RealToken DAO collects, uses and protects your personal data.",
+    "s1Title": "Scope and purpose",
+    "s1Intro": "This privacy policy is required when the site or related services (governance platforms, sign-ups, newsletters) collect personal data. It applies to processing carried out by RealToken DAO and to data that may be collected when using the site, voting tools (e.g. wallet addresses for governance) or communications (e.g. email addresses for sign-ups or newsletters).",
+    "s2Title": "Data collected",
+    "s2List": "Identification data (name, pseudonym)\nEmail address\nConnection data (IP addresses, logs)\nPseudonymous blockchain data (wallet addresses, transaction or voting history when linked to use of the site or services)",
+    "s3Title": "Purposes and legal basis",
+    "s3List": "Managing votes and participation in DAO governance (legitimate interest or pre-contractual measures)\nSending newsletters and information (consent)\nImproving services and the site (legitimate interest)\nCompliance with legal obligations (legal obligation)",
+    "s4Title": "Recipients and retention",
+    "s4Content": "Data may be shared with technical providers (hosting, voting tools, analytics) strictly for their assigned tasks. Retention periods are set according to each purpose (e.g. consent duration for newsletters, legal duration for billing or evidence). Pseudonymous blockchain data may be kept as long as needed for governance.",
+    "s5Title": "Your rights",
+    "s5Content": "Under the General Data Protection Regulation (GDPR), you have the right to access, rectify, erase, restrict processing, data portability and to object. To exercise these rights or for any question about your data, you may contact us at the address given in the legal notice. You also have the right to lodge a complaint with your supervisory authority (e.g. CNIL in France).",
+    "s6Title": "Security measures",
+    "s6Content": "Technical and organisational measures are in place to protect your data: encryption of exchanges (HTTPS), secure access, pseudonymisation where possible. For blockchain services, on-chain data is by nature public or pseudonymous; we do not store identifying personal data on-chain without necessity and we limit possible correlation.",
+    "s7Title": "DAO, blockchain and GDPR",
+    "s7Content": "In a DAO and blockchain context, responsibility for processing may be shared (nodes, participants, interfaces). We strive to ensure GDPR compliance by identifying data controllers, limiting personal data exposed on-chain and favouring anonymisation or pseudonymisation where the purpose allows. This policy may be updated; the current version is the one published on this page."
+  },
+  "mentions": {
+    "tag": "Legal",
+    "pageTitle": "Legal notice",
+    "pageDescription": "Legal information about the site publisher and disclaimers regarding DAO and tokenised services.",
+    "s1Title": "Site publisher (LCEN)",
+    "s1Intro": "In accordance with French law no. 2004-575 of 21 June 2004 on confidence in the digital economy (LCEN), the following identifies the publisher and host of the site.",
+    "s1List": "Name or designation: RealToken DAO (decentralised organisation)\nPostal address: [to be completed according to legal structure or representative]\nEmail: marketing@realtoken.community\nPhone: [to be completed]\nCompany register (RCS) / Trade register: [if applicable]\nVAT number: [if applicable]\nDirector of publication: [name of responsible person, e.g. founder or key DAO member]",
+    "s2Title": "Hosting",
+    "s2Content": "The site is hosted by [host name], [address]. For any question regarding hosting, please contact the host or the site publisher.",
+    "s3Title": "Disclaimers and risks",
+    "s3List": "Tokens and tokenised assets (including in the RealT or RealToken ecosystem) do not constitute a guaranteed investment; their value may fluctuate.\nThe contents of this site do not constitute investment, financial, legal or tax advice.\nDue to the decentralised nature of a DAO, liability may be limited and shared among participants; decisions are made collectively and on-chain.\nFor financial and tokenised aspects (sale, purchase, holding of tokens), tax obligations and, where applicable, rules of the AMF (Autorité des marchés financiers) or equivalent regulator may apply; each user is responsible for compliance with applicable law.",
+    "s3Disclaimer": "Failure to provide required legal information may result in penalties (up to €75,000 fine and 1 year imprisonment for a director under French law). The above is for guidance only; you are advised to consult a lawyer to adapt the notice and disclaimers to your DAO and site context."
+  },
   "footer": {
     "tagline": "Decentralized ecosystem for tokenized real-world assets.",
     "applications": "Applications",
