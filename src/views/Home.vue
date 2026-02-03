@@ -96,8 +96,8 @@ const stats = computed(() => [
           {{ $t('hero.lead') }}
         </p>
         <div class="hero-cta">
-          <button class="primary filled">{{ $t('hero.ctaDashboard') }}</button>
-          <button class="primary outline">{{ $t('hero.ctaVision') }}</button>
+          <a href="https://medium.com/realtfrench/la-naissance-dune-dao-pour-d%C3%A9centraliser-l-%C3%A9cosyst%C3%A8me-1759b1a02b27" class="primary filled" target="_blank" rel="noopener noreferrer">{{ $t('hero.ctaDashboard') }}</a>
+          <a href="https://medium.com/realtfrench/token-economy-ce7a2455dead" class="primary outline" target="_blank" rel="noopener noreferrer">{{ $t('hero.ctaVision') }}</a>
         </div>
         <div class="trust-points">
           <div>
