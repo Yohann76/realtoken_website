@@ -4,6 +4,7 @@ import Blog from './views/Blog.vue'
 import BlogPost from './views/BlogPost.vue'
 import Faq from './views/Faq.vue'
 import Comite from './views/Comite.vue'
+import LiensUtiles from './views/LiensUtiles.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/comite',
     name: 'Comite',
     component: Comite
+  },
+  {
+    path: '/liens-utiles',
+    name: 'LiensUtiles',
+    component: LiensUtiles
   }
 ]
 

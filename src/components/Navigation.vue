@@ -189,12 +189,12 @@ const menuItems = computed(() => [
     id: 'resources',
     labelKey: 'nav.menu.resources',
     children: [
-      { labelKey: 'nav.menu.resourcesWiki', href: wikiUrl.value, external: true },
-      { labelKey: 'nav.menu.resourcesAutre', href: '/#ressources', external: false }
+      { labelKey: 'nav.menu.resourcesWiki', href: wikiUrl.value, external: true }
     ],
     routerChildren: [
       { labelKey: 'nav.menu.resourcesBlog', to: '/blog' },
-      { labelKey: 'nav.menu.resourcesFaq', to: '/faq' }
+      { labelKey: 'nav.menu.resourcesFaq', to: '/faq' },
+      { labelKey: 'nav.menu.resourcesLiensUtiles', to: '/liens-utiles' }
     ]
   }
 ])

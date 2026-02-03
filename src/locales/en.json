@@ -22,7 +22,7 @@
       "resourcesFaq": "FAQ",
       "resourcesWiki": "Wiki",
       "resourcesBlog": "Blog",
-      "resourcesAutre": "Other"
+      "resourcesLiensUtiles": "Useful links"
     }
   },
   "hero": {
@@ -181,6 +181,45 @@
       "q2": {
         "question": "How do I buy RealToken tokens?",
         "answer": "You can acquire RealToken tokens from our certified partners. Once in your possession, your tokens are available on RMM for trading and on YAM for portfolio management."
+      }
+    }
+  },
+  "liensUtiles": {
+    "tag": "Resources",
+    "pageTitle": "Useful links",
+    "pageDescription": "Useful links to applications, documentation and resources of the RealToken ecosystem.",
+    "sections": {
+      "rmm": {
+        "title": "RMM",
+        "links": {
+          "telegram": "RMM available liquidity (Telegram)",
+          "dune": "Dune RMM Dashboard",
+          "gainOrLoss": "GainOrLoss – Analyze your wallet on RMM",
+          "rent2repay": "Rent2Repay (Smart Contract)"
+        }
+      },
+      "yam": {
+        "title": "YAM",
+        "links": {
+          "viewer": "YAM Offer Viewer",
+          "report": "YAM Report Generator"
+        }
+      },
+      "reg": {
+        "title": "REG Ecosystem",
+        "links": {
+          "claim": "REG Claim",
+          "dune": "Dune DAO Dashboard",
+          "incentive": "Incentive Vault (DAO Incentive)"
+        }
+      },
+      "dashboardRealt": {
+        "title": "RealT Dashboard",
+        "links": {
+          "pitsbi": "Pitsbi",
+          "cryptalloc": "Cryptalloc RealtLab",
+          "rentTracker": "RealT Rent Tracker"
+        }
       }
     }
   },
