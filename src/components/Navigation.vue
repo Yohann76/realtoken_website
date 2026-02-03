@@ -178,10 +178,10 @@ const menuItems = computed(() => [
     labelKey: 'nav.menu.governance',
     children: [
       { labelKey: 'nav.menu.governanceTally', href: 'https://www.tally.xyz/gov/realtoken-ecosystem-governance', external: true },
-      { labelKey: 'nav.menu.governanceReg', href: '/#governance', external: false },
       { labelKey: 'nav.menu.governanceForum', href: 'https://forum.realtoken.community/', external: true }
     ],
     routerChildren: [
+      { labelKey: 'nav.menu.governanceReg', to: '/reg' },
       { labelKey: 'nav.menu.governanceComites', to: '/comite' }
     ]
   },

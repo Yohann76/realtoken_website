@@ -46,7 +46,7 @@
             <ul>
               <li><a href="https://www.tally.xyz/gov/realtoken-ecosystem-governance" target="_blank" rel="noopener noreferrer">{{ $t('nav.menu.governanceTally') }}</a></li>
               <li><a href="https://forum.realtoken.community/" target="_blank" rel="noopener noreferrer">{{ $t('footer.forum') }}</a></li>
-              <li><a href="/#governance">{{ $t('nav.menu.governanceReg') }}</a></li>
+              <li><router-link to="/reg">{{ $t('nav.menu.governanceReg') }}</router-link></li>
               <li><router-link to="/comite">{{ $t('nav.menu.governanceComites') }}</router-link></li>
             </ul>
           </div>

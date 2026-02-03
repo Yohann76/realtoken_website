@@ -5,6 +5,7 @@ import BlogPost from './views/BlogPost.vue'
 import Faq from './views/Faq.vue'
 import Comite from './views/Comite.vue'
 import LiensUtiles from './views/LiensUtiles.vue'
+import Reg from './views/Reg.vue'
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/liens-utiles',
     name: 'LiensUtiles',
     component: LiensUtiles
+  },
+  {
+    path: '/reg',
+    name: 'Reg',
+    component: Reg
   }
 ]
 

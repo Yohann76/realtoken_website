@@ -184,6 +184,20 @@
       }
     }
   },
+  "reg": {
+    "tag": "Gouvernance",
+    "pageTitle": "Le REG",
+    "pageDescription": "RealToken Ecosystem Governance (REG) est le token de gouvernance de l'écosystème RealToken. Découvrez les informations principales et téléchargez le whitepaper.",
+    "loading": "Chargement des données REG…",
+    "error": "Impossible de charger les données depuis CoinGecko.",
+    "price": "Prix",
+    "marketCap": "Capitalisation",
+    "volume24h": "Volume 24h",
+    "circulatingSupply": "Supply en circulation",
+    "whitepaperTitle": "Whitepaper",
+    "whitepaperDescription": "Téléchargez le whitepaper du REG (version française) pour en savoir plus sur l'économie et la gouvernance du token.",
+    "downloadWhitepaper": "Télécharger le whitepaper (PDF)"
+  },
   "liensUtiles": {
     "tag": "Ressources",
     "pageTitle": "Liens utiles",
