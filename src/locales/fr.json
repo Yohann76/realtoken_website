@@ -143,7 +143,7 @@
     "telegram": "Rejoindre le Telegram",
     "committees": {
       "proposer": {
-        "title": "Proposer",
+        "title": "Proposant",
         "description": "Pour aider à l'établissement : des propositions sur le Forum et des votes correspondants sur Tally (onChain).",
         "members": "Sigri, DRKTT et PhilP"
       },
