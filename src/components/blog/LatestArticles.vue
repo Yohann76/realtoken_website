@@ -36,18 +36,48 @@ onMounted(async () => {
 
 <style scoped>
 .blog-preview {
-  background: rgba(5, 15, 36, 0.8);
+  padding: 80px min(6vw, 80px) 100px;
+  max-width: 1120px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.blog-preview :deep(.section-heading) {
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto 56px;
+}
+
+.blog-preview :deep(.tag) {
+  justify-content: center;
+}
+
+.blog-preview :deep(.tag::before) {
+  display: none;
+}
+
+.blog-preview :deep(.section-heading h2) {
+  font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+  font-weight: 600;
+  margin: 12px 0 16px;
+  letter-spacing: -0.02em;
+}
+
+.blog-preview :deep(.section-heading p) {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
 .articles-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
-  margin-top: 48px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 0;
 }
 
 .blog-cta {
-  margin-top: 48px;
+  margin-top: 40px;
   text-align: center;
 }
 
