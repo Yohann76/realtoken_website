@@ -211,7 +211,7 @@ const stats = computed(() => [
         </p>
       </div>
       <div class="cta-actions">
-        <button class="primary filled">{{ $t('cta.buttonPartner') }}</button>
+        <a href="mailto:marketing@realtoken.community" class="primary filled">{{ $t('cta.buttonPartner') }}</a>
         <button class="primary outline">{{ $t('cta.buttonLearn') }}</button>
       </div>
     </section>
@@ -261,6 +261,12 @@ const stats = computed(() => [
   letter-spacing: 0.08em;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+a.primary {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 
 .primary.filled {

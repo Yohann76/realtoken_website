@@ -76,7 +76,7 @@
         </div>
         <div class="nav-right">
           <LanguageSelector />
-          <button class="primary ghost">{{ $t('nav.contact') }}</button>
+          <a href="mailto:marketing@realtoken.community" class="primary ghost">{{ $t('nav.contact') }}</a>
         </div>
       </div>
     </nav>
@@ -125,7 +125,7 @@
           </div>
           <div class="nav-mobile-actions">
             <LanguageSelector />
-            <button class="primary ghost">{{ $t('nav.contact') }}</button>
+            <a href="mailto:marketing@realtoken.community" class="primary ghost">{{ $t('nav.contact') }}</a>
           </div>
         </div>
       </div>
@@ -392,6 +392,12 @@ onUnmounted(() => {
   letter-spacing: 0.08em;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+a.primary {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 
 .primary.ghost {
