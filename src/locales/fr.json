@@ -175,12 +175,40 @@
     "pageDescription": "Retrouvez les réponses aux questions les plus posées sur l'écosystème RealToken.",
     "items": {
       "q1": {
-        "question": "Qu'est-ce que RealToken DAO ?",
-        "answer": "RealToken DAO est un écosystème décentralisé qui tokenise des actifs immobiliers réels. Chaque token représente une part vérifiable d'un portefeuille immobilier, avec liquidité et gouvernance communautaire."
+        "question": "Qu'est-ce que la DAO RealToken ?",
+        "answer": "La DAO RealToken est une organisation décentralisée autonome (DAO) dédiée à la tokenisation d'actifs réels (RWA – Real World Assets), comme l'immobilier mais aussi l'art ou les infrastructures. Elle permet à ses membres de participer à la gouvernance, d'investir dans des actifs fractionnés, et de contribuer à un écosystème transparent et décentralisé."
       },
       "q2": {
-        "question": "Comment acheter des tokens RealToken ?",
-        "answer": "Vous pouvez acquérir des tokens RealToken auprès de nos partenaires certifiés. Une fois en votre possession, vos tokens sont accessibles sur RMM pour l'échange et sur YAM pour la gestion de portefeuille."
+        "question": "Quel est le lien entre RealToken et RealT ?",
+        "answer": "RealToken et RealT partagent un écosystème commun axé sur la tokenisation d'actifs réels. RealT se concentre sur la création et la gestion des tokens (ex : tokens immobiliers), tandis que la DAO RealToken permet aux détenteurs de tokens de participer à la gouvernance et de voter sur les décisions clés (ex : nouveaux projets, allocations de fonds)."
+      },
+      "q3": {
+        "question": "Comment puis-je participer à la DAO ?",
+        "answer": "Pour participer, il faut :\n• Détenir des tokens de gouvernance (ex : RMM, ou un token spécifique à RealToken).\n• Se connecter à la plateforme de vote (Tally) avec un wallet compatible (MetaMask, WalletConnect, Rabby, etc.).\n• Voter ou proposer des idées via le forum."
+      },
+      "q4": {
+        "question": "Qu'est-ce qu'un RWA (Real World Asset) ?",
+        "answer": "Un RWA est un actif du monde réel (ex : un appartement, une œuvre d'art) représenté sous forme de token sur une blockchain. Cela permet de :\n• Fractionner la propriété (ex : acheter 10 % d'un immeuble).\n• Faciliter les échanges (liquidité 24/7).\n• Automatiser la gestion (loyers, dividendes) via des smart contracts."
+      },
+      "q5": {
+        "question": "Comment sont prises les décisions dans la DAO ?",
+        "answer": "Les décisions sont prises via un processus de vote décentralisé :\n• Un membre soumet une proposition.\n• La communauté discute sur le forum et finalise la proposition.\n• Le vote est créé sur Tally.\n• Les détenteurs de tokens REG votent.\n• La proposition est appliquée si le quorum est atteint."
+      },
+      "q6": {
+        "question": "Quels sont les risques associés aux RWA et à la DAO ?",
+        "answer": "• Volatilité : la valeur des tokens peut fluctuer.\n• Régulation : les cadres légaux évoluent (ex : fiscalité, conformité).\n• Technologie : bugs dans les smart contracts (d'où l'importance des audits).\n• Gouvernance : risque de concentration de pouvoir si quelques membres détiennent beaucoup de tokens.\n• Conseils : diversifier ses investissements et suivre les mises à jour de la DAO."
+      },
+      "q7": {
+        "question": "Comment puis-je proposer un projet ou une idée à la DAO ?",
+        "answer": "• Rejoindre le forum.\n• Rédiger une proposition avec : un titre clair ; une description détaillée (objectifs, budget, calendrier). Voir le template.\n• Soumettre la proposition au vote via Tally."
+      },
+      "q8": {
+        "question": "Où trouver de l'aide ou poser des questions ?",
+        "answer": "Telegram, Forum, FAQ, et par mail si disponible."
+      },
+      "q9": {
+        "question": "La DAO est-elle ouverte aux débutants en crypto ?",
+        "answer": "Oui ! RealToken vise à démocratiser l'accès aux RWA. Des ressources sont disponibles : guide pour débutants (articles du blog), communauté (les membres expérimentés aident les nouveaux sur Telegram)."
       }
     }
   },

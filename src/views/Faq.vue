@@ -38,7 +38,12 @@
             :aria-labelledby="`faq-question-${index}`"
           >
             <div class="faq-answer">
-              <p v-for="(para, i) in answerParagraphs(key)" :key="i">{{ para }}</p>
+              <template v-for="(block, i) in answerBlocks(key)" :key="i">
+                <p v-if="block.type === 'p'" class="faq-answer-p">{{ block.text }}</p>
+                <ul v-else-if="block.type === 'ul'" class="faq-answer-list">
+                  <li v-for="(item, j) in block.items" :key="j">{{ item }}</li>
+                </ul>
+              </template>
             </div>
           </div>
         </div>
@@ -53,10 +58,16 @@ import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
-// Liste des clés des questions FAQ (à compléter avec tes questions)
 const faqItemKeys = ref([
   'q1',
-  'q2'
+  'q2',
+  'q3',
+  'q4',
+  'q5',
+  'q6',
+  'q7',
+  'q8',
+  'q9'
 ])
 
 const openIndex = ref(null)
@@ -65,9 +76,33 @@ function toggle(index) {
   openIndex.value = openIndex.value === index ? null : index
 }
 
-function answerParagraphs(key) {
+const BULLET = '•'
+
+function answerBlocks(key) {
   const raw = t(`faq.items.${key}.answer`)
-  return raw.split('\n').filter(Boolean)
+  const lines = raw.split('\n').map((l) => l.trim()).filter(Boolean)
+  const blocks = []
+  let currentList = []
+
+  function flushList() {
+    if (currentList.length) {
+      blocks.push({ type: 'ul', items: currentList })
+      currentList = []
+    }
+  }
+
+  for (const line of lines) {
+    const isBullet = line.startsWith(BULLET + ' ') || line.startsWith(BULLET)
+    if (isBullet) {
+      const text = (line.startsWith(BULLET + ' ') ? line.slice(2) : line.slice(1)).trim()
+      if (text) currentList.push(text)
+    } else {
+      flushList()
+      blocks.push({ type: 'p', text: line })
+    }
+  }
+  flushList()
+  return blocks
 }
 </script>
 
@@ -221,6 +256,7 @@ h1 {
   padding-top: 4px;
 }
 
+.faq-answer-p,
 .faq-answer p {
   margin: 0 24px 16px;
   padding-top: 0;
@@ -229,11 +265,29 @@ h1 {
   color: rgba(255, 255, 255, 0.82);
 }
 
-.faq-answer p:first-child {
+.faq-answer-p:first-child,
+.faq-answer > p:first-child {
   margin-top: 0;
 }
 
-.faq-answer p:last-child {
+.faq-answer-list {
+  margin: 0 24px 16px;
+  padding-left: 1.5em;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.82);
+  list-style: disc;
+}
+
+.faq-answer-list li {
+  margin-bottom: 6px;
+}
+
+.faq-answer-list li::marker {
+  color: var(--color-orange);
+}
+
+.faq-answer > *:last-child {
   margin-bottom: 24px;
 }
 
@@ -249,13 +303,20 @@ h1 {
     font-size: 1rem;
   }
 
+  .faq-answer-p,
   .faq-answer p {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 12px;
   }
 
-  .faq-answer p:last-child {
+  .faq-answer-list {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 12px;
+  }
+
+  .faq-answer > *:last-child {
     margin-bottom: 20px;
   }
 }

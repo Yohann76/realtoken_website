@@ -175,12 +175,40 @@
     "pageDescription": "Find answers to the most common questions about the RealToken ecosystem.",
     "items": {
       "q1": {
-        "question": "What is RealToken DAO?",
-        "answer": "RealToken DAO is a decentralized ecosystem that tokenizes real-world real estate assets. Each token represents a verifiable share of a real estate portfolio, with liquidity and community governance."
+        "question": "What is the RealToken DAO?",
+        "answer": "The RealToken DAO is a decentralized autonomous organization (DAO) dedicated to the tokenization of real-world assets (RWA), such as real estate but also art or infrastructure. It allows its members to participate in governance, invest in fractional assets, and contribute to a transparent and decentralized ecosystem."
       },
       "q2": {
-        "question": "How do I buy RealToken tokens?",
-        "answer": "You can acquire RealToken tokens from our certified partners. Once in your possession, your tokens are available on RMM for trading and on YAM for portfolio management."
+        "question": "What is the link between RealToken and RealT?",
+        "answer": "RealToken and RealT share a common ecosystem focused on real asset tokenization. RealT focuses on creating and managing tokens (e.g. real estate tokens), while the RealToken DAO enables token holders to participate in governance and vote on key decisions (e.g. new projects, fund allocations)."
+      },
+      "q3": {
+        "question": "How can I participate in the DAO?",
+        "answer": "To participate you need to:\n• Hold governance tokens (e.g. RMM, or a RealToken-specific token).\n• Connect to the voting platform (Tally) with a compatible wallet (MetaMask, WalletConnect, Rabby, etc.).\n• Vote or propose ideas via the forum."
+      },
+      "q4": {
+        "question": "What is an RWA (Real World Asset)?",
+        "answer": "An RWA is a real-world asset (e.g. an apartment, a work of art) represented as a token on a blockchain. This allows:\n• Fractional ownership (e.g. buying 10% of a building).\n• Easier trading (24/7 liquidity).\n• Automated management (rent, dividends) via smart contracts."
+      },
+      "q5": {
+        "question": "How are decisions made in the DAO?",
+        "answer": "Decisions are made through a decentralized voting process:\n• A member submits a proposal.\n• The community discusses on the forum and finalizes the proposal.\n• The vote is created on Tally.\n• REG token holders vote.\n• The proposal is implemented if the quorum is reached."
+      },
+      "q6": {
+        "question": "What are the risks associated with RWA and the DAO?",
+        "answer": "• Volatility: token values can fluctuate.\n• Regulation: legal frameworks evolve (e.g. tax, compliance).\n• Technology: bugs in smart contracts (hence the importance of audits).\n• Governance: risk of concentration of power if a few members hold many tokens.\n• Advice: diversify your investments and follow DAO updates."
+      },
+      "q7": {
+        "question": "How can I propose a project or idea to the DAO?",
+        "answer": "• Join the forum.\n• Write a proposal with: a clear title; a detailed description (objectives, budget, timeline). See the template.\n• Submit the proposal for a vote via Tally."
+      },
+      "q8": {
+        "question": "Where can I find help or ask questions?",
+        "answer": "Telegram, Forum, FAQ, and by email if available."
+      },
+      "q9": {
+        "question": "Is the DAO open to crypto beginners?",
+        "answer": "Yes! RealToken aims to democratize access to RWA. Resources are available: beginner's guide (blog articles), community (experienced members help newcomers on Telegram)."
       }
     }
   },
