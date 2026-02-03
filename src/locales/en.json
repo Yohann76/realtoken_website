@@ -67,11 +67,19 @@
     "title": "RealToken ecosystem tools.",
     "rmm": {
       "title": "RMM",
-      "description": "RealToken Money Market - Liquidity and exchange platform for RealToken tokens, facilitating transactions and price discovery."
+      "description": "RealToken Money Market - Lending and borrowing protocol to borrow stablecoins against RWA assets, based on the Aave platform and adapted to RWA market needs."
     },
     "yam": {
       "title": "YAM",
-      "description": "You and Me - Management interface to track your tokenized assets, visualize returns and manage your RealToken portfolio."
+      "description": "You and Me - Peer-to-peer secondary market with creation of buy and sell offers, adapted to RWA market needs."
+    },
+    "dex": {
+      "title": "DEX (soon)",
+      "description": "A decentralised exchange platform to further improve liquidity for real-world assets."
+    },
+    "nft": {
+      "title": "NFT (soon)",
+      "description": "These NFTs will be used to distribute the REG supply based on each participant's actions and contributions to the ecosystem."
     }
   },
   "ressources": {

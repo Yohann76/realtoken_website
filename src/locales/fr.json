@@ -67,11 +67,19 @@
     "title": "Les outils de l'écosystème RealToken.",
     "rmm": {
       "title": "RMM",
-      "description": "RealToken Money Market - Plateforme de liquidité et d'échange pour les tokens RealToken, facilitant les transactions et la découverte de prix."
+      "description": "RealToken Money Market - Protocole de lending et borrowing pour emprunter des stablecoins en échange d'actifs RWA, basé sur la plateforme Aave et adapté aux besoins du marché RWA."
     },
     "yam": {
       "title": "YAM",
-      "description": "You and Me - Interface de gestion pour suivre vos actifs tokenisés, visualiser les rendements et gérer votre portefeuille RealToken."
+      "description": "You and Me - Marché secondaire pair-à-pair avec création d'offres d'achat et de vente, adapté aux besoins du marché RWA."
+    },
+    "dex": {
+      "title": "DEX (prochainement)",
+      "description": "Une plateforme d'échange décentralisée pour encore améliorer la liquidité des actifs du monde réel."
+    },
+    "nft": {
+      "title": "NFT (prochainement)",
+      "description": "Ces NFT serviront à distribuer la supply des REG en fonction des agissements et contributions de chacun dans l'écosystème."
     }
   },
   "ressources": {

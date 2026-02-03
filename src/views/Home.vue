@@ -32,6 +32,14 @@ const applications = computed(() => [
   {
     title: t('application.yam.title'),
     description: t('application.yam.description')
+  },
+  {
+    title: t('application.dex.title'),
+    description: t('application.dex.description')
+  },
+  {
+    title: t('application.nft.title'),
+    description: t('application.nft.description')
   }
 ])
 
@@ -623,6 +631,10 @@ h1 span {
   margin-top: 0;
 }
 
+.application .cards {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .card {
   padding: 28px 26px;
   border-radius: 14px;
@@ -753,6 +765,10 @@ h1 span {
 
   .section {
     padding: 60px min(5vw, 24px) 80px;
+  }
+
+  .application .cards {
+    grid-template-columns: 1fr;
   }
 
   .step {
