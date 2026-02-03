@@ -116,103 +116,117 @@ const stats = computed(() => [
       </div>
     </header>
 
-    <section id="about" class="section about">
-      <div class="section-heading">
-        <p class="tag">{{ $t('about.tag') }}</p>
-        <h2>{{ $t('about.title') }}</h2>
-        <p>
-          {{ $t('about.description') }}
-        </p>
-      </div>
-      <div class="features">
-        <article v-for="feature in aboutFeatures" :key="feature.title">
-          <h3>{{ feature.title }}</h3>
-          <p>{{ feature.description }}</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="application" class="section application">
-      <div class="section-heading compact">
-        <p class="tag">{{ $t('application.tag') }}</p>
-        <h2>{{ $t('application.title') }}</h2>
-      </div>
-      <div class="cards">
-        <article v-for="app in applications" :key="app.title" class="card">
-          <h3>{{ app.title }}</h3>
-          <p>{{ app.description }}</p>
-        </article>
+    <section id="about" class="section section-light about">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="tag">{{ $t('about.tag') }}</p>
+          <h2>{{ $t('about.title') }}</h2>
+          <p>
+            {{ $t('about.description') }}
+          </p>
+        </div>
+        <div class="features">
+          <article v-for="feature in aboutFeatures" :key="feature.title">
+            <h3>{{ feature.title }}</h3>
+            <p>{{ feature.description }}</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="ressources" class="section ressources">
-      <div class="section-heading compact">
-        <p class="tag">{{ $t('ressources.tag') }}</p>
-        <h2>{{ $t('ressources.title') }}</h2>
-      </div>
-      <div class="cards">
-        <article v-for="resource in resources" :key="resource.title" class="card">
-          <h3>{{ resource.title }}</h3>
-          <p>{{ resource.description }}</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="governance" class="section governance">
-      <div class="section-heading compact">
-        <p class="tag">{{ $t('governance.tag') }}</p>
-        <h2>{{ $t('governance.title') }}</h2>
-      </div>
-      <div class="cards">
-        <article v-for="tool in governanceTools" :key="tool.title" class="card">
-          <h3>{{ tool.title }}</h3>
-          <p>{{ tool.description }}</p>
-        </article>
+    <section id="application" class="section section-navy application">
+      <div class="section-inner">
+        <div class="section-heading compact">
+          <p class="tag">{{ $t('application.tag') }}</p>
+          <h2>{{ $t('application.title') }}</h2>
+        </div>
+        <div class="cards">
+          <article v-for="app in applications" :key="app.title" class="card">
+            <h3>{{ app.title }}</h3>
+            <p>{{ app.description }}</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="process" class="section process">
-      <div class="section-heading compact">
-        <p class="tag">{{ $t('process.tag') }}</p>
-        <h2>{{ $t('process.title') }}</h2>
-      </div>
-      <div class="timeline">
-        <article v-for="step in steps" :key="step.number" class="step">
-          <span class="step-number">{{ step.number }}</span>
-          <div>
-            <h3>{{ step.title }}</h3>
-            <p>{{ step.text }}</p>
-          </div>
-        </article>
+    <section id="ressources" class="section section-dark ressources">
+      <div class="section-inner">
+        <div class="section-heading compact">
+          <p class="tag">{{ $t('ressources.tag') }}</p>
+          <h2>{{ $t('ressources.title') }}</h2>
+        </div>
+        <div class="cards">
+          <article v-for="resource in resources" :key="resource.title" class="card">
+            <h3>{{ resource.title }}</h3>
+            <p>{{ resource.description }}</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="stats" class="section stats">
-      <div class="section-heading compact">
-        <p class="tag">{{ $t('stats.tag') }}</p>
-        <h2>{{ $t('stats.title') }}</h2>
+    <section id="governance" class="section section-light governance">
+      <div class="section-inner">
+        <div class="section-heading compact">
+          <p class="tag">{{ $t('governance.tag') }}</p>
+          <h2>{{ $t('governance.title') }}</h2>
+        </div>
+        <div class="cards">
+          <article v-for="tool in governanceTools" :key="tool.title" class="card">
+            <h3>{{ tool.title }}</h3>
+            <p>{{ tool.description }}</p>
+          </article>
+        </div>
       </div>
-      <div class="stats-grid">
-        <article v-for="item in stats" :key="item.label">
-          <strong>{{ item.value }}</strong>
-          <span>{{ item.label }}</span>
-        </article>
+    </section>
+
+    <section id="process" class="section section-navy process">
+      <div class="section-inner">
+        <div class="section-heading compact">
+          <p class="tag">{{ $t('process.tag') }}</p>
+          <h2>{{ $t('process.title') }}</h2>
+        </div>
+        <div class="timeline">
+          <article v-for="step in steps" :key="step.number" class="step">
+            <span class="step-number">{{ step.number }}</span>
+            <div>
+              <h3>{{ step.title }}</h3>
+              <p>{{ step.text }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats" class="section section-dark stats">
+      <div class="section-inner">
+        <div class="section-heading compact">
+          <p class="tag">{{ $t('stats.tag') }}</p>
+          <h2>{{ $t('stats.title') }}</h2>
+        </div>
+        <div class="stats-grid">
+          <article v-for="item in stats" :key="item.label">
+            <strong>{{ item.value }}</strong>
+            <span>{{ item.label }}</span>
+          </article>
+        </div>
       </div>
     </section>
 
     <LatestArticles />
 
     <section class="section cta">
-      <div>
-        <p class="tag">{{ $t('cta.tag') }}</p>
-        <h2>{{ $t('cta.title') }}</h2>
-        <p>
-          {{ $t('cta.description') }}
-        </p>
-      </div>
-      <div class="cta-actions">
-        <a href="mailto:marketing@realtoken.community" class="primary filled">{{ $t('cta.buttonPartner') }}</a>
-        <router-link to="/devenir-partenaire" class="primary outline">{{ $t('cta.buttonLearn') }}</router-link>
+      <div class="section-inner cta-inner">
+        <div>
+          <p class="tag">{{ $t('cta.tag') }}</p>
+          <h2>{{ $t('cta.title') }}</h2>
+          <p>
+            {{ $t('cta.description') }}
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a href="mailto:marketing@realtoken.community" class="primary filled">{{ $t('cta.buttonPartner') }}</a>
+          <router-link to="/devenir-partenaire" class="primary outline">{{ $t('cta.buttonLearn') }}</router-link>
+        </div>
       </div>
     </section>
   </div>
@@ -229,10 +243,181 @@ const stats = computed(() => [
 }
 
 .section {
-  padding: 80px min(6vw, 80px) 100px;
+  width: 100%;
+  max-width: none;
+  padding: 80px min(8vw, 120px) 100px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section-inner {
   max-width: 1120px;
   margin: 0 auto;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.section-light {
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.section-light .section-heading h2 {
+  color: #242424;
+}
+
+.section-light .section-heading p {
+  color: #5c5c5c;
+}
+
+.section-light .features article,
+.section-light .card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #fafafa;
+}
+
+.section-light .features article:hover,
+.section-light .card:hover {
+  border-color: rgba(255, 140, 66, 0.35);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.section-light .features article h3,
+.section-light .card h3 {
+  color: #242424;
+}
+
+.section-light .features article p,
+.section-light .card p {
+  color: #5c5c5c;
+}
+
+.section-light .step {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 3px solid var(--color-orange);
+  background: #fafafa;
+}
+
+.section-light .step:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.section-light .step h3 {
+  color: #242424;
+}
+
+.section-light .step p {
+  color: #5c5c5c;
+}
+
+.section-dark {
+  background: #242424;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.section-dark .section-heading h2 {
+  color: #fff;
+}
+
+.section-dark .section-heading p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.section-dark .card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.section-dark .card:hover {
+  border-color: rgba(255, 140, 66, 0.4);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.section-dark .card h3 {
+  color: #fff;
+}
+
+.section-dark .card p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.section-dark .step {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 3px solid var(--color-orange);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.section-dark .step:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.section-dark .step h3 {
+  color: #fff;
+}
+
+.section-dark .step p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.section-dark .stats-grid article {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.section-dark .stats-grid article:hover {
+  border-color: rgba(255, 140, 66, 0.3);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.section-dark .stats-grid span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.section-navy {
+  background: var(--color-navy);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.section-navy .section-heading h2 {
+  color: #fff;
+}
+
+.section-navy .section-heading p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.section-navy .card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.section-navy .card:hover {
+  border-color: rgba(255, 140, 66, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.section-navy .card h3 {
+  color: #fff;
+}
+
+.section-navy .card p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.section-navy .step {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-left: 3px solid var(--color-orange);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.section-navy .step:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.section-navy .step h3 {
+  color: #fff;
+}
+
+.section-navy .step p {
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .hero {
@@ -415,28 +600,19 @@ h1 span {
 .features article {
   padding: 28px 24px;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  background: rgba(255, 255, 255, 0.02);
-  transition: border-color 0.2s ease, background 0.2s ease;
-}
-
-.features article:hover {
-  border-color: rgba(255, 140, 66, 0.2);
-  background: rgba(255, 255, 255, 0.03);
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .features article h3 {
   font-size: 1.05rem;
   font-weight: 600;
   margin: 0 0 10px;
-  color: #fff;
   letter-spacing: 0.01em;
 }
 
 .features article p {
   font-size: 0.9rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.72);
   margin: 0;
 }
 
@@ -450,28 +626,19 @@ h1 span {
 .card {
   padding: 28px 26px;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  background: rgba(255, 255, 255, 0.02);
-  transition: border-color 0.2s ease, background 0.2s ease;
-}
-
-.card:hover {
-  border-color: rgba(255, 140, 66, 0.18);
-  background: rgba(255, 255, 255, 0.03);
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card h3 {
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0 0 10px;
-  color: #fff;
   letter-spacing: 0.01em;
 }
 
 .card p {
   font-size: 0.9rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.72);
   margin: 0;
 }
 
@@ -487,15 +654,8 @@ h1 span {
   gap: 24px;
   padding: 24px 28px;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
   border-left: 3px solid var(--color-orange);
-  background: rgba(255, 255, 255, 0.02);
-  transition: border-color 0.2s ease, background 0.2s ease;
-}
-
-.step:hover {
-  background: rgba(255, 255, 255, 0.03);
-  border-left-color: var(--color-orange);
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .step-number {
@@ -516,13 +676,11 @@ h1 span {
   font-size: 1.05rem;
   font-weight: 600;
   margin: 0 0 8px;
-  color: #fff;
 }
 
 .step p {
   font-size: 0.9rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.72);
   margin: 0;
 }
 
@@ -547,15 +705,9 @@ h1 span {
 
 .stats-grid article {
   padding: 28px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 14px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.02);
-  transition: border-color 0.2s ease;
-}
-
-.stats-grid article:hover {
-  border-color: rgba(255, 140, 66, 0.15);
+  transition: border-color 0.2s ease, background 0.2s ease;
 }
 
 .stats-grid strong {
@@ -569,23 +721,24 @@ h1 span {
 
 .stats-grid span {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.65);
 }
 
 .section.cta {
   max-width: none;
   width: 100%;
-  padding-left: min(8vw, 120px);
-  padding-right: min(8vw, 120px);
+  box-sizing: border-box;
 }
 
-.cta {
+.cta-inner {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 32px;
-  background: linear-gradient(135deg, rgba(255, 140, 66, 0.15), rgba(10, 31, 68, 0.85));
+}
+
+.cta {
+  background: linear-gradient(135deg, rgba(255, 140, 66, 0.18), var(--color-navy) 50%);
 }
 
 .cta-actions {

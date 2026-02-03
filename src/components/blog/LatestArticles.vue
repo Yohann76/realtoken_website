@@ -1,21 +1,23 @@
 <template>
-  <section id="blog" class="section blog-preview">
-    <div class="section-heading compact">
-      <p class="tag">{{ $t('blog.tag') }}</p>
-      <h2>{{ $t('blog.title') }}</h2>
-      <p>{{ $t('blog.description') }}</p>
-    </div>
-    <div class="articles-grid" v-if="articles.length">
-      <ArticleCard 
-        v-for="article in articles" 
-        :key="article.slug" 
-        :article="article" 
-      />
-    </div>
-    <div class="blog-cta" v-if="articles.length">
-      <router-link to="/blog" class="primary outline">
-        {{ $t('blog.viewAll') }}
-      </router-link>
+  <section id="blog" class="section section-light blog-preview">
+    <div class="section-inner">
+      <div class="section-heading compact">
+        <p class="tag">{{ $t('blog.tag') }}</p>
+        <h2>{{ $t('blog.title') }}</h2>
+        <p>{{ $t('blog.description') }}</p>
+      </div>
+      <div class="articles-grid" v-if="articles.length">
+        <ArticleCard 
+          v-for="article in articles" 
+          :key="article.slug" 
+          :article="article" 
+        />
+      </div>
+      <div class="blog-cta" v-if="articles.length">
+        <router-link to="/blog" class="primary outline">
+          {{ $t('blog.viewAll') }}
+        </router-link>
+      </div>
     </div>
   </section>
 </template>
@@ -36,10 +38,18 @@ onMounted(async () => {
 
 <style scoped>
 .blog-preview {
-  padding: 80px min(6vw, 80px) 100px;
+  width: 100%;
+  max-width: none;
+  padding: 80px min(8vw, 120px) 100px;
+  margin: 0;
+  box-sizing: border-box;
+  background: #f0f0f0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.blog-preview .section-inner {
   max-width: 1120px;
   margin: 0 auto;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .blog-preview :deep(.section-heading) {
@@ -61,12 +71,49 @@ onMounted(async () => {
   font-weight: 600;
   margin: 12px 0 16px;
   letter-spacing: -0.02em;
+  color: #242424;
 }
 
 .blog-preview :deep(.section-heading p) {
-  color: rgba(255, 255, 255, 0.72);
+  color: #5c5c5c;
   font-size: 1rem;
   line-height: 1.65;
+}
+
+.blog-preview :deep(.article-card) {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.blog-preview :deep(.article-card:hover) {
+  border-color: rgba(255, 140, 66, 0.4);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.blog-preview :deep(.article-title) {
+  color: #242424;
+}
+
+.blog-preview :deep(.article-description),
+.blog-preview :deep(.article-meta) {
+  color: #5c5c5c;
+}
+
+.blog-preview :deep(.article-tags .tag) {
+  background: var(--color-navy);
+  color: #fff;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.blog-preview :deep(.article-card:hover .article-tags .tag) {
+  background: var(--color-orange);
+  color: #fff;
 }
 
 .articles-grid {
@@ -83,7 +130,7 @@ onMounted(async () => {
 
 .primary {
   display: inline-block;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid #242424;
   padding: 12px 28px;
   border-radius: 999px;
   text-transform: uppercase;
@@ -91,13 +138,13 @@ onMounted(async () => {
   letter-spacing: 0.08em;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: #fff;
+  color: #242424;
   text-decoration: none;
 }
 
 .primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 20px 40px rgba(255, 140, 66, 0.4);
+  box-shadow: 0 8px 24px rgba(255, 140, 66, 0.25);
   border-color: var(--color-orange);
   color: var(--color-orange);
 }
