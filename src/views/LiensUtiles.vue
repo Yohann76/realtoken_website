@@ -43,8 +43,8 @@
         </div>
       </div>
 
-      <!-- Bloc Applications tierces de nos partenaires : Dashboard RealT en sous-section -->
-      <div class="section-block section-block--group" v-if="partnerAppsSubsections.length">
+      <!-- Bloc Applications tierces de nos partenaires : surbrillance pour plus de visibilité -->
+      <div class="section-block section-block--group section-block--highlight" v-if="partnerAppsSubsections.length">
         <h2 class="section-title section-title--group">
           <span class="section-title-icon" aria-hidden="true">◆</span>
           {{ $t('liensUtiles.sections.partnerApps.title') }}
@@ -204,6 +204,31 @@ h1 {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
+}
+
+/* Partenaires : bien plus clair que le bloc REG (DAO) */
+.section-block--highlight {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 200, 150, 0.12) 100%);
+  border: 1px solid rgba(255, 140, 66, 0.5);
+  box-shadow: 0 0 32px rgba(255, 140, 66, 0.12), 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.section-block--highlight .section-title--group {
+  color: var(--color-orange);
+  border-bottom-color: rgba(255, 140, 66, 0.5);
+}
+
+.section-block--highlight .section-title-icon {
+  opacity: 1;
+}
+
+.section-block--highlight .subsection-title {
+  color: rgba(255, 255, 255, 0.98);
+}
+
+.section-block--highlight .link-card {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .section-title {
