@@ -48,6 +48,16 @@
                 class="dropdown"
                 role="menu"
               >
+                <router-link
+                  v-for="child in item.routerChildren"
+                  :key="child.labelKey"
+                  :to="child.to"
+                  class="dropdown-item"
+                  role="menuitem"
+                  @click="closeAll"
+                >
+                  {{ $t(child.labelKey) }}
+                </router-link>
                 <a
                   v-for="child in item.children"
                   :key="child.labelKey"
@@ -60,16 +70,6 @@
                 >
                   {{ $t(child.labelKey) }}
                 </a>
-                <router-link
-                  v-for="child in item.routerChildren"
-                  :key="child.labelKey"
-                  :to="child.to"
-                  class="dropdown-item"
-                  role="menuitem"
-                  @click="closeAll"
-                >
-                  {{ $t(child.labelKey) }}
-                </router-link>
               </div>
             </Transition>
           </div>
@@ -100,6 +100,15 @@
             </button>
             <Transition name="accordion">
               <div v-show="openMobile === item.id" class="mobile-children">
+                <router-link
+                  v-for="child in item.routerChildren"
+                  :key="child.labelKey"
+                  :to="child.to"
+                  class="mobile-link"
+                  @click="closeAll"
+                >
+                  {{ $t(child.labelKey) }}
+                </router-link>
                 <a
                   v-for="child in item.children"
                   :key="child.labelKey"
@@ -111,15 +120,6 @@
                 >
                   {{ $t(child.labelKey) }}
                 </a>
-                <router-link
-                  v-for="child in item.routerChildren"
-                  :key="child.labelKey"
-                  :to="child.to"
-                  class="mobile-link"
-                  @click="closeAll"
-                >
-                  {{ $t(child.labelKey) }}
-                </router-link>
               </div>
             </Transition>
           </div>
@@ -178,8 +178,8 @@ const menuItems = computed(() => [
     id: 'governance',
     labelKey: 'nav.menu.governance',
     children: [
-      { labelKey: 'nav.menu.governanceTally', href: 'https://www.tally.xyz/gov/realtoken-ecosystem-governance', external: true },
-      { labelKey: 'nav.menu.governanceForum', href: 'https://forum.realtoken.community/', external: true }
+      { labelKey: 'nav.menu.governanceForum', href: 'https://forum.realtoken.community/', external: true },
+      { labelKey: 'nav.menu.governanceTally', href: 'https://www.tally.xyz/gov/realtoken-ecosystem-governance', external: true }
     ],
     routerChildren: [
       { labelKey: 'nav.menu.governanceReg', to: '/reg' },
