@@ -65,7 +65,19 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    // Ancre explicite dans l’URL (ex: /page#section) → on scroll vers l’élément
+    if (to.hash) {
+      return { el: to.hash, behavior: 'smooth' }
+    }
+    // Retour arrière : restaurer la position sauvegardée par le navigateur
+    if (savedPosition) {
+      return savedPosition
+    }
+    // Par défaut : toujours en haut de la page
+    return { top: 0 }
+  }
 })
 
 export default router
