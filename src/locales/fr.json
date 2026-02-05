@@ -342,12 +342,12 @@
     "pageDescription": "Informations légales relatives à l'éditeur du site et avertissements concernant les services DAO et tokenisés.",
     "s1Title": "Éditeur du site (LCEN)",
     "s1Intro": "Conformément à la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique (LCEN), sont indiqués ci-dessous les éléments d'identification de l'éditeur et de l'hébergeur du site.",
-    "s1List": "Dénomination ou nom : RealToken DAO (organisation décentralisée)\nAdresse postale : [à compléter selon la structure juridique ou le représentant]\nCourriel : marketing@realtoken.community\nTéléphone : [à compléter]\nRCS / Répertoire des métiers : [si applicable]\nNuméro de TVA intracommunautaire : [si applicable]\nDirecteur de la publication : [nom du responsable, ex. fondateur ou membre clé de la DAO]",
+    "s1List": "Dénomination ou nom : RealToken DAO (organisation décentralisée)\nAdresse postale : Îles Vierges britanniques\nCourriel : marketing@realtoken.community\nDirecteur de la publication : comité marketing de la DAO",
     "s2Title": "Hébergeur",
     "s2Content": "Le site est hébergé par [nom de l'hébergeur], [adresse]. Pour toute question relative à l'hébergement, veuillez contacter l'hébergeur ou l'éditeur du site.",
     "s3Title": "Avertissements et risques",
     "s3List": "Les tokens et actifs tokenisés (notamment dans le cadre de RealT ou de l'écosystème RealToken) ne constituent pas un investissement garanti ; leur valeur peut fluctuer.\nLes contenus du site ne constituent pas un conseil en investissement ni un conseil financier, juridique ou fiscal.\nEn raison de la nature décentralisée d'une DAO, la responsabilité peut être limitée et répartie entre les participants ; les décisions sont prises de manière collective et on-chain.\nPour les aspects financiers et tokenisés (vente, achat, détention de tokens), des obligations fiscales et, le cas échéant, des règles de l'AMF (Autorité des marchés financiers) peuvent s'appliquer ; il appartient à chaque utilisateur de se renseigner et de se conformer à la réglementation en vigueur.",
-    "s3Disclaimer": "L'absence des mentions légales obligatoires peut exposer à des sanctions (jusqu'à 75 000 € d'amende et 1 an d'emprisonnement pour un dirigeant). Les informations ci-dessus sont fournies à titre indicatif ; il est recommandé de consulter un avocat ou un professionnel du droit pour adapter les mentions et les disclaimers au contexte précis de la DAO et du site."
+    "s3Disclaimer": "Les informations de cette page sont tenues à jour dans la mesure du possible. Pour toute question relative aux mentions légales, vous pouvez nous contacter à l'adresse indiquée dans la section éditeur."
   },
   "footer": {
     "tagline": "Écosystème décentralisé d'actifs réels tokenisés.",

@@ -342,12 +342,12 @@
     "pageDescription": "Legal information about the site publisher and disclaimers regarding DAO and tokenised services.",
     "s1Title": "Site publisher (LCEN)",
     "s1Intro": "In accordance with French law no. 2004-575 of 21 June 2004 on confidence in the digital economy (LCEN), the following identifies the publisher and host of the site.",
-    "s1List": "Name or designation: RealToken DAO (decentralised organisation)\nPostal address: [to be completed according to legal structure or representative]\nEmail: marketing@realtoken.community\nPhone: [to be completed]\nCompany register (RCS) / Trade register: [if applicable]\nVAT number: [if applicable]\nDirector of publication: [name of responsible person, e.g. founder or key DAO member]",
+    "s1List": "Name or designation: RealToken DAO (decentralised organisation)\nPostal address: British Virgin Islands\nEmail: marketing@realtoken.community\nDirector of publication: DAO marketing committee",
     "s2Title": "Hosting",
     "s2Content": "The site is hosted by [host name], [address]. For any question regarding hosting, please contact the host or the site publisher.",
     "s3Title": "Disclaimers and risks",
     "s3List": "Tokens and tokenised assets (including in the RealT or RealToken ecosystem) do not constitute a guaranteed investment; their value may fluctuate.\nThe contents of this site do not constitute investment, financial, legal or tax advice.\nDue to the decentralised nature of a DAO, liability may be limited and shared among participants; decisions are made collectively and on-chain.\nFor financial and tokenised aspects (sale, purchase, holding of tokens), tax obligations and, where applicable, rules of the AMF (Autorité des marchés financiers) or equivalent regulator may apply; each user is responsible for compliance with applicable law.",
-    "s3Disclaimer": "Failure to provide required legal information may result in penalties (up to €75,000 fine and 1 year imprisonment for a director under French law). The above is for guidance only; you are advised to consult a lawyer to adapt the notice and disclaimers to your DAO and site context."
+    "s3Disclaimer": "The information on this page is kept up to date where possible. For any questions regarding this legal notice, you may contact us at the address given in the publisher section."
   },
   "footer": {
     "tagline": "Decentralized ecosystem for tokenized real-world assets.",
