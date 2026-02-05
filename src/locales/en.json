@@ -330,11 +330,11 @@
     "s4Title": "Recipients and retention",
     "s4Content": "Data may be shared with technical providers (hosting, voting tools, analytics) strictly for their assigned tasks. Retention periods are set according to each purpose (e.g. consent duration for newsletters, legal duration for billing or evidence). Pseudonymous blockchain data may be kept as long as needed for governance.",
     "s5Title": "Your rights",
-    "s5Content": "Under the General Data Protection Regulation (GDPR), you have the right to access, rectify, erase, restrict processing, data portability and to object. To exercise these rights or for any question about your data, you may contact us at the address given in the legal notice. You also have the right to lodge a complaint with your supervisory authority (e.g. CNIL in France).",
+    "s5Content": "Under applicable data protection laws, you have the right to access, rectify, erase, restrict processing, data portability and to object. To exercise these rights or for any question about your data, you may contact us at the address given in the legal notice. You also have the right to lodge a complaint with your supervisory authority.",
     "s6Title": "Security measures",
     "s6Content": "Technical and organisational measures are in place to protect your data: encryption of exchanges (HTTPS), secure access, pseudonymisation where possible. For blockchain services, on-chain data is by nature public or pseudonymous; we do not store identifying personal data on-chain without necessity and we limit possible correlation.",
     "s7Title": "DAO, blockchain and GDPR",
-    "s7Content": "In a DAO and blockchain context, responsibility for processing may be shared (nodes, participants, interfaces). We strive to ensure GDPR compliance by identifying data controllers, limiting personal data exposed on-chain and favouring anonymisation or pseudonymisation where the purpose allows. This policy may be updated; the current version is the one published on this page."
+    "s7Content": "In a DAO and blockchain context, responsibility for processing may be shared (nodes, participants, interfaces). We strive to ensure compliance with applicable regulations by identifying data controllers, limiting personal data exposed on-chain and favouring anonymisation or pseudonymisation where the purpose allows."
   },
   "mentions": {
     "tag": "Legal",
