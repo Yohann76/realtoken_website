@@ -261,6 +261,9 @@
     "pageTitle": "Liens utiles",
     "pageDescription": "Liens utiles vers les applications, documentations et ressources de l'écosystème RealToken.",
     "sections": {
+      "regEcosystem": {
+        "title": "REG écosystème"
+      },
       "rmm": {
         "title": "RMM",
         "links": {
@@ -278,12 +281,15 @@
         }
       },
       "reg": {
-        "title": "REG Écosystème",
+        "title": "REG",
         "links": {
           "claim": "REG Claim",
           "dune": "Dashboard Dune DAO",
           "incentive": "Vault d'incentive (DAO Incentive)"
         }
+      },
+      "partnerApps": {
+        "title": "Applications tierces de nos partenaires"
       },
       "dashboardRealt": {
         "title": "Dashboard RealT",
@@ -291,6 +297,12 @@
           "pitsbi": "Pitsbi",
           "cryptalloc": "Cryptalloc RealtLab",
           "rentTracker": "RealT Rent Tracker"
+        }
+      },
+      "documentation": {
+        "title": "Documentation",
+        "links": {
+          "communityTuto": "Documentation communautaire RealT (GitBook)"
         }
       }
     }

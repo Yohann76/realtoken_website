@@ -9,29 +9,71 @@
     </header>
 
     <section class="liens-utiles-section">
-      <div
-        v-for="section in sections"
-        :key="section.id"
-        v-show="section.links.length"
-        class="section-block"
-      >
-        <h2 class="section-title">{{ $t(section.titleKey) }}</h2>
-        <div class="links-grid">
-          <a
-            v-for="(link, index) in section.links"
-            :key="index"
-            :href="link.href"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="link-card"
+      <!-- Bloc REG écosystème : titre principal + sous-sections RMM, YAM, REG -->
+      <div class="section-block section-block--group" v-if="regEcosystemSubsections.length">
+        <h2 class="section-title section-title--group">
+          <span class="section-title-icon" aria-hidden="true">◆</span>
+          {{ $t('liensUtiles.sections.regEcosystem.title') }}
+        </h2>
+        <div class="subsections">
+          <div
+            v-for="sub in regEcosystemSubsections"
+            :key="sub.id"
+            class="subsection"
           >
-            <span class="link-card-title">{{ $t(link.titleKey) }}</span>
-            <span class="link-card-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-                <path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zM5 19h2v-7H3v2h2v5zm2 0h10v-2H7v2zm0-4h10v-2H7v2zm0-6h10V7H7v2z"/>
-              </svg>
-            </span>
-          </a>
+            <h3 class="subsection-title">{{ $t(sub.titleKey) }}</h3>
+            <div class="links-grid">
+              <a
+                v-for="(link, index) in sub.links"
+                :key="index"
+                :href="link.href"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-card"
+              >
+                <span class="link-card-title">{{ $t(link.titleKey) }}</span>
+                <span class="link-card-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zM5 19h2v-7H3v2h2v5zm2 0h10v-2H7v2zm0-4h10v-2H7v2zm0-6h10V7H7v2z"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloc Applications tierces de nos partenaires : Dashboard RealT en sous-section -->
+      <div class="section-block section-block--group" v-if="partnerAppsSubsections.length">
+        <h2 class="section-title section-title--group">
+          <span class="section-title-icon" aria-hidden="true">◆</span>
+          {{ $t('liensUtiles.sections.partnerApps.title') }}
+        </h2>
+        <div class="subsections">
+          <div
+            v-for="sub in partnerAppsSubsections"
+            :key="sub.id"
+            class="subsection"
+          >
+            <h3 class="subsection-title">{{ $t(sub.titleKey) }}</h3>
+            <div class="links-grid">
+              <a
+                v-for="(link, index) in sub.links"
+                :key="index"
+                :href="link.href"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-card"
+              >
+                <span class="link-card-title">{{ $t(link.titleKey) }}</span>
+                <span class="link-card-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zM5 19h2v-7H3v2h2v5zm2 0h10v-2H7v2zm0-4h10v-2H7v2zm0-6h10V7H7v2z"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -39,11 +81,19 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
 
-const { t } = useI18n()
-
-const sections = [
+// Sous-sections du bloc "REG écosystème" : REG (claim, etc.), RMM, YAM
+const regEcosystemSubsections = computed(() => [
+  {
+    id: 'reg',
+    titleKey: 'liensUtiles.sections.reg.title',
+    links: [
+      { titleKey: 'liensUtiles.sections.reg.links.claim', href: 'https://claim.realtoken.network/reg' },
+      { titleKey: 'liensUtiles.sections.reg.links.dune', href: 'https://dune.com/teugos/realtoken-dao-dashboard' },
+      { titleKey: 'liensUtiles.sections.reg.links.incentive', href: 'https://vote.realtoken.network/dao/incentive' }
+    ]
+  },
   {
     id: 'rmm',
     titleKey: 'liensUtiles.sections.rmm.title',
@@ -61,16 +111,11 @@ const sections = [
       { titleKey: 'liensUtiles.sections.yam.links.viewer', href: 'https://yam.joed.site/' },
       { titleKey: 'liensUtiles.sections.yam.links.report', href: 'https://yam-report.realtoken.community/' }
     ]
-  },
-  {
-    id: 'reg',
-    titleKey: 'liensUtiles.sections.reg.title',
-    links: [
-      { titleKey: 'liensUtiles.sections.reg.links.claim', href: 'https://claim.realtoken.network/reg' },
-      { titleKey: 'liensUtiles.sections.reg.links.dune', href: 'https://dune.com/teugos/realtoken-dao-dashboard' },
-      { titleKey: 'liensUtiles.sections.reg.links.incentive', href: 'https://vote.realtoken.network/dao/incentive' }
-    ]
-  },
+  }
+])
+
+// Sous-sections du bloc "Applications tierces de nos partenaires" : Dashboard RealT, Documentation
+const partnerAppsSubsections = computed(() => [
   {
     id: 'dashboardRealt',
     titleKey: 'liensUtiles.sections.dashboardRealt.title',
@@ -79,8 +124,15 @@ const sections = [
       { titleKey: 'liensUtiles.sections.dashboardRealt.links.cryptalloc', href: 'https://www.cryptalloc.com/realtlab/' },
       { titleKey: 'liensUtiles.sections.dashboardRealt.links.rentTracker', href: 'https://ehpst.duckdns.org/realt_rent_tracker/' }
     ]
+  },
+  {
+    id: 'documentation',
+    titleKey: 'liensUtiles.sections.documentation.title',
+    links: [
+      { titleKey: 'liensUtiles.sections.documentation.links.communityTuto', href: 'https://community-realt.gitbook.io/tuto-community/' }
+    ]
   }
-]
+])
 </script>
 
 <style scoped>
@@ -147,6 +199,13 @@ h1 {
   margin-bottom: 0;
 }
 
+.section-block--group {
+  padding: 28px 24px 32px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+}
+
 .section-title {
   font-size: 1.5rem;
   font-weight: 600;
@@ -154,6 +213,39 @@ h1 {
   margin: 0 0 20px 0;
   padding-bottom: 8px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-title--group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom-color: rgba(255, 140, 66, 0.25);
+}
+
+.section-title-icon {
+  color: var(--color-orange);
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.subsections {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.subsection {
+  padding-left: 12px;
+  border-left: 3px solid rgba(255, 140, 66, 0.35);
+}
+
+.subsection-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 14px 0;
 }
 
 .links-grid {
@@ -213,6 +305,15 @@ h1 {
   .liens-utiles-section {
     padding-left: min(6vw, 24px);
     padding-right: min(6vw, 24px);
+  }
+
+  .section-block--group {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .subsection {
+    padding-left: 10px;
   }
 
   .links-grid {
