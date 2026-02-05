@@ -70,7 +70,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p class="footer-copyright">{{ $t('footer.copyright', { year: currentYear }) }}</p>
+        <p class="footer-copyright">{{ $t('footer.copyright') }}</p>
       </div>
     </div>
   </footer>
@@ -103,7 +103,6 @@ const socialLinks = [
   { id: 'github', label: 'GitHub', href: 'https://github.com/RealToken-Community', svg: svgGitHub }
 ]
 
-const currentYear = computed(() => new Date().getFullYear())
 </script>
 
 <style scoped>
