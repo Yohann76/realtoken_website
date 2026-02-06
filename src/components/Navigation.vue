@@ -2,7 +2,7 @@
   <header class="nav-wrapper">
     <nav class="top-nav">
       <router-link to="/" class="logo" @click="closeAll">
-        <div class="cube"></div>
+        <img :src="logoImg" alt="RealToken DAO" class="logo-img" />
         <div>
           <span>{{ $t('logo.name') }}</span>
           <small>{{ $t('logo.subtitle') }}</small>
@@ -140,6 +140,7 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import LanguageSelector from './LanguageSelector.vue'
+import logoImg from '@/assets/logo-v3-orange.png'
 
 const { locale } = useI18n()
 const menuOpen = ref(false)
@@ -271,12 +272,11 @@ onUnmounted(() => {
   letter-spacing: 0.2em;
 }
 
-.cube {
-  width: 36px;
-  height: 36px;
-  background: linear-gradient(135deg, var(--color-orange), #ffb97a);
-  clip-path: polygon(0 0, 70% 0, 100% 30%, 100% 100%, 30% 100%, 0 70%);
-  box-shadow: 0 10px 30px rgba(255, 140, 66, 0.45);
+.logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
 }
 
 .nav-desktop {
