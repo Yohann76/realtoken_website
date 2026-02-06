@@ -6,7 +6,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <router-link to="/" class="footer-logo">
-            <div class="footer-cube"></div>
+            <img :src="logoImg" alt="RealToken DAO" class="footer-logo-img" />
             <div class="footer-logo-text">
               <span>{{ $t('logo.name') }}</span>
               <small>{{ $t('logo.subtitle') }}</small>
@@ -79,6 +79,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import logoImg from '@/assets/logo-v3-orange.png'
 
 const { locale } = useI18n()
 
@@ -166,12 +167,10 @@ const socialLinks = [
   color: var(--color-orange);
 }
 
-.footer-cube {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, var(--color-orange), #ffb97a);
-  clip-path: polygon(0 0, 70% 0, 100% 30%, 100% 100%, 30% 100%, 0 70%);
-  box-shadow: 0 8px 24px rgba(255, 140, 66, 0.35);
+.footer-logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
   flex-shrink: 0;
 }
 
