@@ -27,11 +27,13 @@ const aboutFeatures = computed(() => [
 const applications = computed(() => [
   {
     title: t('application.rmm.title'),
-    description: t('application.rmm.description')
+    description: t('application.rmm.description'),
+    href: 'https://rmm.realtoken.network/'
   },
   {
     title: t('application.yam.title'),
-    description: t('application.yam.description')
+    description: t('application.yam.description'),
+    href: 'https://yam.realtoken.network'
   },
   {
     title: t('application.dex.title'),
@@ -160,6 +162,10 @@ const stats = computed(() => [
           <article v-for="app in applications" :key="app.title" class="card">
             <h3>{{ app.title }}</h3>
             <p>{{ app.description }}</p>
+            <a v-if="app.href" :href="app.href" target="_blank" rel="noopener noreferrer" class="app-link">
+              {{ $t('application.openApp') }}
+              <span class="app-link-arrow" aria-hidden="true">→</span>
+            </a>
           </article>
         </div>
       </div>
@@ -643,6 +649,16 @@ h1 span {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.application .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.application .card .app-link {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
 .card {
   padding: 28px 26px;
   border-radius: 14px;
@@ -660,6 +676,27 @@ h1 span {
   font-size: 0.9rem;
   line-height: 1.6;
   margin: 0;
+}
+
+.app-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-orange);
+  text-decoration: none;
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.app-link:hover {
+  color: #ffb97a;
+  gap: 0.5rem;
+}
+
+.app-link-arrow {
+  font-size: 1.1em;
+  line-height: 1;
 }
 
 .timeline {

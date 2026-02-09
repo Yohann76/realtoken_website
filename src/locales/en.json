@@ -66,6 +66,7 @@
   "application": {
     "tag": "Application",
     "title": "RealToken ecosystem tools.",
+    "openApp": "Go to application",
     "rmm": {
       "title": "RMM",
       "description": "RealToken Money Market - Lending and borrowing protocol to borrow stablecoins against RWA assets, based on the Aave platform and adapted to RWA market needs."
