@@ -83,12 +83,20 @@
       "description": "Ces NFT serviront à distribuer la supply des REG en fonction des agissements et contributions de chacun dans l'écosystème."
     }
   },
-  "ressources": {
-    "tag": "Ressources",
-    "title": "Documentation et guides pour l'écosystème.",
-    "wiki": {
-      "title": "Wiki",
-      "description": "Documentation complète sur l'écosystème RealToken, les protocoles, la gouvernance et les guides d'utilisation."
+  "daoRole": {
+    "tag": "Rôle et périmètre",
+    "title": "Le rôle de la DAO",
+    "role1": {
+      "title": "Gestion des RealTokens en DeFi",
+      "description": "Gérer les RealTokens au sein de nos applications (RMM, YAM, Bridge, Dashboard) pour assurer liquidité, échanges et services décentralisés à l'écosystème."
+    },
+    "role2": {
+      "title": "Développement de l'écosystème",
+      "description": "Allouer des fonds de la trésorerie pour développer l'écosystème : applications, liquidité, sécurité, nouvelles fonctionnalités et infrastructure."
+    },
+    "role3": {
+      "title": "Coordination et mise à disposition",
+      "description": "Coordonner les services et les partenaires, et mettre notre technologie à disposition pour la tokenisation d'actifs réels au sens large."
     }
   },
   "governance": {

@@ -43,10 +43,18 @@ const applications = computed(() => [
   }
 ])
 
-const resources = computed(() => [
+const daoRoles = computed(() => [
   {
-    title: t('ressources.wiki.title'),
-    description: t('ressources.wiki.description')
+    title: t('daoRole.role1.title'),
+    description: t('daoRole.role1.description')
+  },
+  {
+    title: t('daoRole.role2.title'),
+    description: t('daoRole.role2.description')
+  },
+  {
+    title: t('daoRole.role3.title'),
+    description: t('daoRole.role3.description')
   }
 ])
 
@@ -157,16 +165,16 @@ const stats = computed(() => [
       </div>
     </section>
 
-    <section id="ressources" class="section section-dark ressources">
+    <section id="dao-role" class="section section-dark dao-role">
       <div class="section-inner">
         <div class="section-heading compact">
-          <p class="tag">{{ $t('ressources.tag') }}</p>
-          <h2>{{ $t('ressources.title') }}</h2>
+          <p class="tag">{{ $t('daoRole.tag') }}</p>
+          <h2>{{ $t('daoRole.title') }}</h2>
         </div>
         <div class="cards">
-          <article v-for="resource in resources" :key="resource.title" class="card">
-            <h3>{{ resource.title }}</h3>
-            <p>{{ resource.description }}</p>
+          <article v-for="role in daoRoles" :key="role.title" class="card">
+            <h3>{{ role.title }}</h3>
+            <p>{{ role.description }}</p>
           </article>
         </div>
       </div>
