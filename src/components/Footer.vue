@@ -47,7 +47,7 @@
               <li><a href="https://www.tally.xyz/gov/realtoken-ecosystem-governance" target="_blank" rel="noopener noreferrer">{{ $t('nav.menu.governanceTally') }}</a></li>
               <li><a href="https://forum.realtoken.community/" target="_blank" rel="noopener noreferrer">{{ $t('footer.forum') }}</a></li>
               <li><router-link to="/reg">{{ $t('nav.menu.governanceReg') }}</router-link></li>
-              <li><router-link to="/comite">{{ $t('nav.menu.governanceComites') }}</router-link></li>
+              <li><router-link to="/committee">{{ $t('nav.menu.governanceComites') }}</router-link></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -55,15 +55,15 @@
             <ul>
               <li><router-link to="/blog">{{ $t('footer.blog') }}</router-link></li>
               <li><a :href="wikiUrl" target="_blank" rel="noopener noreferrer">{{ $t('footer.wiki') }}</a></li>
-              <li><router-link to="/liens-utiles">{{ $t('nav.menu.resourcesLiensUtiles') }}</router-link></li>
+              <li><router-link to="/useful-links">{{ $t('nav.menu.resourcesLiensUtiles') }}</router-link></li>
               <li><router-link to="/faq">{{ $t('footer.faq') }}</router-link></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4 class="footer-col-title">{{ $t('footer.legal') }}</h4>
             <ul>
-              <li><router-link to="/confidentialite">{{ $t('footer.privacy') }}</router-link></li>
-              <li><router-link to="/mentions-legales">{{ $t('footer.terms') }}</router-link></li>
+              <li><router-link to="/privacy">{{ $t('footer.privacy') }}</router-link></li>
+              <li><router-link to="/legal-notice">{{ $t('footer.terms') }}</router-link></li>
             </ul>
           </div>
         </nav>

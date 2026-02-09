@@ -66,6 +66,7 @@
   "application": {
     "tag": "Application",
     "title": "RealToken ecosystem tools.",
+    "openApp": "Go to application",
     "rmm": {
       "title": "RMM",
       "description": "RealToken Money Market - Lending and borrowing protocol to borrow stablecoins against RWA assets, based on the Aave platform and adapted to RWA market needs."
@@ -83,12 +84,20 @@
       "description": "These NFTs will be used to distribute the REG supply based on each participant's actions and contributions to the ecosystem."
     }
   },
-  "ressources": {
-    "tag": "Resources",
-    "title": "Documentation and guides for the ecosystem.",
-    "wiki": {
-      "title": "Wiki",
-      "description": "Complete documentation on the RealToken ecosystem, protocols, governance and usage guides."
+  "daoRole": {
+    "tag": "Role and scope",
+    "title": "The DAO's role",
+    "role1": {
+      "title": "RealToken management in DeFi",
+      "description": "Manage RealTokens within our applications (RMM, YAM, Bridge, Dashboard) to provide liquidity, trading and decentralized services to the ecosystem."
+    },
+    "role2": {
+      "title": "Ecosystem development",
+      "description": "Allocate treasury funds to develop the ecosystem: applications, liquidity, security, new features and infrastructure."
+    },
+    "role3": {
+      "title": "Coordination and technology sharing",
+      "description": "Coordinate services and partners, and make our technology available for real-world asset tokenization at large."
     }
   },
   "governance": {
@@ -96,15 +105,18 @@
     "title": "Decentralized governance for the community.",
     "protocol": {
       "title": "Decentralized protocol",
-      "description": "Transparent community governance where every REG holder can participate in important decisions."
+      "description": "Transparent community governance where every REG holder can participate in important decisions.",
+      "link": "View REG on CoinGecko"
     },
     "forum": {
       "title": "Forum",
-      "description": "Discussion and proposal space for the RealToken DAO community."
+      "description": "Discussion and proposal space for the RealToken DAO community.",
+      "link": "Go to forum"
     },
     "tally": {
       "title": "Tally (vote)",
-      "description": "On-chain voting platform for governance proposals and DAO decisions."
+      "description": "On-chain voting platform for governance proposals and DAO decisions.",
+      "link": "Go to Tally"
     }
   },
   "process": {
