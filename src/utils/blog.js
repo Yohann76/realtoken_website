@@ -62,7 +62,8 @@ function parseFrontmatter(content) {
 
 // Slugs canoniques en anglais pour les URL (toujours en anglais)
 // Le contenu est chargé selon la locale (localStorage) via getSlugForLocale
-const englishSlugs = [
+// Exporté pour la génération du sitemap (scripts/generate-sitemap.js)
+export const englishSlugs = [
   'realtoken-dao-realt-relationship',
   'realtoken-dao-objectives',
   'birth-of-realtoken-dao',
