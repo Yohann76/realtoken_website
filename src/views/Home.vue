@@ -233,7 +233,7 @@ const stats = computed(() => [
         </div>
         <div class="cta-actions">
           <a href="mailto:marketing@realtoken.community" class="primary filled">{{ $t('cta.buttonPartner') }}</a>
-          <router-link to="/devenir-partenaire" class="primary outline">{{ $t('cta.buttonLearn') }}</router-link>
+          <router-link to="/partners" class="primary outline">{{ $t('cta.buttonLearn') }}</router-link>
         </div>
       </div>
     </section>

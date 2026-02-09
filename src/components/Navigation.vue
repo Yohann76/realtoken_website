@@ -184,7 +184,7 @@ const menuItems = computed(() => [
     ],
     routerChildren: [
       { labelKey: 'nav.menu.governanceReg', to: '/reg' },
-      { labelKey: 'nav.menu.governanceComites', to: '/comite' }
+      { labelKey: 'nav.menu.governanceComites', to: '/committee' }
     ]
   },
   {
@@ -196,7 +196,7 @@ const menuItems = computed(() => [
     routerChildren: [
       { labelKey: 'nav.menu.resourcesBlog', to: '/blog' },
       { labelKey: 'nav.menu.resourcesFaq', to: '/faq' },
-      { labelKey: 'nav.menu.resourcesLiensUtiles', to: '/liens-utiles' }
+      { labelKey: 'nav.menu.resourcesLiensUtiles', to: '/useful-links' }
     ]
   }
 ])
