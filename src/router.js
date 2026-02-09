@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { getEnglishSlug } from './utils/blog.js'
 import Home from './views/Home.vue'
 import Blog from './views/Blog.vue'
 import BlogPost from './views/BlogPost.vue'
@@ -24,7 +25,15 @@ const routes = [
   {
     path: '/blog/:slug',
     name: 'BlogPost',
-    component: BlogPost
+    component: BlogPost,
+    beforeEnter(to, _from, next) {
+      const englishSlug = getEnglishSlug(to.params.slug)
+      if (englishSlug !== to.params.slug) {
+        next({ path: `/blog/${englishSlug}`, replace: true })
+      } else {
+        next()
+      }
+    }
   },
   {
     path: '/faq',
@@ -32,12 +41,12 @@ const routes = [
     component: Faq
   },
   {
-    path: '/comite',
+    path: '/committee',
     name: 'Comite',
     component: Comite
   },
   {
-    path: '/liens-utiles',
+    path: '/useful-links',
     name: 'LiensUtiles',
     component: LiensUtiles
   },
@@ -47,20 +56,26 @@ const routes = [
     component: Reg
   },
   {
-    path: '/devenir-partenaire',
+    path: '/partners',
     name: 'Partenaires',
     component: Partenaires
   },
   {
-    path: '/confidentialite',
+    path: '/privacy',
     name: 'Confidentialite',
     component: Confidentialite
   },
   {
-    path: '/mentions-legales',
+    path: '/legal-notice',
     name: 'MentionsLegales',
     component: MentionsLegales
-  }
+  },
+  // Redirects: anciennes URLs FR → URLs anglaises (SEO, bookmarks)
+  { path: '/comite', redirect: '/committee' },
+  { path: '/liens-utiles', redirect: '/useful-links' },
+  { path: '/devenir-partenaire', redirect: '/partners' },
+  { path: '/confidentialite', redirect: '/privacy' },
+  { path: '/mentions-legales', redirect: '/legal-notice' }
 ]
 
 const router = createRouter({

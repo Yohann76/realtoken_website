@@ -27,11 +27,13 @@ const aboutFeatures = computed(() => [
 const applications = computed(() => [
   {
     title: t('application.rmm.title'),
-    description: t('application.rmm.description')
+    description: t('application.rmm.description'),
+    href: 'https://rmm.realtoken.network/'
   },
   {
     title: t('application.yam.title'),
-    description: t('application.yam.description')
+    description: t('application.yam.description'),
+    href: 'https://yam.realtoken.network'
   },
   {
     title: t('application.dex.title'),
@@ -43,25 +45,39 @@ const applications = computed(() => [
   }
 ])
 
-const resources = computed(() => [
+const daoRoles = computed(() => [
   {
-    title: t('ressources.wiki.title'),
-    description: t('ressources.wiki.description')
+    title: t('daoRole.role1.title'),
+    description: t('daoRole.role1.description')
+  },
+  {
+    title: t('daoRole.role2.title'),
+    description: t('daoRole.role2.description')
+  },
+  {
+    title: t('daoRole.role3.title'),
+    description: t('daoRole.role3.description')
   }
 ])
 
 const governanceTools = computed(() => [
   {
     title: t('governance.protocol.title'),
-    description: t('governance.protocol.description')
+    description: t('governance.protocol.description'),
+    href: 'https://www.coingecko.com/en/coins/realtoken-ecosystem-governance',
+    linkText: t('governance.protocol.link')
   },
   {
     title: t('governance.forum.title'),
-    description: t('governance.forum.description')
+    description: t('governance.forum.description'),
+    href: 'https://forum.realtoken.community/',
+    linkText: t('governance.forum.link')
   },
   {
     title: t('governance.tally.title'),
-    description: t('governance.tally.description')
+    description: t('governance.tally.description'),
+    href: 'https://www.tally.xyz/gov/realtoken-ecosystem-governance',
+    linkText: t('governance.tally.link')
   }
 ])
 
@@ -152,21 +168,25 @@ const stats = computed(() => [
           <article v-for="app in applications" :key="app.title" class="card">
             <h3>{{ app.title }}</h3>
             <p>{{ app.description }}</p>
+            <a v-if="app.href" :href="app.href" target="_blank" rel="noopener noreferrer" class="app-link">
+              {{ $t('application.openApp') }}
+              <span class="app-link-arrow" aria-hidden="true">→</span>
+            </a>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="ressources" class="section section-dark ressources">
+    <section id="dao-role" class="section section-dark dao-role">
       <div class="section-inner">
         <div class="section-heading compact">
-          <p class="tag">{{ $t('ressources.tag') }}</p>
-          <h2>{{ $t('ressources.title') }}</h2>
+          <p class="tag">{{ $t('daoRole.tag') }}</p>
+          <h2>{{ $t('daoRole.title') }}</h2>
         </div>
         <div class="cards">
-          <article v-for="resource in resources" :key="resource.title" class="card">
-            <h3>{{ resource.title }}</h3>
-            <p>{{ resource.description }}</p>
+          <article v-for="role in daoRoles" :key="role.title" class="card">
+            <h3>{{ role.title }}</h3>
+            <p>{{ role.description }}</p>
           </article>
         </div>
       </div>
@@ -182,6 +202,10 @@ const stats = computed(() => [
           <article v-for="tool in governanceTools" :key="tool.title" class="card">
             <h3>{{ tool.title }}</h3>
             <p>{{ tool.description }}</p>
+            <a v-if="tool.href" :href="tool.href" target="_blank" rel="noopener noreferrer" class="app-link">
+              {{ tool.linkText }}
+              <span class="app-link-arrow" aria-hidden="true">→</span>
+            </a>
           </article>
         </div>
       </div>
@@ -233,7 +257,7 @@ const stats = computed(() => [
         </div>
         <div class="cta-actions">
           <a href="mailto:marketing@realtoken.community" class="primary filled">{{ $t('cta.buttonPartner') }}</a>
-          <router-link to="/devenir-partenaire" class="primary outline">{{ $t('cta.buttonLearn') }}</router-link>
+          <router-link to="/partners" class="primary outline">{{ $t('cta.buttonLearn') }}</router-link>
         </div>
       </div>
     </section>
@@ -635,6 +659,22 @@ h1 span {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.application .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.application .card .app-link,
+.governance .card .app-link {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.governance .card {
+  display: flex;
+  flex-direction: column;
+}
+
 .card {
   padding: 28px 26px;
   border-radius: 14px;
@@ -652,6 +692,27 @@ h1 span {
   font-size: 0.9rem;
   line-height: 1.6;
   margin: 0;
+}
+
+.app-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-orange);
+  text-decoration: none;
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.app-link:hover {
+  color: #ffb97a;
+  gap: 0.5rem;
+}
+
+.app-link-arrow {
+  font-size: 1.1em;
+  line-height: 1;
 }
 
 .timeline {

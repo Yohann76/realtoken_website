@@ -66,6 +66,7 @@
   "application": {
     "tag": "Application",
     "title": "Les outils de l'écosystème RealToken.",
+    "openApp": "Accéder à l'application",
     "rmm": {
       "title": "RMM",
       "description": "RealToken Money Market - Protocole de lending et borrowing pour emprunter des stablecoins en échange d'actifs RWA, basé sur la plateforme Aave et adapté aux besoins du marché RWA."
@@ -83,12 +84,20 @@
       "description": "Ces NFT serviront à distribuer la supply des REG en fonction des agissements et contributions de chacun dans l'écosystème."
     }
   },
-  "ressources": {
-    "tag": "Ressources",
-    "title": "Documentation et guides pour l'écosystème.",
-    "wiki": {
-      "title": "Wiki",
-      "description": "Documentation complète sur l'écosystème RealToken, les protocoles, la gouvernance et les guides d'utilisation."
+  "daoRole": {
+    "tag": "Rôle et périmètre",
+    "title": "Le rôle de la DAO",
+    "role1": {
+      "title": "Gestion des RealTokens en DeFi",
+      "description": "Gérer les RealTokens au sein de nos applications (RMM, YAM, Bridge, Dashboard) pour assurer liquidité, échanges et services décentralisés à l'écosystème."
+    },
+    "role2": {
+      "title": "Développement de l'écosystème",
+      "description": "Allouer des fonds de la trésorerie pour développer l'écosystème : applications, liquidité, sécurité, nouvelles fonctionnalités et infrastructure."
+    },
+    "role3": {
+      "title": "Coordination et mise à disposition",
+      "description": "Coordonner les services et les partenaires, et mettre notre technologie à disposition pour la tokenisation d'actifs réels au sens large."
     }
   },
   "governance": {
@@ -96,15 +105,18 @@
     "title": "Gouvernance décentralisée pour la communauté.",
     "protocol": {
       "title": "Protocole décentralisé",
-      "description": "Gouvernance communautaire transparente où chaque détenteur de REG peut participer aux décisions importantes."
+      "description": "Gouvernance communautaire transparente où chaque détenteur de REG peut participer aux décisions importantes.",
+      "link": "Voir le REG sur CoinGecko"
     },
     "forum": {
       "title": "Forum",
-      "description": "Espace de discussion et de proposition pour la communauté RealToken DAO."
+      "description": "Espace de discussion et de proposition pour la communauté RealToken DAO.",
+      "link": "Accéder au forum"
     },
     "tally": {
       "title": "Tally (vote)",
-      "description": "Plateforme de vote on-chain pour les propositions de gouvernance et les décisions de la DAO."
+      "description": "Plateforme de vote on-chain pour les propositions de gouvernance et les décisions de la DAO.",
+      "link": "Accéder à Tally"
     }
   },
   "process": {

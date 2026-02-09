@@ -4,8 +4,8 @@ import en from './locales/en.json'
 
 const i18n = createI18n({
   legacy: false,
-  locale: localStorage.getItem('locale') || 'fr',
-  fallbackLocale: 'fr',
+  locale: localStorage.getItem('locale') || 'en',
+  fallbackLocale: 'en',
   messages: {
     fr,
     en

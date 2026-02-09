@@ -60,24 +60,15 @@ function parseFrontmatter(content) {
   }
 }
 
-// Liste des articles disponibles
-// Note: Pour ajouter un nouvel article, créez le fichier .md dans articles/{locale}/ et ajoutez le slug ici
-// TODO: Add more articles
-// TODO: automatically generate the slug from the filename (or parameter markdown) (e.g. 'introduction-realtoken-dao' -> 'introduction-realtoken-dao')
-const articlesList = {
-  fr: [
-    'lien-realt-dao-realtoken',
-    'objectif-dao-realtoken',
-    'naissance-dao-realtoken',
-    'perimetre-dao-realtoken'
-  ],
-  en: [
-    'realtoken-dao-realt-relationship',
-    'realtoken-dao-objectives',
-    'birth-of-realtoken-dao',
-    'realtoken-dao-scope'
-  ]
-}
+// Slugs canoniques en anglais pour les URL (toujours en anglais)
+// Le contenu est chargé selon la locale (localStorage) via getSlugForLocale
+// Exporté pour la génération du sitemap (scripts/generate-sitemap.js)
+export const englishSlugs = [
+  'realtoken-dao-realt-relationship',
+  'realtoken-dao-objectives',
+  'birth-of-realtoken-dao',
+  'realtoken-dao-scope'
+]
 
 // Correspondance des slugs entre locales (même article, slugs différents selon la langue)
 // Quand on est sur /blog/perimetre-dao-realtoken et qu'on passe en EN, on doit charger realtoken-dao-scope
@@ -97,6 +88,12 @@ export function getSlugForLocale(slug, locale) {
   return slugEquivalents[slug]?.[locale] ?? slug
 }
 
+/** Retourne le slug canonique anglais (pour les URL). Si le slug est déjà en anglais, le retourne ; sinon retourne l’équivalent EN. */
+export function getEnglishSlug(slug) {
+  const en = slugEquivalents[slug]?.en
+  return en ?? slug
+}
+
 // Note: Les slugs correspondent aux noms de fichiers sans l'extension .md
 
 // Fonction pour charger le contenu d'un article
@@ -112,40 +109,35 @@ async function loadArticleContent(slug, locale) {
   }
 }
 
-// Fonction pour charger tous les articles
+// Charge tous les articles ; les URL restent en anglais (slug = englishSlug)
 export async function loadArticles(locale = 'fr') {
   const articles = []
-  const slugs = articlesList[locale] || []
-  
-  for (const slug of slugs) {
-    const content = await loadArticleContent(slug, locale)
+  for (const englishSlug of englishSlugs) {
+    const contentSlug = getSlugForLocale(englishSlug, locale)
+    const content = await loadArticleContent(contentSlug, locale)
     if (content) {
       const parsed = parseFrontmatter(content)
       articles.push({
         ...parsed.data,
-        slug,
+        slug: englishSlug,
         content: md.render(parsed.content),
         rawContent: parsed.content
       })
     }
   }
-  
-  // Trier par date (plus récent en premier)
   articles.sort((a, b) => new Date(b.date) - new Date(a.date))
-  
   return articles
 }
 
-// Fonction pour charger un article spécifique (résout le slug équivalent si l'article n'existe pas dans cette locale)
+// Charge un article ; slug dans l'URL est toujours en anglais, contenu selon locale
 export async function loadArticle(slug, locale = 'fr') {
-  const resolvedSlug = getSlugForLocale(slug, locale)
-  const content = await loadArticleContent(resolvedSlug, locale)
+  const contentSlug = getSlugForLocale(slug, locale)
+  const content = await loadArticleContent(contentSlug, locale)
   if (!content) return null
-  
   const parsed = parseFrontmatter(content)
   return {
     ...parsed.data,
-    slug: resolvedSlug,
+    slug,
     content: md.render(parsed.content),
     rawContent: parsed.content
   }
