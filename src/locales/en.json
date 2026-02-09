@@ -105,15 +105,18 @@
     "title": "Decentralized governance for the community.",
     "protocol": {
       "title": "Decentralized protocol",
-      "description": "Transparent community governance where every REG holder can participate in important decisions."
+      "description": "Transparent community governance where every REG holder can participate in important decisions.",
+      "link": "View REG on CoinGecko"
     },
     "forum": {
       "title": "Forum",
-      "description": "Discussion and proposal space for the RealToken DAO community."
+      "description": "Discussion and proposal space for the RealToken DAO community.",
+      "link": "Go to forum"
     },
     "tally": {
       "title": "Tally (vote)",
-      "description": "On-chain voting platform for governance proposals and DAO decisions."
+      "description": "On-chain voting platform for governance proposals and DAO decisions.",
+      "link": "Go to Tally"
     }
   },
   "process": {

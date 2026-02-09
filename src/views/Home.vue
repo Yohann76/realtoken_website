@@ -63,15 +63,21 @@ const daoRoles = computed(() => [
 const governanceTools = computed(() => [
   {
     title: t('governance.protocol.title'),
-    description: t('governance.protocol.description')
+    description: t('governance.protocol.description'),
+    href: 'https://www.coingecko.com/en/coins/realtoken-ecosystem-governance',
+    linkText: t('governance.protocol.link')
   },
   {
     title: t('governance.forum.title'),
-    description: t('governance.forum.description')
+    description: t('governance.forum.description'),
+    href: 'https://forum.realtoken.community/',
+    linkText: t('governance.forum.link')
   },
   {
     title: t('governance.tally.title'),
-    description: t('governance.tally.description')
+    description: t('governance.tally.description'),
+    href: 'https://www.tally.xyz/gov/realtoken-ecosystem-governance',
+    linkText: t('governance.tally.link')
   }
 ])
 
@@ -196,6 +202,10 @@ const stats = computed(() => [
           <article v-for="tool in governanceTools" :key="tool.title" class="card">
             <h3>{{ tool.title }}</h3>
             <p>{{ tool.description }}</p>
+            <a v-if="tool.href" :href="tool.href" target="_blank" rel="noopener noreferrer" class="app-link">
+              {{ tool.linkText }}
+              <span class="app-link-arrow" aria-hidden="true">→</span>
+            </a>
           </article>
         </div>
       </div>
@@ -654,9 +664,15 @@ h1 span {
   flex-direction: column;
 }
 
-.application .card .app-link {
+.application .card .app-link,
+.governance .card .app-link {
   margin-top: auto;
   padding-top: 1rem;
+}
+
+.governance .card {
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
