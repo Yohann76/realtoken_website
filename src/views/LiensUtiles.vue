@@ -97,7 +97,7 @@
         <div class="legend-cards">
           <article class="legend-card">
             <h3>{{ $t('liensUtiles.whoManages.dao.title') }}</h3>
-            <p>{{ $t('liensUtiles.whoManages.dao.description') }}</p>
+            <p class="legend-card-desc" v-html="$t('liensUtiles.whoManages.dao.description')"></p>
           </article>
           <article class="legend-card">
             <h3>{{ $t('liensUtiles.whoManages.realt.title') }}</h3>
@@ -247,6 +247,16 @@ function sectionClass(index) {
   line-height: 1.6;
   margin: 0;
   color: rgba(255, 255, 255, 0.78);
+}
+
+.legend-card-desc :deep(a) {
+  color: var(--color-orange);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.legend-card-desc :deep(a:hover) {
+  color: var(--color-orange-light);
 }
 
 @media (max-width: 900px) {
