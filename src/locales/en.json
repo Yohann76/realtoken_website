@@ -284,15 +284,18 @@
       "title": "Who manages these applications?",
       "dao": {
         "title": "Managed by the DAO",
-        "description": "Applications and tools developed and maintained by the DAO. The community pilots the roadmap and resources through REG votes. One condition: the DAO must have possession of the code (repository: <a href=\"https://github.com/RealToken-Community\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub RealToken Community</a>)."
+        "description": "Applications and tools developed and maintained by the DAO. The community pilots the roadmap and resources through REG votes. One condition: the DAO must have possession of the code (repository: <a href=\"https://github.com/RealToken-Community\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub RealToken Community</a>).",
+        "domainLabel": "Domain: realtoken.community"
       },
       "realt": {
         "title": "Managed by RealT",
-        "description": "Some applications are managed by RealT because the ecosystem is in the process of decentralization. From a legal standpoint, some applications still require a centralized entity to operate them."
+        "description": "Some applications are managed by RealT because the ecosystem is in the process of decentralization. From a legal standpoint, some applications still require a centralized entity to operate them.",
+        "domainLabel": "Domain: realtoken.network"
       },
       "community": {
         "title": "Community initiative",
-        "description": "Projects and tools created by community members or third parties, outside the DAO. They are maintained by third parties, with no formal link or guarantee of ongoing support, but can still be useful to the ecosystem."
+        "description": "Projects and tools created by community members or third parties, outside the DAO. They are maintained by third parties, with no formal link or guarantee of ongoing support, but can still be useful to the ecosystem.",
+        "domainLabel": "Domain: Free"
       }
     },
     "sections": {

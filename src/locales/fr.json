@@ -284,15 +284,18 @@
       "title": "Qui gère ces applications ?",
       "dao": {
         "title": "Géré par la DAO",
-        "description": "Applications et outils développés, maintenus par la DAO. La communauté en pilote la feuille de route et les moyens via les votes REG. Une condition : la DAO doit avoir la possession du code (dépôt : <a href=\"https://github.com/RealToken-Community\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub RealToken Community</a>)."
+        "description": "Applications et outils développés, maintenus par la DAO. La communauté en pilote la feuille de route et les moyens via les votes REG. Une condition : la DAO doit avoir la possession du code (dépôt : <a href=\"https://github.com/RealToken-Community\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub RealToken Community</a>).",
+        "domainLabel": "Domaine : realtoken.community"
       },
       "realt": {
         "title": "Géré par RealT",
-        "description": "Certaines applications sont gérées par RealT car l'écosystème est en cours de décentralisation. Juridiquement, certaines applications nécessitent encore un rattachement centralisé pour fonctionner."
+        "description": "Certaines applications sont gérées par RealT car l'écosystème est en cours de décentralisation. Juridiquement, certaines applications nécessitent encore un rattachement centralisé pour fonctionner.",
+        "domainLabel": "Domaine : realtoken.network"
       },
       "community": {
         "title": "Initiative hors DAO",
-        "description": "Projets et outils créés par des membres de la communauté ou des tiers, en dehors de la DAO. Ils sont maintenus par des personnes tierces, sans lien, ni garantie de suivi, mais peuvent tout de même être utiles à l'écosystème."
+        "description": "Projets et outils créés par des membres de la communauté ou des tiers, en dehors de la DAO. Ils sont maintenus par des personnes tierces, sans lien, ni garantie de suivi, mais peuvent tout de même être utiles à l'écosystème.",
+        "domainLabel": "Domaine : Libre"
       }
     },
     "sections": {

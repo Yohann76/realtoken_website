@@ -98,14 +98,17 @@
           <article class="legend-card">
             <h3>{{ $t('liensUtiles.whoManages.dao.title') }}</h3>
             <p class="legend-card-desc" v-html="$t('liensUtiles.whoManages.dao.description')"></p>
+            <span class="legend-card-domain">{{ $t('liensUtiles.whoManages.dao.domainLabel') }}</span>
           </article>
           <article class="legend-card">
             <h3>{{ $t('liensUtiles.whoManages.realt.title') }}</h3>
             <p>{{ $t('liensUtiles.whoManages.realt.description') }}</p>
+            <span class="legend-card-domain">{{ $t('liensUtiles.whoManages.realt.domainLabel') }}</span>
           </article>
           <article class="legend-card">
             <h3>{{ $t('liensUtiles.whoManages.community.title') }}</h3>
             <p>{{ $t('liensUtiles.whoManages.community.description') }}</p>
+            <span class="legend-card-domain">{{ $t('liensUtiles.whoManages.community.domainLabel') }}</span>
           </article>
         </div>
       </div>
@@ -222,6 +225,8 @@ function sectionClass(index) {
 }
 
 .legend-card {
+  display: flex;
+  flex-direction: column;
   padding: 28px 26px;
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -247,6 +252,17 @@ function sectionClass(index) {
   line-height: 1.6;
   margin: 0;
   color: rgba(255, 255, 255, 0.78);
+  flex: 1;
+}
+
+.legend-card-domain {
+  display: block;
+  margin-top: auto;
+  padding-top: 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-orange);
+  text-align: left;
 }
 
 .legend-card-desc :deep(a) {
