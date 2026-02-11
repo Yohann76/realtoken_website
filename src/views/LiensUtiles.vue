@@ -35,7 +35,7 @@
                   {{ section.main.linkText }}
                   <span class="app-link-arrow" aria-hidden="true">→</span>
                 </a>
-                <span v-if="section.main.managedBy" class="hub-managed-badge">{{ $t('liensUtiles.managedBy.' + section.main.managedBy) }}</span>
+                <span v-if="section.main.managedBy" class="hub-managed-badge hub-managed-badge--below">{{ $t('liensUtiles.managedBy.' + section.main.managedBy) }}</span>
               </div>
             </div>
             <div class="hub-tools">
@@ -300,12 +300,17 @@ function sectionClass(index) {
 
 .hub-main-footer {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
   margin-top: 12px;
 }
 
 .hub-main-footer .app-link {
+  margin-top: 0;
+}
+
+.hub-main-footer .hub-managed-badge--below {
   margin-top: 0;
 }
 
