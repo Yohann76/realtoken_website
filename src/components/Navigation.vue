@@ -245,7 +245,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 12px;
   min-height: var(--nav-height);
   padding: 0 min(8vw, 120px);
   background: rgba(5, 15, 36, 0.95);
@@ -263,7 +263,8 @@ onUnmounted(() => {
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
-  flex-shrink: 0;
+  min-width: 0;
+  flex: 1 1 auto;
 }
 
 .logo small {
@@ -420,6 +421,7 @@ a.primary {
 
 .hamburger {
   display: none;
+  flex-shrink: 0;
   flex-direction: column;
   justify-content: center;
   gap: 6px;
@@ -547,12 +549,7 @@ a.primary {
   opacity: 0;
 }
 
-@media (max-width: 768px) {
-  .top-nav {
-    padding-left: min(6vw, 24px);
-    padding-right: min(6vw, 24px);
-  }
-
+@media (max-width: 900px) {
   .hamburger {
     display: flex;
   }
@@ -562,7 +559,26 @@ a.primary {
   }
 }
 
-@media (min-width: 769px) {
+@media (max-width: 768px) {
+  .top-nav {
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 8px;
+  }
+
+  .logo > div span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 120px;
+  }
+
+  .logo > div small {
+    display: none;
+  }
+}
+
+@media (min-width: 901px) {
   .nav-mobile {
     display: none !important;
   }
