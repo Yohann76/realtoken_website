@@ -86,6 +86,30 @@
         </div>
       </section>
     </template>
+
+    <!-- Section "Qui gère ces applications ?" (comme Rôle et périmètre) -->
+    <section id="who-manages" class="section section-inner-wrap section-legend">
+      <div class="section-inner">
+        <div class="section-heading compact">
+          <p class="tag">{{ $t('liensUtiles.whoManages.tag') }}</p>
+          <h2>{{ $t('liensUtiles.whoManages.title') }}</h2>
+        </div>
+        <div class="legend-cards">
+          <article class="legend-card">
+            <h3>{{ $t('liensUtiles.whoManages.dao.title') }}</h3>
+            <p>{{ $t('liensUtiles.whoManages.dao.description') }}</p>
+          </article>
+          <article class="legend-card">
+            <h3>{{ $t('liensUtiles.whoManages.realt.title') }}</h3>
+            <p>{{ $t('liensUtiles.whoManages.realt.description') }}</p>
+          </article>
+          <article class="legend-card">
+            <h3>{{ $t('liensUtiles.whoManages.community.title') }}</h3>
+            <p>{{ $t('liensUtiles.whoManages.community.description') }}</p>
+          </article>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -174,6 +198,61 @@ function sectionClass(index) {
 .section-light {
   background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Section "Qui gère" : fond gris, 3 cartes comme Rôle et périmètre (home) */
+.section-legend {
+  background: #242424;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.section-legend .section-heading h2 {
+  color: #fff;
+}
+
+.section-legend .section-heading .tag {
+  color: var(--color-orange);
+}
+
+.legend-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 0;
+}
+
+.legend-card {
+  padding: 28px 26px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.legend-card:hover {
+  border-color: rgba(255, 140, 66, 0.4);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.legend-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 10px;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+.legend-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+@media (max-width: 900px) {
+  .legend-cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 .section-inner {

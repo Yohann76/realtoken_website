@@ -279,6 +279,22 @@
       "daoRealt": "Géré par la DAO & RealT",
       "community": "Initiative hors DAO"
     },
+    "whoManages": {
+      "tag": "Application Hub",
+      "title": "Qui gère ces applications ?",
+      "dao": {
+        "title": "Géré par la DAO",
+        "description": "Applications et outils développés, maintenus ou officiellement soutenus par la RealToken DAO. La communauté en pilote la feuille de route et les moyens via les votes REG."
+      },
+      "realt": {
+        "title": "Géré par RealT",
+        "description": "Applications et services opérés par RealT, le partenaire à l’origine de l’écosystème RealToken. RealT assure l’infrastructure technique et le fonctionnement au quotidien."
+      },
+      "community": {
+        "title": "Initiative hors DAO",
+        "description": "Projets et outils créés par des membres de la communauté ou des tiers, en dehors de la DAO. Ils ne sont pas officiellement maintenus par la DAO ou RealT mais peuvent être utiles à l’écosystème."
+      }
+    },
     "sections": {
       "rmm": {
         "tag": "RMM",
