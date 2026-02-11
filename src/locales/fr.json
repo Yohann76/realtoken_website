@@ -23,7 +23,7 @@
       "resourcesFaq": "FAQ",
       "resourcesWiki": "Wiki",
       "resourcesBlog": "Blog",
-      "resourcesLiensUtiles": "Liens utiles"
+      "resourcesLiensUtiles": "Application Hub"
     }
   },
   "hero": {
@@ -270,8 +270,8 @@
   },
   "liensUtiles": {
     "tag": "Ressources",
-    "pageTitle": "Liens utiles",
-    "pageDescription": "Liens utiles vers les applications, documentations et ressources de l'écosystème RealToken.",
+    "pageTitle": "Application Hub",
+    "pageDescription": "Applications, documentations et ressources de l'écosystème RealToken.",
     "sections": {
       "regEcosystem": {
         "title": "REG écosystème"

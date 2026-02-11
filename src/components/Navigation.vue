@@ -196,7 +196,7 @@ const menuItems = computed(() => [
     routerChildren: [
       { labelKey: 'nav.menu.resourcesBlog', to: '/blog' },
       { labelKey: 'nav.menu.resourcesFaq', to: '/faq' },
-      { labelKey: 'nav.menu.resourcesLiensUtiles', to: '/useful-links' }
+      { labelKey: 'nav.menu.resourcesLiensUtiles', to: '/application-hub' }
     ]
   }
 ])

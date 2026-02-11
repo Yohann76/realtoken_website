@@ -55,7 +55,7 @@
             <ul>
               <li><router-link to="/blog">{{ $t('footer.blog') }}</router-link></li>
               <li><a :href="wikiUrl" target="_blank" rel="noopener noreferrer">{{ $t('footer.wiki') }}</a></li>
-              <li><router-link to="/useful-links">{{ $t('nav.menu.resourcesLiensUtiles') }}</router-link></li>
+              <li><router-link to="/application-hub">{{ $t('nav.menu.resourcesLiensUtiles') }}</router-link></li>
               <li><router-link to="/faq">{{ $t('footer.faq') }}</router-link></li>
             </ul>
           </div>
