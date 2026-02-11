@@ -165,7 +165,9 @@ const menuItems = computed(() => [
       { labelKey: 'nav.menu.applicationsDashboard', href: 'https://dashboard.realtoken.community/', external: true },
       { labelKey: 'nav.menu.applicationsWallet', href: 'https://wallet.realtoken.network/', external: true }
     ],
-    routerChildren: []
+    routerChildren: [
+      { labelKey: 'nav.menu.resourcesLiensUtiles', to: '/application-hub' }
+    ]
   },
   {
     id: 'projets-rwa',
@@ -195,8 +197,7 @@ const menuItems = computed(() => [
     ],
     routerChildren: [
       { labelKey: 'nav.menu.resourcesBlog', to: '/blog' },
-      { labelKey: 'nav.menu.resourcesFaq', to: '/faq' },
-      { labelKey: 'nav.menu.resourcesLiensUtiles', to: '/application-hub' }
+      { labelKey: 'nav.menu.resourcesFaq', to: '/faq' }
     ]
   }
 ])
