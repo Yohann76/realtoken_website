@@ -55,6 +55,7 @@ const formatDate = (dateString) => {
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease;
+  min-width: 0;
 }
 
 .article-card:hover {
@@ -78,6 +79,13 @@ const formatDate = (dateString) => {
 
 .article-content {
   padding: 24px;
+  min-width: 0;
+}
+
+.article-title,
+.article-description {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .article-meta {

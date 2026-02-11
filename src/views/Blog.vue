@@ -92,12 +92,36 @@ h1 {
 
 .blog-section {
   padding: 96px min(8vw, 120px);
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .blog-section {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .blog-header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .articles-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 350px), 1fr));
   gap: 32px;
+  min-width: 0;
+}
+
+@media (max-width: 400px) {
+  .articles-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
 
 .loading {

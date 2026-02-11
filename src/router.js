@@ -46,7 +46,7 @@ const routes = [
     component: Comite
   },
   {
-    path: '/useful-links',
+    path: '/application-hub',
     name: 'LiensUtiles',
     component: LiensUtiles
   },
@@ -72,7 +72,7 @@ const routes = [
   },
   // Redirects: anciennes URLs FR → URLs anglaises (SEO, bookmarks)
   { path: '/comite', redirect: '/committee' },
-  { path: '/liens-utiles', redirect: '/useful-links' },
+  { path: '/liens-utiles', redirect: '/application-hub' },
   { path: '/devenir-partenaire', redirect: '/partners' },
   { path: '/confidentialite', redirect: '/privacy' },
   { path: '/mentions-legales', redirect: '/legal-notice' }

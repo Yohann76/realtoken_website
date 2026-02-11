@@ -25,7 +25,7 @@ const staticRoutes = [
   { path: 'blog', priority: '0.9', changefreq: 'weekly' },
   { path: 'faq', priority: '0.8', changefreq: 'monthly' },
   { path: 'committee', priority: '0.8', changefreq: 'monthly' },
-  { path: 'useful-links', priority: '0.8', changefreq: 'monthly' },
+  { path: 'application-hub', priority: '0.8', changefreq: 'monthly' },
   { path: 'reg', priority: '0.8', changefreq: 'monthly' },
   { path: 'partners', priority: '0.7', changefreq: 'monthly' },
   { path: 'privacy', priority: '0.5', changefreq: 'yearly' },

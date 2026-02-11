@@ -39,6 +39,7 @@
               <li><a href="https://yam.realtoken.network" target="_blank" rel="noopener noreferrer">YAM</a></li>
               <li><a href="https://bridge.realtoken.network/" target="_blank" rel="noopener noreferrer">{{ $t('nav.menu.applicationsBridge') }}</a></li>
               <li><a href="https://dashboard.realtoken.community/" target="_blank" rel="noopener noreferrer">Dashboard</a></li>
+              <li><router-link to="/application-hub">{{ $t('nav.menu.resourcesLiensUtiles') }}</router-link></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -55,7 +56,6 @@
             <ul>
               <li><router-link to="/blog">{{ $t('footer.blog') }}</router-link></li>
               <li><a :href="wikiUrl" target="_blank" rel="noopener noreferrer">{{ $t('footer.wiki') }}</a></li>
-              <li><router-link to="/useful-links">{{ $t('nav.menu.resourcesLiensUtiles') }}</router-link></li>
               <li><router-link to="/faq">{{ $t('footer.faq') }}</router-link></li>
             </ul>
           </div>

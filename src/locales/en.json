@@ -23,7 +23,7 @@
       "resourcesFaq": "FAQ",
       "resourcesWiki": "Wiki",
       "resourcesBlog": "Blog",
-      "resourcesLiensUtiles": "Useful links"
+      "resourcesLiensUtiles": "Application Hub"
     }
   },
   "hero": {
@@ -270,52 +270,97 @@
   },
   "liensUtiles": {
     "tag": "Resources",
-    "pageTitle": "Useful links",
-    "pageDescription": "Useful links to applications, documentation and resources of the RealToken ecosystem.",
-    "sections": {
-      "regEcosystem": {
-        "title": "REG Ecosystem"
+    "pageTitle": "Application Hub",
+    "pageDescription": "Applications, documentation and resources of the RealToken ecosystem.",
+    "openApp": "Open app",
+    "managedBy": {
+      "realt": "Managed by RealT",
+      "dao": "Managed by the DAO",
+      "daoRealt": "Managed by the DAO & RealT",
+      "community": "Community initiative"
+    },
+    "whoManages": {
+      "tag": "Application Hub",
+      "title": "Who manages these applications?",
+      "dao": {
+        "title": "Managed by the DAO",
+        "description": "Applications and tools developed and maintained by the DAO. The community pilots the roadmap and resources through REG votes. One condition: the DAO must have possession of the code (repository: <a href=\"https://github.com/RealToken-Community\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub RealToken Community</a>).",
+        "domainLabel": "Domain: realtoken.community"
       },
+      "realt": {
+        "title": "Managed by RealT",
+        "description": "Some applications are managed by RealT because the ecosystem is in the process of decentralization. From a legal standpoint, some applications still require a centralized entity to operate them.",
+        "domainLabel": "Domain: realtoken.network"
+      },
+      "community": {
+        "title": "Community initiative",
+        "description": "Projects and tools created by community members or third parties, outside the DAO. They are maintained by third parties, with no formal link or guarantee of ongoing support, but can still be useful to the ecosystem.",
+        "domainLabel": "Domain: Free"
+      }
+    },
+    "sections": {
       "rmm": {
+        "tag": "RMM",
         "title": "RMM",
-        "links": {
-          "telegram": "RMM available liquidity (Telegram)",
-          "dune": "Dune RMM Dashboard",
-          "gainOrLoss": "GainOrLoss – Analyze your wallet on RMM",
-          "rent2repay": "Rent2Repay (Smart Contract)"
-        }
+        "main": {
+          "title": "RMM",
+          "description": "Use your RealTokens as collateral to borrow in return.",
+          "href": "https://rmm.realtoken.network/",
+          "linkText": "Open RMM",
+          "managedBy": "daoRealt"
+        },
+        "tools": [
+          { "title": "Rent to Repay", "description": "Automate debt repayment when receiving rent.", "href": "https://github.com/RealToken-Community/DEVCONTEST-rent2repay", "managedBy": "dao" },
+          { "title": "RMM Analytics – Gain or Loss", "description": "Analyze interest earned or paid by a wallet on RMM.", "href": "https://analytics.rmm.realtoken.community/", "managedBy": "dao" },
+          { "title": "Bot Telegram – RMM liquidity notifications", "description": "Get notified when liquidity is available on RMM.", "href": "https://t.me/rmm_available_liquidity", "managedBy": "community" },
+          { "title": "Dune RMM Dashboard", "description": "RMM analytics and dashboards on Dune.", "href": "https://dune.com/sigri44/realtoken-rmm", "managedBy": "community" }
+        ]
       },
       "yam": {
+        "tag": "YAM",
         "title": "YAM",
-        "links": {
-          "viewer": "YAM Offer Viewer",
-          "report": "YAM Report Generator"
-        }
+        "main": {
+          "title": "YAM",
+          "description": "Buy and sell RealTokens peer-to-peer.",
+          "href": "https://yam.realtoken.network",
+          "linkText": "Open YAM",
+          "managedBy": "daoRealt"
+        },
+        "tools": [
+          { "title": "YAM Transaction Report Generator", "description": "Generate a PDF of all your transactions over a given period.", "href": "https://yam-report.realtoken.community/", "managedBy": "dao" },
+          { "title": "YAM Offer by ID", "description": "Alternative to main YAM to buy an offer directly by ID.", "href": "https://yam.joed.site/", "managedBy": "community" },
+          { "title": "Bot Telegram – YAM Sale Notify Bot", "description": "Get notified when one of your offers published on YAM is sold.", "href": "https://t.me/yam_sale_notify_bot", "managedBy": "community" }
+        ]
+      },
+      "realtokens": {
+        "tag": "Realtokens",
+        "title": "Realtokens",
+        "tools": [
+          { "title": "RealToken Asset Tracker", "description": "Mobile app to track your RealToken assets.", "href": "https://mobile.realtoken.community/", "managedBy": "community" },
+          { "title": "Shareholder Vote – Assets", "description": "Vote on RealToken assets (shareholder votes).", "href": "https://vote.realtoken.network/assets", "managedBy": "realt" },
+          { "title": "RealToken API", "description": "API documentation and endpoints for RealToken data.", "href": "https://api.realtoken.community/", "managedBy": "dao" },
+          { "title": "Bot Telegram – RealToken Update Alerts", "description": "Notifications of changes on a RealToken (rent, token price, etc.).", "href": "https://t.me/RealToken_Alerts_Bot", "managedBy": "community" },
+          { "title": "Pitsbi", "description": "RealT dashboard and analytics.", "href": "https://realt.pitsbi.io", "managedBy": "community" },
+          { "title": "Cryptalloc RealtLab", "description": "Portfolio and RealToken tools.", "href": "https://www.cryptalloc.com/realtlab/", "managedBy": "community" },
+          { "title": "RealT Rent Tracker", "description": "Track rent payments for your RealTokens.", "href": "https://ehpst.duckdns.org/realt_rent_tracker/", "managedBy": "community" },
+          { "title": "RealT community documentation", "description": "Community tutorials and guides (GitBook).", "href": "https://community-realt.gitbook.io/tuto-community/", "managedBy": "dao" }
+        ]
       },
       "reg": {
-        "title": "REG",
-        "links": {
-          "claim": "REG Claim",
-          "dune": "Dune DAO Dashboard",
-          "incentive": "Incentive Vault (DAO Incentive)"
-        }
-      },
-      "partnerApps": {
-        "title": "Third-party applications from our partners"
-      },
-      "dashboardRealt": {
-        "title": "RealT Dashboard",
-        "links": {
-          "pitsbi": "Pitsbi",
-          "cryptalloc": "Cryptalloc RealtLab",
-          "rentTracker": "RealT Rent Tracker"
-        }
-      },
-      "documentation": {
-        "title": "Documentation",
-        "links": {
-          "communityTuto": "RealT community documentation (GitBook)"
-        }
+        "tag": "REG",
+        "title": "REG Ecosystem",
+        "main": {
+          "title": "REG",
+          "description": "Governance token of the RealToken ecosystem. Claim, vote, and participate in the DAO.",
+          "href": "https://claim.realtoken.network/reg",
+          "linkText": "Claim REG",
+          "managedBy": "dao"
+        },
+        "tools": [
+          { "title": "RealToken Wallet", "description": "Wallet to hold and manage your REG and RealTokens.", "href": "https://wallet.realtoken.network/", "managedBy": "daoRealt" },
+          { "title": "Dune DAO Dashboard", "description": "RealToken DAO analytics and metrics.", "href": "https://dune.com/teugos/realtoken-dao-dashboard", "managedBy": "community" },
+          { "title": "Incentive Vault", "description": "DAO incentive program and vault.", "href": "https://vote.realtoken.network/dao/incentive", "managedBy": "dao" }
+        ]
       }
     }
   },
