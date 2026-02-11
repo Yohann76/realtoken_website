@@ -357,6 +357,7 @@
           "managedBy": "dao"
         },
         "tools": [
+          { "title": "RealToken Wallet", "description": "Wallet to hold and manage your REG and RealTokens.", "href": "https://wallet.realtoken.network/", "managedBy": "daoRealt" },
           { "title": "Dune DAO Dashboard", "description": "RealToken DAO analytics and metrics.", "href": "https://dune.com/teugos/realtoken-dao-dashboard", "managedBy": "community" },
           { "title": "Incentive Vault", "description": "DAO incentive program and vault.", "href": "https://vote.realtoken.network/dao/incentive", "managedBy": "dao" }
         ]
