@@ -298,6 +298,12 @@
         "domainLabel": "Domaine : Libre"
       }
     },
+    "communitySection": {
+      "tag": "Ressources",
+      "title": "Initiatives communautaires",
+      "disclaimer": "Les applications ci-dessous sont des projets tiers, non gérés ni validés par la DAO. Elles sont maintenues par des membres de la communauté ou des tiers. Utiles à l'écosystème mais sans garantie de suivi."
+    },
+    "dashboardRealtokensDesc": "Application mobile, API et outils RealToken.",
     "sections": {
       "rmm": {
         "tag": "RMM",

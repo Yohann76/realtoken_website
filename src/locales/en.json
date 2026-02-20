@@ -298,6 +298,12 @@
         "domainLabel": "Domain: Free"
       }
     },
+    "communitySection": {
+      "tag": "Resources",
+      "title": "Community initiatives",
+      "disclaimer": "The applications below are third-party projects, not managed or endorsed by the DAO. They are maintained by community members or third parties. Useful to the ecosystem but with no guarantee of ongoing support."
+    },
+    "dashboardRealtokensDesc": "Mobile app, API and RealToken tools.",
     "sections": {
       "rmm": {
         "tag": "RMM",
