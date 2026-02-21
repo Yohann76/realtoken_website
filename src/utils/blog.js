@@ -67,7 +67,8 @@ export const englishSlugs = [
   'realtoken-dao-realt-relationship',
   'realtoken-dao-objectives',
   'birth-of-realtoken-dao',
-  'realtoken-dao-scope'
+  'realtoken-dao-scope',
+  'realtoken-dao-governance-participation'
 ]
 
 // Correspondance des slugs entre locales (même article, slugs différents selon la langue)
@@ -80,7 +81,9 @@ const slugEquivalents = {
   'objectif-dao-realtoken': { en: 'realtoken-dao-objectives' },
   'realtoken-dao-objectives': { fr: 'objectif-dao-realtoken' },
   'lien-realt-dao-realtoken': { en: 'realtoken-dao-realt-relationship' },
-  'realtoken-dao-realt-relationship': { fr: 'lien-realt-dao-realtoken' }
+  'realtoken-dao-realt-relationship': { fr: 'lien-realt-dao-realtoken' },
+  'participation-gouvernance-realtoken-dao': { en: 'realtoken-dao-governance-participation' },
+  'realtoken-dao-governance-participation': { fr: 'participation-gouvernance-realtoken-dao' }
 }
 
 /** Retourne le slug à utiliser pour une locale (équivalent du même article dans l'autre langue si besoin) */
