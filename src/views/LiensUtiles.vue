@@ -326,6 +326,11 @@ const activeSection = computed(() => {
   border-left: 3px solid var(--color-orange);
 }
 
+.hub-panel--community .hub-panel-disclaimer {
+  background: rgba(180, 75, 70, 0.08);
+  border-left-color: rgba(180, 75, 70, 0.5);
+}
+
 .hub-panel-main {
   margin-bottom: 24px;
 }
@@ -445,17 +450,19 @@ const activeSection = computed(() => {
   color: rgba(255, 255, 255, 0.55);
 }
 
+/* Initiative hors DAO : fond rouge très léger pour les distinguer dans le thème */
 .hub-tool-card--community {
-  background: rgba(255, 255, 255, 0.03);
-  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(180, 75, 70, 0.06);
+  border-color: rgba(180, 75, 70, 0.18);
 }
 
 .hub-tool-card--community:hover {
-  border-color: rgba(255, 140, 66, 0.35);
+  background: rgba(180, 75, 70, 0.1);
+  border-color: rgba(180, 75, 70, 0.28);
 }
 
 .hub-managed-badge--community {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(220, 140, 135, 0.95);
 }
 
 .hub-legend-desc :deep(a) {
