@@ -342,6 +342,7 @@
         "tag": "Realtokens",
         "title": "Realtokens",
         "tools": [
+          { "title": "Bridge", "description": "Transfer RealTokens between chains (L2, etc.).", "href": "https://bridge.realtoken.network/", "managedBy": "realt" },
           { "title": "RealToken Asset Tracker", "description": "Mobile app to track your RealToken assets. Hosted on the DAO's GitHub (realtoken_apps), managed by the DAO (currently low maintenance).", "href": "https://mobile.realtoken.community/", "managedBy": "dao" },
           { "title": "Shareholder Vote – Assets", "description": "Vote on RealToken assets (shareholder votes).", "href": "https://vote.realtoken.network/assets", "managedBy": "realt" },
           { "title": "RealToken API", "description": "API documentation and endpoints for RealToken data.", "href": "https://api.realtoken.community/", "managedBy": "dao" },
