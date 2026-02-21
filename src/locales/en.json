@@ -222,7 +222,7 @@
       },
       "q2": {
         "question": "What is the link between RealToken and RealT?",
-        "answer": "RealToken and RealT share a common ecosystem focused on real asset tokenization. RealT focuses on creating and managing tokens (e.g. real estate tokens), while the RealToken DAO enables token holders to participate in governance and vote on key decisions (e.g. new projects, fund allocations)."
+        "answer": "RealToken and RealT belong to the same real-world asset tokenization ecosystem, with distinct roles. RealT focuses on creating and managing the underlying assets (real estate tokens, issuance, compliance). The RealToken DAO focuses on the technological ecosystem and DeFi: tools (RMM, YAM, Bridge), community governance, and decisions on protocols, integrations, and allocations. In short: RealT manages the tokenized assets; the RealToken DAO manages the ecosystem's infrastructure and governance."
       },
       "q3": {
         "question": "How can I participate in the DAO?",
