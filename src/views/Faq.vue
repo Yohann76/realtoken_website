@@ -230,6 +230,8 @@ h1 {
   border-radius: 12px;
   overflow: hidden;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  /* Quand on arrive via un lien avec ancre, le scroll laisse de la place sous la nav fixe (72px) */
+  scroll-margin-top: 88px;
 }
 
 .faq-item:hover {
