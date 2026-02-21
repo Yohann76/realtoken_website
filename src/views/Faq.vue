@@ -39,9 +39,9 @@
           >
             <div class="faq-answer">
               <template v-for="(block, i) in answerBlocks(key)" :key="i">
-                <p v-if="block.type === 'p'" class="faq-answer-p">{{ block.text }}</p>
+                <p v-if="block.type === 'p'" class="faq-answer-p" v-html="block.text"></p>
                 <ul v-else-if="block.type === 'ul'" class="faq-answer-list">
-                  <li v-for="(item, j) in block.items" :key="j">{{ item }}</li>
+                  <li v-for="(item, j) in block.items" :key="j" v-html="item"></li>
                 </ul>
               </template>
             </div>
@@ -285,6 +285,14 @@ h1 {
 
 .faq-answer-list li::marker {
   color: var(--color-orange);
+}
+
+.faq-answer :deep(a) {
+  color: var(--color-orange);
+  text-decoration: underline;
+}
+.faq-answer :deep(a:hover) {
+  text-decoration: none;
 }
 
 .faq-answer > *:last-child {

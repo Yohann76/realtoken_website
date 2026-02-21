@@ -226,7 +226,7 @@
       },
       "q3": {
         "question": "Comment puis-je participer à la DAO ?",
-        "answer": "Pour participer, il faut :\n• Détenir des tokens de gouvernance (ex : RMM, ou un token spécifique à RealToken).\n• Se connecter à la plateforme de vote (Tally) avec un wallet compatible (MetaMask, WalletConnect, Rabby, etc.).\n• Voter ou proposer des idées via le forum."
+        "answer": "• Forum : rejoindre <a href='https://forum.realtoken.community' target='_blank' rel='noopener noreferrer'>le forum</a> pour débattre, suivre les décisions et proposer des idées (pas besoin de token). Pour soumettre une proposition, discutez d'abord de votre idée sur le forum, puis rédigez une proposition formelle.\n• REG : le REG (token de gouvernance) s'obtient sur des plateformes d'échange comme <a href='https://app.1inch.io' target='_blank' rel='noopener noreferrer'>1inch</a> ou via <a href='https://yam.realtoken.network' target='_blank' rel='noopener noreferrer'>YAM</a>. Des REG sont aussi distribués en fonction de la participation dans les tokens partenaires. Participer activement à l'écosystème (développement, communication, etc.) peut également être rétribué en REG. Le REG donne un droit de vote.\n• Tally : sur <a href='https://tally.xyz/gov/realtoken-ecosystem-governance' target='_blank' rel='noopener noreferrer'>Tally</a>, connectez votre wallet pour consulter les propositions, voter ou déléguer votre vote."
       },
       "q4": {
         "question": "Qu'est-ce qu'un RWA (Real World Asset) ?",
