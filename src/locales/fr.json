@@ -222,11 +222,11 @@
       },
       "q2": {
         "question": "Quel est le lien entre RealToken et RealT ?",
-        "answer": "RealToken et RealT partagent un écosystème commun axé sur la tokenisation d'actifs réels. RealT se concentre sur la création et la gestion des tokens (ex : tokens immobiliers), tandis que la DAO RealToken permet aux détenteurs de tokens de participer à la gouvernance et de voter sur les décisions clés (ex : nouveaux projets, allocations de fonds)."
+        "answer": "RealToken et RealT font partie du même écosystème de tokenisation d'actifs réels, avec des rôles distincts. RealT se concentre sur la création et la gestion des actifs sous-jacents (tokens immobiliers, émission, conformité). La DAO RealToken se concentre quant à elle sur l'écosystème technologique et le DeFi : outils (RMM, YAM, Bridge), gouvernance communautaire, et décisions sur les protocoles, les intégrations et les allocations. En résumé : RealT gère les actifs tokenisés ; la DAO RealToken gère l'infrastructure et la gouvernance de l'écosystème."
       },
       "q3": {
         "question": "Comment puis-je participer à la DAO ?",
-        "answer": "Pour participer, il faut :\n• Détenir des tokens de gouvernance (ex : RMM, ou un token spécifique à RealToken).\n• Se connecter à la plateforme de vote (Tally) avec un wallet compatible (MetaMask, WalletConnect, Rabby, etc.).\n• Voter ou proposer des idées via le forum."
+        "answer": "• Forum : rejoindre <a href='https://forum.realtoken.community' target='_blank' rel='noopener noreferrer'>le forum</a> pour débattre, suivre les décisions et proposer des idées (pas besoin de token). Pour soumettre une proposition, discutez d'abord de votre idée sur le forum, puis rédigez une proposition formelle.\n• REG : le REG (token de gouvernance) s'obtient sur des plateformes d'échange comme <a href='https://app.1inch.io' target='_blank' rel='noopener noreferrer'>1inch</a> ou via <a href='https://yam.realtoken.network' target='_blank' rel='noopener noreferrer'>YAM</a>. Des REG sont aussi distribués en fonction de la participation dans les tokens partenaires. Participer activement à l'écosystème (développement, communication, etc.) peut également être rétribué en REG. Le REG donne un droit de vote.\n• Tally : sur <a href='https://tally.xyz/gov/realtoken-ecosystem-governance' target='_blank' rel='noopener noreferrer'>Tally</a>, connectez votre wallet pour consulter les propositions, voter ou déléguer votre vote."
       },
       "q4": {
         "question": "Qu'est-ce qu'un RWA (Real World Asset) ?",
@@ -242,11 +242,11 @@
       },
       "q7": {
         "question": "Comment puis-je proposer un projet ou une idée à la DAO ?",
-        "answer": "• Rejoindre le forum.\n• Rédiger une proposition avec : un titre clair ; une description détaillée (objectifs, budget, calendrier). Voir le template.\n• Soumettre la proposition au vote via Tally."
+        "answer": "• Aborder l'idée sur <a href='https://t.me/realtokendao_official' target='_blank' rel='noopener noreferrer'>Telegram</a> pour étudier la pertinence et la faisabilité.\n• Rejoindre <a href='https://forum.realtoken.community/' target='_blank' rel='noopener noreferrer'>le forum</a> et rédiger une proposition avec : un titre clair ; une description détaillée (objectifs, budget, calendrier). Voir <a href='https://forum.realtoken.community/d/2-realtoken-dao-official-guidelines' target='_blank' rel='noopener noreferrer'>le template</a>.\n• Soumettre la proposition au vote via <a href='https://tally.xyz/gov/realtoken-ecosystem-governance' target='_blank' rel='noopener noreferrer'>Tally</a>."
       },
       "q8": {
         "question": "Où trouver de l'aide ou poser des questions ?",
-        "answer": "Telegram, Forum, FAQ, et par mail si disponible."
+        "answer": "• <a href='https://t.me/realtokendao_official' target='_blank' rel='noopener noreferrer'>Telegram</a> : la communauté est bienveillante ; postez dans la langue de votre choix, nous vous aiderons.\n• <a href='https://forum.realtoken.community/' target='_blank' rel='noopener noreferrer'>Forum</a> : pour des interrogations et questionnements un peu plus réfléchis.\n• Par mail (<a href='mailto:marketing@realtoken.community'>marketing@realtoken.community</a>) : pour toute demande de partenariat ou autre question."
       },
       "q9": {
         "question": "La DAO est-elle ouverte aux débutants en crypto ?",
@@ -342,6 +342,7 @@
         "tag": "Realtokens",
         "title": "Realtokens",
         "tools": [
+          { "title": "Bridge", "description": "Permet de transférer des RealTokens entre des chaînes (L2, etc.).", "href": "https://bridge.realtoken.network/", "managedBy": "realt" },
           { "title": "RealToken Asset Tracker", "description": "Application mobile pour suivre vos actifs RealToken. Hébergée sur le GitHub de la DAO (realtoken_apps), gérée par la DAO (peu maintenue actuellement).", "href": "https://mobile.realtoken.community/", "managedBy": "dao" },
           { "title": "Shareholder Vote – Assets", "description": "Application de vote sur les assets RealToken (votes actionnaires).", "href": "https://vote.realtoken.network/assets", "managedBy": "realt" },
           { "title": "RealToken API", "description": "Documentation et endpoints de l'API RealToken.", "href": "https://api.realtoken.community/", "managedBy": "dao" },
@@ -363,6 +364,7 @@
           "managedBy": "dao"
         },
         "tools": [
+          { "title": "Documentation de la DAO", "description": "Wiki pour mieux connaître la DAO et son organisation.", "href": "https://wiki.realtoken.community/", "managedBy": "dao" },
           { "title": "RealToken Wallet", "description": "Wallet pour détenir et gérer vos REG et RealTokens.", "href": "https://wallet.realtoken.network/", "managedBy": "daoRealt" },
           { "title": "Dashboard Dune DAO", "description": "Analytics et métriques de la RealToken DAO.", "href": "https://dune.com/teugos/realtoken-dao-dashboard", "managedBy": "community" },
           { "title": "Incentive Vault", "description": "Programme d'incentive et vault de la DAO.", "href": "https://vote.realtoken.network/dao/incentive", "managedBy": "dao" }
