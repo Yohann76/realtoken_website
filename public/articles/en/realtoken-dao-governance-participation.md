@@ -1,6 +1,6 @@
 ---
 title: "How to participate in RealToken DAO governance?"
-date: "2024-06-01"
+date: "2026-02-20"
 description: "Practical guide to becoming an active member of the RealToken DAO: getting REG tokens, joining the forum, voting on Tally, and submitting your first proposals"
 tags: ["dao", "governance", "reg", "participation", "guide"]
 author: "RealToken Team"
