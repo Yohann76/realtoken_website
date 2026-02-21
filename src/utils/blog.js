@@ -61,7 +61,8 @@ function parseFrontmatter(content) {
 }
 
 // Slugs canoniques : définis dans data/blog-slugs.js (sans dépendance) pour le script sitemap
-export { englishSlugs } from '../data/blog-slugs.js'
+import { englishSlugs } from '../data/blog-slugs.js'
+export { englishSlugs }
 
 // Correspondance des slugs entre locales (même article, slugs différents selon la langue)
 // Quand on est sur /blog/perimetre-dao-realtoken et qu'on passe en EN, on doit charger realtoken-dao-scope
