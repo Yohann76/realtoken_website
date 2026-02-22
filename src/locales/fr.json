@@ -10,7 +10,7 @@
       "applicationsRmm": "RMM",
       "applicationsYam": "YAM",
       "applicationsBridge": "Bridge",
-      "applicationsDashboard": "Dashboard",
+      "applicationsDashboard": "Realtoken Dashboard",
       "applicationsWallet": "RealToken Wallet",
       "projetsRwa": "Projets RWA",
       "projetsRwaRealt": "RealT",
@@ -343,6 +343,7 @@
         "title": "Realtokens",
         "tools": [
           { "title": "Bridge", "description": "Permet de transférer des RealTokens entre des chaînes (L2, etc.).", "href": "https://bridge.realtoken.network/", "managedBy": "realt" },
+          { "title": "Realtoken Dashboard", "description": "Tableau de bord RealToken : vue d'ensemble des actifs et de l'écosystème.", "href": "https://dashboard.realtoken.community/", "managedBy": "dao" },
           { "title": "RealToken Asset Tracker", "description": "Application mobile pour suivre vos actifs RealToken. Hébergée sur le GitHub de la DAO (realtoken_apps), gérée par la DAO (peu maintenue actuellement).", "href": "https://mobile.realtoken.community/", "managedBy": "dao" },
           { "title": "Shareholder Vote – Assets", "description": "Application de vote sur les assets RealToken (votes actionnaires).", "href": "https://vote.realtoken.network/assets", "managedBy": "realt" },
           { "title": "RealToken API", "description": "Documentation et endpoints de l'API RealToken.", "href": "https://api.realtoken.community/", "managedBy": "dao" },
