@@ -334,20 +334,20 @@
         },
         "tools": [
           { "title": "YAM Transaction Report Generator", "description": "Permet de générer un PDF de toutes ses transactions sur une période donnée.", "href": "https://yam-report.realtoken.community/", "managedBy": "dao" },
-          { "title": "YAM Offer Viewer by ID", "description": "Alternative au YAM principal permettant d'acheter une offre directement à partir de son ID. Version gérée par la DAO (code sur GitHub RealToken Community).", "href": "https://offer-view.yam.realtoken.community/", "managedBy": "dao" },
-          { "title": "Bot Telegram – YAM Sale Notify Bot", "description": "Permet de recevoir une notification chaque fois qu'une de vos offres publiées sur le YAM est achetée. Géré par la DAO.", "href": "https://t.me/yam_sale_notify_bot", "managedBy": "dao" }
+          { "title": "YAM Offer Viewer by ID", "description": "Alternative au YAM principal permettant d'acheter une offre directement à partir de son ID.", "href": "https://offer-view.yam.realtoken.community/", "managedBy": "dao" },
+          { "title": "Bot Telegram – YAM Sale Notify Bot", "description": "Permet de recevoir une notification chaque fois qu'une de vos offres publiées sur le YAM est achetée.", "href": "https://t.me/yam_sale_notify_bot", "managedBy": "dao" }
         ]
       },
       "realtokens": {
         "tag": "Realtokens",
         "title": "Realtokens",
         "tools": [
-          { "title": "Bridge", "description": "Permet de transférer des RealTokens entre des chaînes (L2, etc.).", "href": "https://bridge.realtoken.network/", "managedBy": "realt" },
+          { "title": "Bridge", "description": "Permet de transférer des RealTokens/REG entre des chaînes (L2, etc.).", "href": "https://bridge.realtoken.network/", "managedBy": "realt" },
           { "title": "Realtoken Dashboard", "description": "Tableau de bord RealToken : vue d'ensemble des actifs et de l'écosystème.", "href": "https://dashboard.realtoken.community/", "managedBy": "dao" },
-          { "title": "RealToken Asset Tracker", "description": "Application mobile pour suivre vos actifs RealToken. Hébergée sur le GitHub de la DAO (realtoken_apps), gérée par la DAO (peu maintenue actuellement).", "href": "https://mobile.realtoken.community/", "managedBy": "dao" },
+          { "title": "RealToken Asset Tracker", "description": "Application mobile pour suivre vos actifs RealToken.", "href": "https://mobile.realtoken.community/", "managedBy": "dao" },
           { "title": "Shareholder Vote – Assets", "description": "Application de vote sur les assets RealToken (votes actionnaires).", "href": "https://vote.realtoken.network/assets", "managedBy": "realt" },
           { "title": "RealToken API", "description": "Documentation et endpoints de l'API RealToken.", "href": "https://api.realtoken.community/", "managedBy": "dao" },
-          { "title": "Bot Telegram – RealToken Update Alerts", "description": "Notifications des changements sur un RealToken (loyer, prix du token, etc.). Géré par la DAO (code sur GitHub RealToken Community).", "href": "https://t.me/RealToken_Alerts_Bot", "managedBy": "dao" },
+          { "title": "Bot Telegram – RealToken Update Alerts", "description": "Notifications des changements sur un RealToken (loyer, prix du token, etc.).", "href": "https://t.me/RealToken_Alerts_Bot", "managedBy": "dao" },
           { "title": "Pitsbi", "description": "Dashboard et analytics RealT.", "href": "https://realt.pitsbi.io", "managedBy": "community" },
           { "title": "Cryptalloc RealtLab", "description": "Portfolio et outils RealToken.", "href": "https://www.cryptalloc.com/realtlab/", "managedBy": "community" },
           { "title": "RealT Rent Tracker", "description": "Suivi des loyers de vos RealTokens.", "href": "https://ehpst.duckdns.org/realt_rent_tracker/", "managedBy": "community" },
